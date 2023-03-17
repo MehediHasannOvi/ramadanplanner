@@ -1,0 +1,36 @@
+name: ramadanplanner
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+  sizer: ^2.0.15
+  google_fonts: ^4.0.3
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  assets: 
+    - assets/
+    - null
+  uses-material-design: true
+
+  fonts: 
+    - family: Mynerve
+      fonts: 
+        - asset: assets/font/Mynerve.ttf
+          weight: 700
+    - family: Lato
+      fonts: 
+        - asset: assets/font/Lato-Regular.ttf
+          weight: 400
+
