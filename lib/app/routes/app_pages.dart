@@ -1,5 +1,11 @@
 import 'package:get/get.dart';
 
+import '../modules/DailyTracking/bindings/daily_tracking_binding.dart';
+import '../modules/DailyTracking/views/daily_tracking_view.dart';
+import '../modules/PrayTracker/bindings/pray_tracker_binding.dart';
+import '../modules/PrayTracker/views/pray_tracker_view.dart';
+import '../modules/QuranTracker/bindings/quran_tracker_binding.dart';
+import '../modules/QuranTracker/views/quran_tracker_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -15,6 +21,21 @@ class AppPages {
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.PRAY_TRACKER,
+      page: () => const PrayTrackerView(),
+      binding: PrayTrackerBinding(),
+    ),
+    GetPage(
+      name: _Paths.QURAN_TRACKER,
+      page: () => const QuranTrackerView(),
+      binding: QuranTrackerBinding(),
+    ),
+    GetPage(
+      name: _Paths.DAILY_TRACKING,
+      page: () => const DailyTrackingView(),
+      binding: DailyTrackingBinding(),
     ),
   ];
 }

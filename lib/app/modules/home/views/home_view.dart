@@ -5,6 +5,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -47,6 +48,7 @@ class HomeView extends GetView<HomeController> {
             //   child:
 
             // ),
+
             SizedBox(
               height: 3.h,
             ),
@@ -143,68 +145,76 @@ class HomeView extends GetView<HomeController> {
                       color: AppColors.primaryColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: GridView.builder(
-                        physics: NeverScrollableScrollPhysics(),
-                        gridDelegate:
-                            const SliverGridDelegateWithMaxCrossAxisExtent(
-                                maxCrossAxisExtent: 180,
-                                childAspectRatio: 4 / 2,
-                                crossAxisSpacing: 10,
-                                mainAxisSpacing: 10),
-                        itemCount: 4,
-                        itemBuilder: (BuildContext ctx, index) {
-                          return Container(
-                            margin: EdgeInsets.all(10),
-                            height: 3.h,
-                            width: 10.w,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: 8.h,
-                                  width: 8.h,
-                                  decoration: BoxDecoration(
-                                    color: AppColors.tertiaryColor,
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  child: Icon(
-                                    Icons.done,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 2.w,
-                                ),
-                                Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    AppText(
-                                      text: "Subuh",
-                                      fontSize: 12.sp,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      textAlign: TextAlign.left,
-                                    ),
-                                    AppText(
-                                      text: "3/2",
-                                      fontSize: 10.sp,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      textAlign: TextAlign.left,
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                          );
-                        }),
+                    child: GridView.count(
+                      // shrinkWrap: true,
+                      // physics: NeverScrollableScrollPhysics(),
+                      padding: EdgeInsets.zero,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10,
+                      crossAxisCount: 2,
+                      children: [
+                        manuButton("Daliy Tracker", "1/13" , () => Get.toNamed(Routes.DAILY_TRACKING)),
+                        manuButton("Pray Tracker", "1/13",() => Get.toNamed(Routes.PRAY_TRACKER)),
+                        manuButton("Quran Tracker", "1/13",() => Get.toNamed(Routes.QURAN_TRACKER)),
+                        manuButton("Pray Tracker", "1/13",() => Get.toNamed(Routes.DAILY_TRACKING)),
+                      ],
+                    ),
                   ),
                 ],
               ),
             ),
           ],
         ));
+  }
+
+  Container manuButton(String name, String com , Function()? tap) {
+    return Container(
+      height: 20.h,
+      width: 10.w,
+      child: GestureDetector(
+        onTap: tap,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              height: 8.h,
+              width: 8.h,
+              decoration: BoxDecoration(
+                color: AppColors.tertiaryColor,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Icon(
+                Icons.done,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(
+              width: 2.w,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                AppText(
+                  text: name,
+                  fontSize: 10.sp,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  textAlign: TextAlign.left,
+                ),
+                AppText(
+                  text: com,
+                  fontSize: 8.sp,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  textAlign: TextAlign.left,
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
