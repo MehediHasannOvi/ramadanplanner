@@ -1,16 +1,50 @@
-# ramadanplanner
 
-A new Flutter project.
+# Ramadan Planner
 
-## Getting Started
+This App You Can Get Pray Time traking , quran , Good Work you Can traking Your All Good Work 
 
-This project is a starting point for a Flutter application.
+## Color Reference
 
-A few resources to get you started if this is your first Flutter project:
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Example Color | ![#07160D](https://via.placeholder.com/10/07160D?text=+) #07160D |
+| Example Color | ![#214031](https://via.placeholder.com/10/214031?text=+) #214031 |
+| Example Color | ![#3E7B5E](https://via.placeholder.com/10/00b48a?text=+) #3E7B5E |
+| Example Color | ![#FFE500](https://via.placeholder.com/10/3E7B5E?text=+) #FFE500 |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Deployment
+
+To deploy this project run
+
+```bash
+  Flutter Pub get 
+  Flutter Run
+```
+
+
+## Screenshots
+
+![App Screenshot](https://cdn.dribbble.com/users/4383731/screenshots/15469115/media/a5f1811d4d86993292353c941419fd07.png?compress=1&resize=1000x750&vertical=top)
+
+
+## Tech Stack
+
+**Client:** Dart, Flutter, 
+
+**Server:** Firebase, Hive
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
