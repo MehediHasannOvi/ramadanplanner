@@ -1,18 +1,15 @@
 import 'package:get/get.dart';
 
-class DailyTrackingController extends GetxController {
-  //TODO: Implement DailyTrackingController
-
+class GraphController extends GetxController {
+  //TODO: Implement GraphController
+  Map<String, double> dataMap = {
+    "Flutter": 5,
+    "React": 6,
+    "Xamarin": 4,
+    "Ionic": 1,
+    
+  };
   final count = 0.obs;
-  bool press = false;
-
-  function(bool value) {
-    press = value;
-    // press = false;
-    update();
-    print(value);
-  }
-
   @override
   void onInit() {
     super.onInit();

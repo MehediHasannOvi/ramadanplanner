@@ -7,6 +7,7 @@ abstract class Routes {
   static const PRAY_TRACKER = _Paths.PRAY_TRACKER;
   static const QURAN_TRACKER = _Paths.QURAN_TRACKER;
   static const DAILY_TRACKING = _Paths.DAILY_TRACKING;
+  static const GRAPH = _Paths.GRAPH;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const PRAY_TRACKER = '/pray-tracker';
   static const QURAN_TRACKER = '/quran-tracker';
   static const DAILY_TRACKING = '/daily-tracking';
+  static const GRAPH = '/graph';
 }

@@ -1,26 +1,34 @@
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../Util/app_colors.dart';
 import '../routes/app_pages.dart';
+import 'home/views/home_view.dart';
 
-
-class Fastpage extends StatelessWidget {
+class Fastpage extends StatefulWidget {
   const Fastpage({super.key});
+
+  @override
+  State<Fastpage> createState() => _FastpageState();
+}
+
+class _FastpageState extends State<Fastpage> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+        const Duration(seconds: 3),
+        () =>Get.offNamed(Routes.HOME));
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF0d2329),
       body: Center(
-        child: MaterialButton(
-          color: AppColors.quaternaryColor,
-          onPressed: (){
-          
-          Get.offNamed(Routes.HOME);  
-        }, child: Text("Open")
-        ),
-      )
+        child: Image.asset("assets/images/logo.png"),
+      ),
     );
   }
 }

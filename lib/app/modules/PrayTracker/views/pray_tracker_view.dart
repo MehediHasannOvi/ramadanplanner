@@ -5,6 +5,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
+import '../../DailyTracking/controllers/daily_tracking_controller.dart';
 import '../controllers/pray_tracker_controller.dart';
 
 class PrayTrackerView extends GetView<PrayTrackerController> {
@@ -70,7 +71,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: false, onChanged: (value) {}),
+                trailing: GetBuilder<DailyTrackingController>(
+                  init: DailyTrackingController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.press,
+                      onChanged: (value) {
+                        _.function(value!);
+                      },
+                    );
+                  },
+                ),
               ),
               ListTile(
                 title: AppText(
@@ -85,7 +98,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: false, onChanged: (value) {}),
+                trailing: GetBuilder<DailyTrackingController>(
+                  init: DailyTrackingController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.press,
+                      onChanged: (value) {
+                        _.function(value!);
+                      },
+                    );
+                  },
+                ),
               ),
               ListTile(
                 title: AppText(
@@ -115,7 +140,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: false, onChanged: (value) {}),
+                trailing: GetBuilder<DailyTrackingController>(
+                  init: DailyTrackingController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.press,
+                      onChanged: (value) {
+                        _.function(value!);
+                      },
+                    );
+                  },
+                ),
               ),
               ListTile(
                 title: AppText(
@@ -139,7 +176,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: false, onChanged: (value) {}),
+                trailing: GetBuilder<DailyTrackingController>(
+                  init: DailyTrackingController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.press,
+                      onChanged: (value) {
+                        _.function(value!);
+                      },
+                    );
+                  },
+                ),
               ),
               ListTile(
                 title: AppText(
@@ -148,7 +197,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: false, onChanged: (value) {}),
+                trailing: GetBuilder<DailyTrackingController>(
+                  init: DailyTrackingController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.press,
+                      onChanged: (value) {
+                        _.function(value!);
+                      },
+                    );
+                  },
+                ),
               ),
             ],
           ),

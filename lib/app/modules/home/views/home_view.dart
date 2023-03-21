@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -5,6 +6,8 @@ import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
+import '../../../../Util/main_button.dart';
+import '../../../data/dinerkaj.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/home_controller.dart';
 
@@ -23,21 +26,31 @@ class HomeView extends GetView<HomeController> {
             ),
             AppText(
               text: "Assalamualaikum",
-              fontSize: 12.sp,
+              fontSize: 10.sp,
               fontWeight: FontWeight.normal,
               color: Colors.grey,
               // textAlign: TextAlign.left,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             AppText(
               text: "MeHedi Hasan Ovi",
-              fontSize: 15.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: Colors.white,
             ),
           ]),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Get.toNamed(Routes.GRAPH);
+                },
+                icon: Icon(
+                  CupertinoIcons.graph_square,
+                  color: AppColors.quinaryColor,
+                )),
+          ],
         ),
         body: ListView(
           // crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,7 +82,7 @@ class HomeView extends GetView<HomeController> {
                     height: 2.h,
                   ),
                   AppText(
-                    text: "Untuk Makassar dan sekitarnya",
+                    text: controller.dinerkajChnage().toString(),
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w300,
                     color: Colors.white,
@@ -84,8 +97,8 @@ class HomeView extends GetView<HomeController> {
             Container(
               height: 75.h,
               width: double.infinity,
-              padding: EdgeInsets.all(30),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(30),
+              decoration: const BoxDecoration(
                 color: AppColors.secondaryColor,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
@@ -97,7 +110,7 @@ class HomeView extends GetView<HomeController> {
                   Container(
                     height: 30.h,
                     width: double.infinity,
-                    padding: EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
                       color: AppColors.tertiaryColor,
                       borderRadius: BorderRadius.circular(10),
@@ -108,7 +121,7 @@ class HomeView extends GetView<HomeController> {
                             "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature",
                         fontSize: 12.sp,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xEBF0EFEF),
+                        color: const Color(0xEBF0EFEF),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -125,13 +138,18 @@ class HomeView extends GetView<HomeController> {
                         color: Colors.white,
                         textAlign: TextAlign.left,
                       ),
-                      Spacer(),
-                      AppText(
-                        text: "Lihat Semua",
-                        fontSize: 10.sp,
-                        fontWeight: FontWeight.normal,
-                        color: AppColors.quaternaryColor,
-                        textAlign: TextAlign.left,
+                      const Spacer(),
+                      GestureDetector(
+                        onTap: () {
+                          print(TimeOfDay.now().minute);
+                        },
+                        child: AppText(
+                          text: "Lihat Semua",
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.normal,
+                          color: AppColors.quaternaryColor,
+                          textAlign: TextAlign.left,
+                        ),
                       ),
                     ],
                   ),
@@ -141,22 +159,27 @@ class HomeView extends GetView<HomeController> {
                   Container(
                     height: 25.h,
                     width: double.infinity,
+                    alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: AppColors.primaryColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: GridView.count(
+                    child: GridView(
                       // shrinkWrap: true,
                       // physics: NeverScrollableScrollPhysics(),
                       padding: EdgeInsets.zero,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      crossAxisCount: 2,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2, childAspectRatio: 1.9),
                       children: [
-                        manuButton("Daliy Tracker", "1/13" , () => Get.toNamed(Routes.DAILY_TRACKING)),
-                        manuButton("Pray Tracker", "1/13",() => Get.toNamed(Routes.PRAY_TRACKER)),
-                        manuButton("Quran Tracker", "1/13",() => Get.toNamed(Routes.QURAN_TRACKER)),
-                        manuButton("Pray Tracker", "1/13",() => Get.toNamed(Routes.DAILY_TRACKING)),
+                        manuButton("Pray Tracker", "1/7",
+                            () => Get.toNamed(Routes.PRAY_TRACKER)),
+                        manuButton("Daily Tracker", "1/13",
+                            () => Get.toNamed(Routes.DAILY_TRACKING)),
+                        manuButton("Quran Tracker", "1/3",
+                            () => Get.toNamed(Routes.QURAN_TRACKER)),
+                        manuButton("Pray Tracker", "1/13",
+                            () => Get.toNamed(Routes.DAILY_TRACKING)),
                       ],
                     ),
                   ),
@@ -165,56 +188,5 @@ class HomeView extends GetView<HomeController> {
             ),
           ],
         ));
-  }
-
-  Container manuButton(String name, String com , Function()? tap) {
-    return Container(
-      height: 20.h,
-      width: 10.w,
-      child: GestureDetector(
-        onTap: tap,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              height: 8.h,
-              width: 8.h,
-              decoration: BoxDecoration(
-                color: AppColors.tertiaryColor,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Icon(
-                Icons.done,
-                color: Colors.white,
-              ),
-            ),
-            SizedBox(
-              width: 2.w,
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                AppText(
-                  text: name,
-                  fontSize: 10.sp,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  textAlign: TextAlign.left,
-                ),
-                AppText(
-                  text: com,
-                  fontSize: 8.sp,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  textAlign: TextAlign.left,
-                ),
-              ],
-            )
-          ],
-        ),
-      ),
-    );
   }
 }
