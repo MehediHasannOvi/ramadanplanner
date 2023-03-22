@@ -1,7 +1,6 @@
-
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
-
+import 'package:hive/hive.dart';
 
 import '../../../../Util/main_button.dart';
 import '../../../data/dinerkaj.dart';
@@ -11,8 +10,7 @@ import '../../../routes/app_pages.dart';
 class HomeController extends GetxController {
   //TODO: Implement HomeController
 
-
-
+  RxInt getpraylanght = Hive.box('daily').length.obs;
 
   int getDataIndexForCurrentDate() {
     // Get the current date
@@ -24,7 +22,7 @@ class HomeController extends GetxController {
     return dataIndex;
   }
 
-    int hadiss() {
+  int hadiss() {
     // Get the current date
     HijriCalendar currentDate = HijriCalendar.now();
 
@@ -51,5 +49,10 @@ class HomeController extends GetxController {
     manuButton("Pray Tracker", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
   ];
 
- 
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    getpraylanght;
+    super.onInit();
+  }
 }

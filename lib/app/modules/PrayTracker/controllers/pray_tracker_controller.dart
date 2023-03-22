@@ -2,76 +2,104 @@ import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
 class PrayTrackerController extends GetxController {
-  //TODO: Implement PrayTrackerController
-  // final pray = Hive.box("pray");
+  // RxBool fazar =   false.obs;
 
-  bool fazar = false;
-  bool zohar = false;
-  bool asar = false;
-  bool magrib = false;
-  bool esha = false;
-  bool tahajjud = false;
-  bool duha = false;
+  final namazData = Hive.box('daily');
 
-    function(bool value) {
-     fazar = value;
-    // press = false;
+  function(bool value) {
+    if (value == true) {
+      namazData.put('fazar', value);
+    } else {
+      namazData.delete(
+        'fazar',
+      );
+    }
+
     update();
-    
+    onClose();
   }
+
   function1(bool value) {
-     zohar = value;
+    if (value == true) {
+      namazData.put('zohar', value);
+    } else {
+      namazData.delete(
+        'zohar',
+      );
+    }
+
     // press = false;
     update();
-    
+    onClose();
   }
+
   function2(bool value) {
-     asar = value;
+    if (value == true) {
+      namazData.put('asor', value);
+    } else {
+      namazData.delete(
+        'asor',
+      );
+    }
+
     // press = false;
     update();
-    
+    onClose();
   }
+
   function3(bool value) {
-     magrib = value;
+    if (value == true) {
+      namazData.put('magrib', value);
+    } else {
+      namazData.delete(
+        'magrib',
+      );
+    }
+
     // press = false;
     update();
-    
+    onClose();
   }
+
   function4(bool value) {
-    esha = value;
+    if (value == true) {
+      namazData.put('isar', value);
+    } else {
+      namazData.delete(
+        'isar',
+      );
+    }
+
     // press = false;
     update();
-    
+    onClose();
   }
+
   function5(bool value) {
-     tahajjud = value;
+    if (value == true) {
+      namazData.put('tahajud', value);
+    } else {
+      namazData.delete(
+        'tahajud',
+      );
+    }
+
     // press = false;
     update();
-    
+    onClose();
   }
+
   function6(bool value) {
-     duha = value;
+    if (value == true) {
+      namazData.put('duha', value);
+    } else {
+      namazData.delete(
+        'duha',
+      );
+    }
+
     // press = false;
     update();
-    
+    onClose();
   }
-
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }

@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
-import '../../DailyTracking/controllers/daily_tracking_controller.dart';
+
 import '../controllers/pray_tracker_controller.dart';
 
 class PrayTrackerView extends GetView<PrayTrackerController> {
@@ -77,41 +77,41 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.fazar,
+                      value: controller.namazData.get("fazar") ?? false,
                       onChanged: (value) {
-                        _.function(value!);
+                        controller.function(value!);
                       },
                     );
                   },
                 ),
               ),
               ListTile(
-                title: AppText(
-                  text: "যুহর",
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-                subtitle: AppText(
-                  text: "5:10",
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.white,
-                ),
-                trailing: GetBuilder<PrayTrackerController>(
-                  init: PrayTrackerController(),
-                  initState: (_) {},
-                  builder: (_) {
-                    return Checkbox(
+                  title: AppText(
+                    text: "যুহর",
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                  subtitle: AppText(
+                    text: "5:10",
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.white,
+                  ),
+                  trailing: GetBuilder<PrayTrackerController>(
+                    init: PrayTrackerController(),
+                    initState: (_) {},
+                    builder: (_) {
+                      return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.duha,
+                      value: controller.namazData.get("zohar") ?? false,
                       onChanged: (value) {
-                        _.function1(value!);
+                        controller.function1(value!);
                       },
                     );
-                  },
-                ),
-              ),
+                    },
+                  )),
+
               ListTile(
                 title: AppText(
                   text: "আসর",
@@ -131,9 +131,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.asar,
+                      value: controller.namazData.get("asor") ?? false,
                       onChanged: (value) {
-                        _.function2(value!);
+                        controller.function2(value!);
                       },
                     );
                   },
@@ -158,9 +158,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.magrib,
+                      value: controller.namazData.get("magrib") ?? false,
                       onChanged: (value) {
-                        _.function3(value!);
+                        controller.function3(value!);
                       },
                     );
                   },
@@ -185,9 +185,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.asar,
+                      value: controller.namazData.get("isar") ?? false,
                       onChanged: (value) {
-                        _.function4(value!);
+                        controller.function4(value!);
                       },
                     );
                   },
@@ -206,9 +206,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.tahajjud,
+                      value: controller.namazData.get("tahajud") ?? false,
                       onChanged: (value) {
-                        _.function5(value!);
+                        controller.function5(value!);
                       },
                     );
                   },
@@ -227,9 +227,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.duha,
+                      value: controller.namazData.get("duha") ?? false,
                       onChanged: (value) {
-                        _.function6(value!);
+                        controller.function6(value!);
                       },
                     );
                   },

@@ -117,13 +117,17 @@ class HomeView extends GetView<HomeController> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Center(
-                      child: AppText(
-                        text:
-                            hadis[controller.hadiss()],
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.bold,
-                        color: const Color(0xEBF0EFEF),
-                        textAlign: TextAlign.center,
+                      child: ListView(
+                        children: [
+                          AppText(
+                            text:
+                                hadis[controller.hadiss()],
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.bold,
+                            color: const Color(0xEBF0EFEF),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -173,8 +177,9 @@ class HomeView extends GetView<HomeController> {
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2, childAspectRatio: 1.9),
                       children: [
-                        manuButton("Pray Tracker", "1/7",
-                            () => Get.toNamed(Routes.PRAY_TRACKER)),
+                        Obx(() =>  manuButton("Pray Tracker", "${controller.getpraylanght}/7",
+                            () => Get.toNamed(Routes.PRAY_TRACKER)),),
+                       
                         manuButton("Daily Tracker", "1/13",
                             () => Get.toNamed(Routes.DAILY_TRACKING)),
                         manuButton("Quran Tracker", "1/3",
