@@ -1,21 +1,48 @@
-import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
+import 'package:hijri/hijri_calendar.dart';
+
 
 import '../../../../Util/main_button.dart';
 import '../../../data/dinerkaj.dart';
+import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
-  int i = 0;
-  dinerkajChnage() {
-    final time = TimeOfDay.now();
-    if (time == TimeOfDay.now()) {
-      return dinerkaj[i++];
-    } else {
-      const Text("No");
-    }
+
+
+
+
+  int getDataIndexForCurrentDate() {
+    // Get the current date
+    HijriCalendar currentDate = HijriCalendar.now();
+
+    // Use the day of the year as the index for the list
+    int dataIndex = currentDate.hDay % dinerkaj.length;
+    print(dinerkaj.length);
+    return dataIndex;
   }
+
+    int hadiss() {
+    // Get the current date
+    HijriCalendar currentDate = HijriCalendar.now();
+
+    // Use the day of the year as the index for the list
+    int dataIndex = currentDate.hDay % hadis.length;
+    print(hadis.length);
+    return dataIndex;
+  }
+
+  // return dinerkaj[i++];
+
+  // if (time == timeServer.get(keytime)) {
+  //   print("This Funsion ar Work  002 ${timeServer.get(keytime)}");
+  //   return dinerkaj[i++];
+  // } else {
+  //   print("This Funsion ar Work  0023 ${timeServer.get(time)}");
+  //   const Text("No");
+  // }
 
   final List mainBUtton = [
     manuButton("Pray Tracker", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
@@ -24,21 +51,5 @@ class HomeController extends GetxController {
     manuButton("Pray Tracker", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
   ];
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
+ 
 }

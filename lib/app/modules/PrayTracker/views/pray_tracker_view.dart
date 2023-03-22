@@ -71,13 +71,13 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
                   initState: (_) {},
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.press,
+                      value: _.fazar,
                       onChanged: (value) {
                         _.function(value!);
                       },
@@ -98,15 +98,15 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
                   initState: (_) {},
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.press,
+                      value: _.duha,
                       onChanged: (value) {
-                        _.function(value!);
+                        _.function1(value!);
                       },
                     );
                   },
@@ -125,7 +125,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: true, onChanged: (value) {}),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.asar,
+                      onChanged: (value) {
+                        _.function2(value!);
+                      },
+                    );
+                  },
+                ),
               ),
               ListTile(
                 title: AppText(
@@ -140,15 +152,15 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
                   initState: (_) {},
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.press,
+                      value: _.magrib,
                       onChanged: (value) {
-                        _.function(value!);
+                        _.function3(value!);
                       },
                     );
                   },
@@ -167,7 +179,19 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),
-                trailing: Checkbox(value: true, onChanged: (value) {}),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
+                  initState: (_) {},
+                  builder: (_) {
+                    return Checkbox(
+                      focusColor: AppColors.quaternaryColor,
+                      value: _.asar,
+                      onChanged: (value) {
+                        _.function4(value!);
+                      },
+                    );
+                  },
+                ),
               ),
               ListTile(
                 title: AppText(
@@ -176,15 +200,15 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                trailing: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
                   initState: (_) {},
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.press,
+                      value: _.tahajjud,
                       onChanged: (value) {
-                        _.function(value!);
+                        _.function5(value!);
                       },
                     );
                   },
@@ -197,15 +221,15 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                trailing: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
+                trailing: GetBuilder<PrayTrackerController>(
+                  init: PrayTrackerController(),
                   initState: (_) {},
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: _.press,
+                      value: _.duha,
                       onChanged: (value) {
-                        _.function(value!);
+                        _.function6(value!);
                       },
                     );
                   },

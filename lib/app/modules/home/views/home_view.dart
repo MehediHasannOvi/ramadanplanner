@@ -8,6 +8,7 @@ import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../../../../Util/main_button.dart';
 import '../../../data/dinerkaj.dart';
+import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/home_controller.dart';
 
@@ -82,7 +83,7 @@ class HomeView extends GetView<HomeController> {
                     height: 2.h,
                   ),
                   AppText(
-                    text: controller.dinerkajChnage().toString(),
+                    text: dinerkaj[controller.getDataIndexForCurrentDate()].toString(),
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w300,
                     color: Colors.white,
@@ -118,7 +119,7 @@ class HomeView extends GetView<HomeController> {
                     child: Center(
                       child: AppText(
                         text:
-                            "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature",
+                            hadis[controller.hadiss()],
                         fontSize: 12.sp,
                         fontWeight: FontWeight.bold,
                         color: const Color(0xEBF0EFEF),
