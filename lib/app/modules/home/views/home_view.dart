@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:hive/hive.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
@@ -35,17 +36,25 @@ class HomeView extends GetView<HomeController> {
             const SizedBox(
               height: 5,
             ),
-            AppText(
-              text: "MeHedi Hasan Ovi",
-              fontSize: 12.sp,
-              fontWeight: FontWeight.w400,
-              color: Colors.white,
+            GetBuilder<HomeController>(
+              init: HomeController(),
+              initState: (_) {},
+              builder: (_) {
+                return AppText(
+                  text: Hive.box('user').get('name') ?? "User",
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
+                );
+              },
             ),
           ]),
           actions: [
             IconButton(
                 onPressed: () {
-                  Get.toNamed(Routes.GRAPH);
+                   controller.getusername();
+                  // Get.toNamed(Routes.GRAPH);
+                  // Hive.box('user').delete("name");
                 },
                 icon: Icon(
                   CupertinoIcons.graph_square,
@@ -83,7 +92,8 @@ class HomeView extends GetView<HomeController> {
                     height: 2.h,
                   ),
                   AppText(
-                    text: dinerkaj[controller.getDataIndexForCurrentDate()].toString(),
+                    text: dinerkaj[controller.getDataIndexForCurrentDate()]
+                        .toString(),
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w300,
                     color: Colors.white,
@@ -120,8 +130,7 @@ class HomeView extends GetView<HomeController> {
                       child: ListView(
                         children: [
                           AppText(
-                            text:
-                                hadis[controller.hadiss()],
+                            text: hadis[controller.hadiss()],
                             fontSize: 12.sp,
                             fontWeight: FontWeight.bold,
                             color: const Color(0xEBF0EFEF),
@@ -177,9 +186,12 @@ class HomeView extends GetView<HomeController> {
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2, childAspectRatio: 1.9),
                       children: [
-                        Obx(() =>  manuButton("Pray Tracker", "${controller.getpraylanght}/7",
-                            () => Get.toNamed(Routes.PRAY_TRACKER)),),
-                       
+                        Obx(
+                          () => manuButton(
+                              "Pray Tracker",
+                              "${controller.getpraylanght}/7",
+                              () => Get.toNamed(Routes.PRAY_TRACKER)),
+                        ),
                         manuButton("Daily Tracker", "1/13",
                             () => Get.toNamed(Routes.DAILY_TRACKING)),
                         manuButton("Quran Tracker", "1/3",
