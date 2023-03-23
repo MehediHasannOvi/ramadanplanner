@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:hive/hive.dart';
 
 class DailyTrackingController extends GetxController {
   //TODO: Implement DailyTrackingController
@@ -6,27 +7,152 @@ class DailyTrackingController extends GetxController {
   final count = 0.obs;
   bool press = false;
 
+  final dailyData = Hive.box('Dtrack');
+
   function(bool value) {
-    press = value;
-    // press = false;
+    if (value == true) {
+      dailyData.put('sokalerJikir', value);
+    } else {
+      dailyData.delete(
+        'sokalerJikir',
+      );
+      
+    }
     update();
-    print(value);
+      onClose();
   }
 
-  @override
-  void onInit() {
-    super.onInit();
+  function2(bool value) {
+    if (value == true) {
+      dailyData.put('sondarJikir', value);
+    } else {
+      dailyData.delete(
+        'sondarJikir',
+      );
+    }
+    update();
+      onClose();
+  }
+  function3(bool value) {
+    if (value == true) {
+      dailyData.put('dansadka', value);
+    } else {
+      dailyData.delete(
+        'dansadka',
+      );
+    }
+    update();
+      onClose();
+  }
+   function4(bool value) {
+    if (value == true) {
+      dailyData.put('dinerkaj', value);
+    } else {
+      dailyData.delete(
+        'dinerkaj',
+      );
+    }
+    update();
+      onClose();
+  }
+   function5(bool value) {
+    if (value == true) {
+      dailyData.put('jamatenamaz', value);
+    } else {
+      dailyData.delete(
+        'jamatenamaz',
+      );
+    }
+    update();
+      onClose();
+  }
+  function6(bool value) {
+    if (value == true) {
+      dailyData.put('istegfa', value);
+    } else {
+      dailyData.delete(
+        'istegfa',
+      );
+    }
+    update();
+      onClose();
+  }
+  function7(bool value) {
+    if (value == true) {
+      dailyData.put('quranteloyat', value);
+    } else {
+      dailyData.delete(
+        'quranteloyat',
+      );
+    }
+    update();
+      onClose();
+  }
+  function8(bool value) {
+    if (value == true) {
+      dailyData.put('allahnammukhosto', value);
+    } else {
+      dailyData.delete(
+        'allahnammukhosto',
+      );
+    }
+    update();
+      onClose();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+   function9(bool value) {
+    if (value == true) {
+      dailyData.put('dinerdoya', value);
+    } else {
+      dailyData.delete(
+        'dinerdoya',
+      );
+    }
+    update();
+      onClose();
   }
-
-  @override
-  void onClose() {
-    super.onClose();
+   function10(bool value) {
+    if (value == true) {
+      dailyData.put('dinerayat', value);
+    } else {
+      dailyData.delete(
+        'dinerayat',
+      );
+    }
+    update();
+      onClose();
   }
-
-  void increment() => count.value++;
+  function11(bool value) {
+    if (value == true) {
+      dailyData.put('dinehadis', value);
+    } else {
+      dailyData.delete(
+        'dinehadis',
+      );
+    }
+    update();
+      onClose();
+  }
+  function12(bool value) {
+    if (value == true) {
+      dailyData.put('notunkicusikha', value);
+    } else {
+      dailyData.delete(
+        'notunkicusikha',
+      );
+    }
+    update();
+      onClose();
+  }
+  function13(bool value) {
+    if (value == true) {
+      dailyData.put('ghumerzikir', value);
+    } else {
+      dailyData.delete(
+        'ghumerzikir',
+      );
+    }
+    update();
+      onClose();
+  }
 }

@@ -26,7 +26,7 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("sokalerJikir") ?? false,
                       onChanged: (value) {
                         controller.function(value!);
                       },
@@ -42,9 +42,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("sondarJikir") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function2(value!);
                       },
                     );
                   },
@@ -58,9 +58,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("dansadka") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function3(value!);
                       },
                     );
                   },
@@ -74,9 +74,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("dinerkaj") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function4(value!);
                       },
                     );
                   },
@@ -90,9 +90,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("jamatenamaz") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function5(value!);
                       },
                     );
                   },
@@ -106,9 +106,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("istegfa") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function6(value!);
                       },
                     );
                   },
@@ -122,9 +122,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("quranteloyat") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function7(value!);
                       },
                     );
                   },
@@ -139,9 +139,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("allahnammukhosto") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function8(value!);
                       },
                     );
                   },
@@ -155,9 +155,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("dinerdoya") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function9(value!);
                       },
                     );
                   },
@@ -171,9 +171,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("dinerayat") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function10(value!);
                       },
                     );
                   },
@@ -187,9 +187,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("dinerhadis") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function11(value!);
                       },
                     );
                   },
@@ -203,9 +203,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("notunkicusikha") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function12(value!);
                       },
                     );
                   },
@@ -219,9 +219,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.press,
+                      value: controller.dailyData.get("ghumerzikir") ?? false,
                       onChanged: (value) {
-                        controller.function(value!);
+                        controller.function13(value!);
                       },
                     );
                   },

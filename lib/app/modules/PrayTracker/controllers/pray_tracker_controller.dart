@@ -1,3 +1,4 @@
+import 'package:adhan/adhan.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
@@ -5,6 +6,9 @@ class PrayTrackerController extends GetxController {
   // RxBool fazar =   false.obs;
 
   final namazData = Hive.box('daily');
+
+
+
 
   function(bool value) {
     if (value == true) {

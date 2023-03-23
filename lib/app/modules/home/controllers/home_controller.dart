@@ -13,7 +13,7 @@ import '../../../routes/app_pages.dart';
 class HomeController extends GetxController {
   //TODO: Implement HomeController
 
-  RxInt getpraylanght = Hive.box('daily').length.obs;
+  
 
   final TextEditingController name = TextEditingController();
 
@@ -38,6 +38,7 @@ class HomeController extends GetxController {
   }
 
   getusername() {
+    
     Timer(const Duration(seconds: 0), () {
       Get.defaultDialog(
           backgroundColor: AppColors.secondaryColor,
@@ -105,7 +106,7 @@ class HomeController extends GetxController {
     } else {
       print("User Name is ${Hive.box("user").get("name")}");
     }
-    getpraylanght;
+    // getpraylanght;
     super.onInit();
   }
 }

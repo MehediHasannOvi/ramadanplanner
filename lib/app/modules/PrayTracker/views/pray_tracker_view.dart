@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
-
+import 'package:adhan/adhan.dart';
 import '../controllers/pray_tracker_controller.dart';
 
 class PrayTrackerView extends GetView<PrayTrackerController> {

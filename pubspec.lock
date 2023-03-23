@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "56.0.0"
+  adhan:
+    dependency: "direct main"
+    description:
+      name: adhan
+      sha256: "1894f0ffcfce8a23c91602152fb1fdb81e3587f74a0864cb3a3c655f87663a3c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0-nullsafety.2"
   analyzer:
     dependency: transitive
     description:

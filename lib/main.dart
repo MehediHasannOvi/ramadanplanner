@@ -10,8 +10,9 @@ import 'app/routes/app_pages.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  var box = await Hive.openBox('daily');
-  var user = await Hive.openBox('user');
+   await Hive.openBox('daily');
+ await Hive.openBox('user');
+ await Hive.openBox('Dtrack');
   runApp(Sizer(builder: (context, orientation, deviceType) {
     return GetMaterialApp(
         title: "Application",
