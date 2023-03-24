@@ -70,6 +70,9 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                           color: AppColors.secondaryColor,
                         ),
                         child: TextFormField(
+                          onChanged: (value) {
+                            controller.visibilitychange(value);
+                          },
                           controller: controller.ayatController,
                           textAlign: TextAlign.center,
                           keyboardType: TextInputType.number,
@@ -107,6 +110,9 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                           color: AppColors.secondaryColor,
                         ),
                         child: TextFormField(
+                          onChanged: (value) {
+                            controller.visibilitychange(value);
+                          },
                           controller: controller.pageController,
                           textAlign: TextAlign.center,
                           keyboardType: TextInputType.number,
@@ -145,6 +151,9 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                         ),
                         child: TextFormField(
                           controller: controller.paraController,
+                          onChanged: (value) {
+                            controller.visibilitychange(value);
+                          },
                           textAlign: TextAlign.center,
                           keyboardType: TextInputType.number,
                           decoration: const InputDecoration(
@@ -163,8 +172,8 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 40,
+              SizedBox(
+                height: 20.h,
               ),
               GetBuilder<QuranTrackerController>(
                 init: QuranTrackerController(),
@@ -174,11 +183,20 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                     visible: controller.visibility,
                     child: Center(
                       child: MaterialButton(
-                          onPressed: () {},
+                          color: AppColors.quaternaryColor,
+                          minWidth: 30.w,
+                          height: 5.5.h, //height of button
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          onPressed: () {
+                            controller.getquranData();
+                          },
                           child: AppText(
                             text: "সাবমিট",
                             fontSize: 16,
-                            color: Colors.white,
+                            color: AppColors.primaryColor,
+                            fontWeight: FontWeight.bold,
                           )),
                     ),
                   );

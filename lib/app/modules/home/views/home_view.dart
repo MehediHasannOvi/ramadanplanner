@@ -13,6 +13,7 @@ import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
 import '../../DailyTracking/controllers/daily_tracking_controller.dart';
 import '../../PrayTracker/controllers/pray_tracker_controller.dart';
+import '../../QuranTracker/controllers/quran_tracker_controller.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -74,6 +75,12 @@ class HomeView extends GetView<HomeController> {
                 },
                 icon: Icon(
                   CupertinoIcons.graph_square,
+                  color: AppColors.quinaryColor,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  CupertinoIcons.heart_circle,
                   color: AppColors.quinaryColor,
                 )),
           ],
@@ -222,8 +229,15 @@ class HomeView extends GetView<HomeController> {
                                 () => Get.toNamed(Routes.DAILY_TRACKING));
                           },
                         ),
-                        manuButton("Quran Tracker", "1/3",
-                            () => Get.toNamed(Routes.QURAN_TRACKER)),
+                        GetBuilder<QuranTrackerController>(
+                          init: QuranTrackerController(),
+                          initState: (_) {},
+                          builder: (_) {
+                            final quranData = Hive.box('quranData').length;
+                            return manuButton("Daily Tracker", "${quranData}/3",
+                                () => Get.toNamed(Routes.QURAN_TRACKER));
+                          },
+                        ),
                         manuButton("Pray Tracker", "1/13",
                             () => Get.toNamed(Routes.DAILY_TRACKING)),
                       ],

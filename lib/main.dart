@@ -13,6 +13,7 @@ void main() async {
    await Hive.openBox('daily');
  await Hive.openBox('user');
  await Hive.openBox('Dtrack');
+ await Hive.openBox('quranData');
   runApp(Sizer(builder: (context, orientation, deviceType) {
     return GetMaterialApp(
         title: "Application",
