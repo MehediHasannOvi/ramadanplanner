@@ -11,6 +11,7 @@ import '../../../../Util/main_button.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
+import '../../DailyTracking/controllers/daily_tracking_controller.dart';
 import '../../PrayTracker/controllers/pray_tracker_controller.dart';
 import '../controllers/home_controller.dart';
 
@@ -208,16 +209,16 @@ class HomeView extends GetView<HomeController> {
                             final getpraylanght = Hive.box('daily').length;
                             return manuButton(
                                 "Pray Tracker",
-                                "${getpraylanght}/7",
+                                "${getpraylanght}/6",
                                 () => Get.toNamed(Routes.PRAY_TRACKER));
                           },
                         ),
-                        GetBuilder<PrayTrackerController>(
-                          init: PrayTrackerController(),
+                        GetBuilder<DailyTrackingController>(
+                          init: DailyTrackingController(),
                           initState: (_) {},
                           builder: (_) {
                             final dinerkaj = Hive.box('Dtrack').length;
-                            return manuButton("Daily Tracker", "${dinerkaj}/13",
+                            return manuButton("Daily Tracker", "${dinerkaj}/9",
                                 () => Get.toNamed(Routes.DAILY_TRACKING));
                           },
                         ),

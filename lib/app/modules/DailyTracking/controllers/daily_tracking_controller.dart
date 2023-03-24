@@ -100,51 +100,8 @@ class DailyTrackingController extends GetxController {
       onClose();
   }
 
-   function9(bool value) {
-    if (value == true) {
-      dailyData.put('dinerdoya', value);
-    } else {
-      dailyData.delete(
-        'dinerdoya',
-      );
-    }
-    update();
-      onClose();
-  }
-   function10(bool value) {
-    if (value == true) {
-      dailyData.put('dinerayat', value);
-    } else {
-      dailyData.delete(
-        'dinerayat',
-      );
-    }
-    update();
-      onClose();
-  }
-  function11(bool value) {
-    if (value == true) {
-      dailyData.put('dinehadis', value);
-    } else {
-      dailyData.delete(
-        'dinehadis',
-      );
-    }
-    update();
-      onClose();
-  }
-  function12(bool value) {
-    if (value == true) {
-      dailyData.put('notunkicusikha', value);
-    } else {
-      dailyData.delete(
-        'notunkicusikha',
-      );
-    }
-    update();
-      onClose();
-  }
-  function13(bool value) {
+   
+  function9(bool value) {
     if (value == true) {
       dailyData.put('ghumerzikir', value);
     } else {

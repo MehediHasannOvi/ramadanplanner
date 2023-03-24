@@ -1,23 +1,26 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class QuranTrackerController extends GetxController {
   //TODO: Implement QuranTrackerController
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  TextEditingController ayatController = TextEditingController();
+  TextEditingController paraController = TextEditingController();
+  TextEditingController pageController = TextEditingController();
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  bool visibility = false;
 
-  @override
-  void onClose() {
-    super.onClose();
+  visibilitychange(dynamic value) {
+    if (ayatController.text.isEmpty &&
+        paraController.text.isEmpty &&
+        pageController.text.isEmpty) {
+      visibility = false;
+      update();
+      onDelete();
+    } else {
+      visibility = true;
+    }
+    update();
+    onDelete();
   }
-
-  void increment() => count.value++;
 }

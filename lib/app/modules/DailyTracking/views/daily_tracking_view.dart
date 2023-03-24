@@ -30,6 +30,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -46,6 +49,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function2(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -62,6 +68,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function3(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -78,6 +87,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function4(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -94,6 +106,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function5(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -110,6 +125,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function6(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -126,6 +144,9 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                       onChanged: (value) {
                         controller.function7(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -139,10 +160,14 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.dailyData.get("allahnammukhosto") ?? false,
+                      value:
+                          controller.dailyData.get("allahnammukhosto") ?? false,
                       onChanged: (value) {
                         controller.function8(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -155,74 +180,13 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.dailyData.get("dinerdoya") ?? false,
+                      value: controller.dailyData.get("ghumerzikir") ?? false,
                       onChanged: (value) {
                         controller.function9(value!);
                       },
-                    );
-                  },
-                ),
-                title: AppText(text: "দিনের দোয়া মুখস্থ", fontSize: 16),
-              ),
-              ListTile(
-                leading: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
-                  initState: (_) {},
-                  builder: (_) {
-                    return Checkbox(
-                      focusColor: AppColors.quaternaryColor,
-                      value: controller.dailyData.get("dinerayat") ?? false,
-                      onChanged: (value) {
-                        controller.function10(value!);
-                      },
-                    );
-                  },
-                ),
-                title: AppText(text: "দিনের আয়াত", fontSize: 16),
-              ),
-              ListTile(
-                leading: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
-                  initState: (_) {},
-                  builder: (_) {
-                    return Checkbox(
-                      focusColor: AppColors.quaternaryColor,
-                      value: controller.dailyData.get("dinerhadis") ?? false,
-                      onChanged: (value) {
-                        controller.function11(value!);
-                      },
-                    );
-                  },
-                ),
-                title: AppText(text: "দিনের হাদিস", fontSize: 16),
-              ),
-              ListTile(
-                leading: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
-                  initState: (_) {},
-                  builder: (_) {
-                    return Checkbox(
-                      focusColor: AppColors.quaternaryColor,
-                      value: controller.dailyData.get("notunkicusikha") ?? false,
-                      onChanged: (value) {
-                        controller.function12(value!);
-                      },
-                    );
-                  },
-                ),
-                title: AppText(text: "নতুন কিছু শিখা", fontSize: 16),
-              ),
-              ListTile(
-                leading: GetBuilder<DailyTrackingController>(
-                  init: DailyTrackingController(),
-                  initState: (_) {},
-                  builder: (_) {
-                    return Checkbox(
-                      focusColor: AppColors.quaternaryColor,
-                      value: controller.dailyData.get("ghumerzikir") ?? false,
-                      onChanged: (value) {
-                        controller.function13(value!);
-                      },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),

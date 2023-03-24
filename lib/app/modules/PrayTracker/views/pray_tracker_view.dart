@@ -65,12 +65,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                subtitle: AppText(
-                  text: "5:10",
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.white,
-                ),
+                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -81,6 +76,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -92,23 +90,22 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                  subtitle: AppText(
-                    text: "5:10",
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.white,
-                  ),
+                 
                   trailing: GetBuilder<PrayTrackerController>(
                     init: PrayTrackerController(),
                     initState: (_) {},
                     builder: (_) {
                       return Checkbox(
-                      focusColor: AppColors.quaternaryColor,
-                      value: controller.namazData.get("zohar") ?? false,
-                      onChanged: (value) {
-                        controller.function1(value!);
-                      },
-                    );
+                        focusColor: AppColors.quaternaryColor,
+                        value: controller.namazData.get("zohar") ?? false,
+                        onChanged: (value) {
+                          controller.function1(value!);
+                        },
+                        side: MaterialStateBorderSide.resolveWith(
+                          (states) =>
+                              BorderSide(width: 1.0, color: Colors.white),
+                        ),
+                      );
                     },
                   )),
 
@@ -119,12 +116,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                subtitle: AppText(
-                  text: "5:10",
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.white,
-                ),
+                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -135,6 +127,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function2(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -146,12 +141,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                subtitle: AppText(
-                  text: "5:10",
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.white,
-                ),
+                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -162,6 +152,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function3(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -173,12 +166,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                subtitle: AppText(
-                  text: "5:10",
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.white,
-                ),
+                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -189,6 +177,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function4(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
@@ -210,31 +201,14 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function5(value!);
                       },
+                      side: MaterialStateBorderSide.resolveWith(
+                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                      ),
                     );
                   },
                 ),
               ),
-              ListTile(
-                title: AppText(
-                  text: "দুহা",
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-                trailing: GetBuilder<PrayTrackerController>(
-                  init: PrayTrackerController(),
-                  initState: (_) {},
-                  builder: (_) {
-                    return Checkbox(
-                      focusColor: AppColors.quaternaryColor,
-                      value: controller.namazData.get("duha") ?? false,
-                      onChanged: (value) {
-                        controller.function6(value!);
-                      },
-                    );
-                  },
-                ),
-              ),
+              
             ],
           ),
         ));

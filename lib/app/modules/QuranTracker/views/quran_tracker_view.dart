@@ -61,12 +61,28 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                       Container(
                         height: 7.h,
                         width: 22.w,
+                        alignment: Alignment.center,
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: AppColors.quaternaryColor,
                           ),
                           borderRadius: BorderRadius.circular(10),
                           color: AppColors.secondaryColor,
+                        ),
+                        child: TextFormField(
+                          controller: controller.ayatController,
+                          textAlign: TextAlign.center,
+                          keyboardType: TextInputType.number,
+                          decoration: const InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "আয়াত নং",
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          style: const TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
                       )
                     ],
@@ -90,6 +106,21 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                           borderRadius: BorderRadius.circular(10),
                           color: AppColors.secondaryColor,
                         ),
+                        child: TextFormField(
+                          controller: controller.pageController,
+                          textAlign: TextAlign.center,
+                          keyboardType: TextInputType.number,
+                          decoration: const InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "পৃষ্ঠা নং",
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          style: const TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       )
                     ],
                   ),
@@ -112,11 +143,47 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                           borderRadius: BorderRadius.circular(10),
                           color: AppColors.secondaryColor,
                         ),
+                        child: TextFormField(
+                          controller: controller.paraController,
+                          textAlign: TextAlign.center,
+                          keyboardType: TextInputType.number,
+                          decoration: const InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "পারা নং",
+                            hintStyle: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          style: const TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       )
                     ],
                   )
                 ],
-              )
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              GetBuilder<QuranTrackerController>(
+                init: QuranTrackerController(),
+                initState: (_) {},
+                builder: (_) {
+                  return Visibility(
+                    visible: controller.visibility,
+                    child: Center(
+                      child: MaterialButton(
+                          onPressed: () {},
+                          child: AppText(
+                            text: "সাবমিট",
+                            fontSize: 16,
+                            color: Colors.white,
+                          )),
+                    ),
+                  );
+                },
+              ),
             ],
           ),
         ));
