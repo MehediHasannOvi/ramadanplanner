@@ -8,6 +8,7 @@ import 'package:sizer/sizer.dart';
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../../../../Util/main_button.dart';
+import '../../../../notification/notification.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
@@ -30,8 +31,8 @@ class HomeView extends GetView<HomeController> {
               height: 2.h,
             ),
             AppText(
-              text: "Assalamualaikum",
-              fontSize: 10.sp,
+              text: "আস-সালামু আলাইকুম",
+              fontSize: 14,
               fontWeight: FontWeight.normal,
               color: Colors.grey,
               // textAlign: TextAlign.left,
@@ -47,7 +48,7 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     AppText(
                       text: Hive.box('user').get('name') ?? "User",
-                      fontSize: 12.sp,
+                      fontSize: 16,
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
                     ),
@@ -78,7 +79,9 @@ class HomeView extends GetView<HomeController> {
                   color: AppColors.quinaryColor,
                 )),
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  triggerNotification("Hello", "Mas Allah Ramadan Is Back");
+                },
                 icon: Icon(
                   CupertinoIcons.heart_circle,
                   color: AppColors.quinaryColor,
@@ -104,12 +107,12 @@ class HomeView extends GetView<HomeController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   AppText(
-                    text: "Saatnya \nSholat Tarwih",
-                    fontSize: 30.sp,
+                    text: "পবিত্র মাহে \nরামাদানের শুভেচ্ছা",
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
                     color: AppColors.quinaryColor,
                     textAlign: TextAlign.left,
-                    fontFamily: "Mynerve",
+                    fontFamily: "Li",
                   ),
                   SizedBox(
                     height: 2.h,
@@ -117,7 +120,7 @@ class HomeView extends GetView<HomeController> {
                   AppText(
                     text: dinerkaj[controller.getDataIndexForCurrentDate()]
                         .toString(),
-                    fontSize: 12.sp,
+                    fontSize: 16,
                     fontWeight: FontWeight.w300,
                     color: Colors.white,
                     textAlign: TextAlign.left,
@@ -126,7 +129,7 @@ class HomeView extends GetView<HomeController> {
               ),
             ),
             SizedBox(
-              height: 20.sp,
+              height: 8.h,
             ),
             Container(
               height: 75.h,
@@ -154,8 +157,7 @@ class HomeView extends GetView<HomeController> {
                         children: [
                           AppText(
                             text: hadis[controller.hadiss()],
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
                             color: const Color(0xEBF0EFEF),
                             textAlign: TextAlign.center,
                           ),
@@ -166,35 +168,21 @@ class HomeView extends GetView<HomeController> {
                   SizedBox(
                     height: 4.h,
                   ),
-                  Row(
-                    children: [
-                      AppText(
-                        text: "Jadwal Sholat",
-                        fontSize: 14.sp,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        textAlign: TextAlign.left,
-                      ),
-                      const Spacer(),
-                      GestureDetector(
-                        onTap: () {
-                          print(TimeOfDay.now().minute);
-                        },
-                        child: AppText(
-                          text: "Lihat Semua",
-                          fontSize: 10.sp,
-                          fontWeight: FontWeight.normal,
-                          color: AppColors.quaternaryColor,
-                          textAlign: TextAlign.left,
-                        ),
-                      ),
-                    ],
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: AppText(
+                      text: "আজকের আমল",
+                      fontSize: 18,
+                      // fontWeight: FontWeight.bold,
+                      color: AppColors.quaternaryColor,
+                      textAlign: TextAlign.left,
+                    ),
                   ),
                   SizedBox(
                     height: 4.h,
                   ),
                   Container(
-                    height: 25.h,
+                    height: 26.h,
                     width: double.infinity,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
@@ -202,9 +190,9 @@ class HomeView extends GetView<HomeController> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: GridView(
-                      // shrinkWrap: true,
+                      shrinkWrap: true,
                       // physics: NeverScrollableScrollPhysics(),
-                      padding: EdgeInsets.zero,
+
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2, childAspectRatio: 1.9),
@@ -215,7 +203,7 @@ class HomeView extends GetView<HomeController> {
                           builder: (_) {
                             final getpraylanght = Hive.box('daily').length;
                             return manuButton(
-                                "Pray Tracker",
+                                "নামাজ",
                                 "${getpraylanght}/6",
                                 () => Get.toNamed(Routes.PRAY_TRACKER));
                           },
@@ -225,7 +213,7 @@ class HomeView extends GetView<HomeController> {
                           initState: (_) {},
                           builder: (_) {
                             final dinerkaj = Hive.box('Dtrack').length;
-                            return manuButton("Daily Tracker", "${dinerkaj}/9",
+                            return manuButton("দিনের কাজ", "${dinerkaj}/9",
                                 () => Get.toNamed(Routes.DAILY_TRACKING));
                           },
                         ),
@@ -234,12 +222,12 @@ class HomeView extends GetView<HomeController> {
                           initState: (_) {},
                           builder: (_) {
                             final quranData = Hive.box('quranData').length;
-                            return manuButton("Daily Tracker", "${quranData}/3",
+                            return manuButton("কোরআন", "${quranData}/3",
                                 () => Get.toNamed(Routes.QURAN_TRACKER));
                           },
                         ),
-                        manuButton("Pray Tracker", "1/13",
-                            () => Get.toNamed(Routes.DAILY_TRACKING)),
+                        manuButton("আল্লাহ'র নাম", "99",
+                            () => Get.toNamed(Routes.ALLAH_NAME)),
                       ],
                     ),
                   ),

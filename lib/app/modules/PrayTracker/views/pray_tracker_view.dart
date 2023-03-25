@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
-import 'package:adhan/adhan.dart';
+
 import '../controllers/pray_tracker_controller.dart';
 
 class PrayTrackerView extends GetView<PrayTrackerController> {
@@ -45,13 +45,13 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                 title: AppText(
                   text: "নামাজ",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 trailing: AppText(
                   text: "পড়েছি",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
@@ -62,7 +62,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                 title: AppText(
                   text: "ফজর ",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 
@@ -87,7 +87,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   title: AppText(
                     text: "যুহর",
                     fontSize: 18,
-                    fontWeight: FontWeight.bold,
+                    // fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                  
@@ -113,7 +113,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                 title: AppText(
                   text: "আসর",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 
@@ -138,7 +138,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                 title: AppText(
                   text: "মাগরিব",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 
@@ -163,7 +163,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                 title: AppText(
                   text: "ইশা",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 
@@ -188,7 +188,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                 title: AppText(
                   text: "তারাবীহ",
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 trailing: GetBuilder<PrayTrackerController>(

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/AllahName/bindings/allah_name_binding.dart';
+import '../modules/AllahName/views/allah_name_view.dart';
 import '../modules/DailyTracking/bindings/daily_tracking_binding.dart';
 import '../modules/DailyTracking/views/daily_tracking_view.dart';
 import '../modules/PrayTracker/bindings/pray_tracker_binding.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.GRAPH,
       page: () => const GraphView(),
       binding: GraphBinding(),
+    ),
+    GetPage(
+      name: _Paths.ALLAH_NAME,
+      page: () => const AllahNameView(),
+      binding: AllahNameBinding(),
     ),
   ];
 }

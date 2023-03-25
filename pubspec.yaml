@@ -16,7 +16,9 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   hijri: ^3.0.0
-  adhan: ^2.0.0-nullsafety.2
+  awesome_notifications: ^0.7.4+1
+  permission_handler: ^10.2.0
+  
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -28,16 +30,27 @@ dev_dependencies:
 flutter: 
   assets: 
     - assets/images/
+    - assets/json/
+    - assets/sound/notification.mp3
     
   uses-material-design: true
 
   fonts: 
-    - family: Mynerve
+    - family: Li
       fonts: 
-        - asset: assets/font/Mynerve.ttf
+        - asset: assets/font/Li.ttf
           weight: 700
+    - family: Tuli
+      fonts: 
+        - asset: assets/font/Tuli.ttf
+          weight: 400
     - family: Lato
       fonts: 
         - asset: assets/font/Lato-Regular.ttf
           weight: 400
-
+    
+    - family: arbi
+      fonts: 
+        - asset: assets/font/arbi.ttf
+          weight: 400
+    

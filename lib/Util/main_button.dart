@@ -5,8 +5,8 @@ import 'package:sizer/sizer.dart';
 
 manuButton(String name, String com, Function()? tap) {
   return SizedBox(
-    height: 20.h,
-    width: 10.w,
+    height: 20,
+    width: 20,
     child: GestureDetector(
       onTap: tap,
       child: Row(
@@ -35,7 +35,6 @@ manuButton(String name, String com, Function()? tap) {
               AppText(
                 text: name,
                 fontSize: 10.sp,
-                fontWeight: FontWeight.bold,
                 color: Colors.white,
                 textAlign: TextAlign.left,
               ),

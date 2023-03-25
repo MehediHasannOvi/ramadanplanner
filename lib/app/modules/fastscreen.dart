@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,7 @@ class Fastpage extends StatefulWidget {
 class _FastpageState extends State<Fastpage> {
   @override
   void initState() {
+   
     super.initState();
     Timer(
         const Duration(seconds: 2),

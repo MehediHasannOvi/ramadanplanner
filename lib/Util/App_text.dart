@@ -11,8 +11,8 @@ class AppText extends StatelessWidget {
       {super.key,
       this.text = "Hello World",
       this.textAlign = TextAlign.left,
-      this.fontWeight = FontWeight.normal,
-      this.fontFamily = "Lato",
+      this.fontWeight = FontWeight.w300,
+      this.fontFamily = "Tuli",
       this.fontSize = 18,
       this.color = Colors.white});
 
@@ -21,10 +21,9 @@ class AppText extends StatelessWidget {
     return Text(text,
         textAlign: textAlign,
         style: TextStyle(
-          fontSize: fontSize,
-          fontWeight: fontWeight,
-          color: color,
-          fontFamily: fontFamily
-        ));
+            fontSize: fontSize,
+            fontWeight: fontWeight,
+            color: color,
+            fontFamily: fontFamily));
   }
 }

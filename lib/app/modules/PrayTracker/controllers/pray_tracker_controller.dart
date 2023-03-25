@@ -1,4 +1,4 @@
-import 'package:adhan/adhan.dart';
+
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
