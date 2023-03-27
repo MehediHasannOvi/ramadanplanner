@@ -18,6 +18,11 @@ dependencies:
   hijri: ^3.0.0
   awesome_notifications: ^0.7.4+1
   permission_handler: ^10.2.0
+  firebase_core: ^2.6.1
+  # intl: ^0.17.0
+  # firebase_messaging: ^14.3.0
+  # firebase_crashlytics: ^3.0.17
+
   
 
 dev_dependencies: 

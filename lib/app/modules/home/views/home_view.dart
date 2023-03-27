@@ -68,19 +68,12 @@ class HomeView extends GetView<HomeController> {
             ),
           ]),
           actions: [
+           
+               
             IconButton(
-                onPressed: () {
-                  // controller.getusername();
-                  Get.toNamed(Routes.GRAPH);
-                  // Hive.box('user').delete("name");
-                },
-                icon: Icon(
-                  CupertinoIcons.graph_square,
-                  color: AppColors.quinaryColor,
-                )),
-            IconButton(
-                onPressed: () {
-                  triggerNotification("Hello", "Mas Allah Ramadan Is Back");
+                onPressed: ()async {
+                 
+                
                 },
                 icon: Icon(
                   CupertinoIcons.heart_circle,
@@ -202,9 +195,7 @@ class HomeView extends GetView<HomeController> {
                           initState: (_) {},
                           builder: (_) {
                             final getpraylanght = Hive.box('daily').length;
-                            return manuButton(
-                                "নামাজ",
-                                "${getpraylanght}/6",
+                            return manuButton("নামাজ", "${getpraylanght}/6",
                                 () => Get.toNamed(Routes.PRAY_TRACKER));
                           },
                         ),

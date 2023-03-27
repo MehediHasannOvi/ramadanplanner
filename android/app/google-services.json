@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "897038968699",
+    "project_id": "ramadan-remainder",
+    "storage_bucket": "ramadan-remainder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897038968699:android:6eb05b44cddca28b737fde",
+        "android_client_info": {
+          "package_name": "com.ababildev.ramadanplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897038968699-8ltat0magdapep6r3p4dbsuip7jfb0d6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSPLR8RGF3atQIix__ypgfWoNEAksVjN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897038968699-8ltat0magdapep6r3p4dbsuip7jfb0d6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

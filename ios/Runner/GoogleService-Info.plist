@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>897038968699-d82cgtpp82kopf1tvqgs8pbpjm8slhrk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.897038968699-d82cgtpp82kopf1tvqgs8pbpjm8slhrk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7UIJPv-uFEILS-V0gLpa2MxjWiV-GDb8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>897038968699</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ababildev.ramadanplanner</string>
+	<key>PROJECT_ID</key>
+	<string>ramadan-remainder</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ramadan-remainder.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:897038968699:ios:e1f4e5d5b8cee1b3737fde</string>
+</dict>
+</plist>

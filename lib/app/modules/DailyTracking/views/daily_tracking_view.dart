@@ -12,7 +12,7 @@ class DailyTrackingView extends GetView<DailyTrackingController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daily Tracking'),
+        title: const Text('দিনের কাজ'),
         centerTitle: true,
       ),
       body: Container(

@@ -13,7 +13,7 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Quran Tracker'),
+          title: const Text('কোরআন'),
           centerTitle: true,
         ),
         body: Container(
@@ -193,7 +193,7 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                             controller.getquranData();
                           },
                           child: AppText(
-                            text: "সাবমিট",
+                            text: "সেভ করুন",
                             fontSize: 16,
                             color: AppColors.primaryColor,
                             fontWeight: FontWeight.bold,

@@ -14,7 +14,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Pray Tracker'),
+          title: const Text('নামাজ'),
           centerTitle: true,
         ),
         body: Container(

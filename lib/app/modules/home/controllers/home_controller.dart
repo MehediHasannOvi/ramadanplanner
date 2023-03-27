@@ -1,6 +1,5 @@
 import 'dart:async';
 
-
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
@@ -24,30 +23,25 @@ class HomeController extends GetxController {
 
     // Use the day of the year as the index for the list
     int dataIndex = currentDate.hDay % dinerkaj.length;
-
-    triggerNotification(
-        "আজকের দিনের কাজ",
-        dinerkaj[dataIndex],
-      );
+    // Timer(Duration(seconds: 0), () {
+    //   triggerNotification("আজকের দিনের কাজ", dinerkaj[dataIndex], null, false);
+    //   print("is it working");
+    // });
 
     print(dinerkaj.length);
+    update();
+    NotificationServices.showNotification(
+      body: '${dinerkaj[dataIndex]}',
+      title: 'আজকের দিনের ',
+    );
     return dataIndex;
   }
 
   sendNotification() {
-    int time = DateTime.now().hour;
-
-    if (time == 9) {
-      Timer(
-        const Duration(
-           seconds: 2 
-        ), () {
-      triggerNotification(
-        "আজকের দিনের কাজ",
-        dinerkaj[getDataIndexForCurrentDate()],
-      );
-    });
-    } 
+    // Timer(const Duration(seconds: 2), () {
+    //   triggerNotification(
+    //       "আজকের দিনের কাজ", dinerkaj[getDataIndexForCurrentDate()], 9, true);
+    // });
   }
 
   int hadiss() {
@@ -70,11 +64,11 @@ class HomeController extends GetxController {
           confirmTextColor: Colors.black,
           barrierDismissible: false,
           radius: 5,
-          title: "Hello Please Submit Your Name",
+          title: "আপনার নাম টি লিখুন ",
           content: TextFormField(
               controller: name,
               decoration: const InputDecoration(
-                hintText: "Enter Your Name",
+                hintText: "নাম",
                 hintStyle: TextStyle(color: Colors.white),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
@@ -85,7 +79,7 @@ class HomeController extends GetxController {
               ),
               keyboardType: TextInputType.name,
               style: const TextStyle(color: Colors.white)),
-          textConfirm: "Submit",
+          textConfirm: "সেভ করুন",
           onConfirm: () {
             if (name.text.isEmpty && name.text.length < 3) {
               Get.snackbar("Error", "Please Enter Your Name",
@@ -121,21 +115,25 @@ class HomeController extends GetxController {
   // ];
 
   @override
-  void onInit() {
+  void onInit() async {
     AwesomeNotifications().isNotificationAllowed().then((isAllowed) {
       if (!isAllowed) {
         AwesomeNotifications().requestPermissionToSendNotifications();
       }
     });
-     
-    
+
     // TODO: implement onInit
     if (Hive.box("user").get("name") == null) {
       getusername();
     } else {
       print("User Name is ${Hive.box("user").get("name")}");
     }
-    // sendNotification();
+     await NotificationServices.showNotification(
+          body: '${dinerkaj[getDataIndexForCurrentDate()]}',
+          title: 'আজকের দিনের করেছেন',
+          schedule: true,
+          interval: 28800);
+
     // getpraylanght;
     super.onInit();
   }
