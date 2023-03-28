@@ -1,9 +1,12 @@
+// ignore_for_file: unused_import, depend_on_referenced_packages, avoid_print
+
 import 'dart:async';
 
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
+
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import '../../../../Util/app_colors.dart';
@@ -13,7 +16,7 @@ import '../../../data/hadis.dart';
 
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+
 
   final TextEditingController name = TextEditingController();
   HijriCalendar currentDate = HijriCalendar.now();
@@ -36,7 +39,6 @@ class HomeController extends GetxController {
 
     // Use the day of the year as the index for the list
     int dataIndex = currentDate.hDay % hadis.length;
-    print(hadis.length);
     return dataIndex;
   }
 
@@ -88,11 +90,11 @@ class HomeController extends GetxController {
   void onInit() async {
   
 
+    // ignore: todo
     // TODO: implement onInit
     if (Hive.box("user").get("name") == null) {
       getusername();
     } else {
-      print("User Name is ${Hive.box("user").get("name")}");
     }
  
 

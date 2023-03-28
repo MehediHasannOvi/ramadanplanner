@@ -202,14 +202,14 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   );
                 },
               ),
-              Spacer(),
+              const Spacer(),
               
               AppText(
                 text: "আপনার আগের পড়া...",
                 color: AppColors.quaternaryColor,
                 fontSize: 16,
               ),
-              Divider(
+              const Divider(
                 color: AppColors.quaternaryColor,
               ),
               GetBuilder<QuranTrackerController>(
@@ -219,7 +219,7 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   return Container(
                     height: 12.h,
                     width: double.infinity,
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [

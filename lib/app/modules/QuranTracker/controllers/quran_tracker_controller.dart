@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
 import '../../../../Util/app_colors.dart';
-import '../../../routes/app_pages.dart';
 
 class QuranTrackerController extends GetxController {
+  // ignore: todo
   //TODO: Implement QuranTrackerController
 
   TextEditingController ayatController = TextEditingController();
@@ -56,6 +56,7 @@ class QuranTrackerController extends GetxController {
 
   @override
   void onClose() {
+    // ignore: todo
     // TODO: implement onClose
     ayatController.clear();
     paraController.clear();

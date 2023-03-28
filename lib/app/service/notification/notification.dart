@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, unnecessary_brace_in_string_interps
+
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'dart:isolate';

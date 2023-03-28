@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import '../../../model/allahname.dart';
 
 class AllahNameController extends GetxController {
+  // ignore: todo
   //TODO: Implement AllahNameController
 
    @override

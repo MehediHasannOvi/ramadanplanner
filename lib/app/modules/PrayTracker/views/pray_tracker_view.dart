@@ -94,7 +94,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         controller.function(value!);
                       },
                       side: MaterialStateBorderSide.resolveWith(
-                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -120,7 +120,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         },
                         side: MaterialStateBorderSide.resolveWith(
                           (states) =>
-                              BorderSide(width: 1.0, color: Colors.white),
+                              const BorderSide(width: 1.0, color: Colors.white),
                         ),
                       );
                     },
@@ -145,7 +145,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         controller.function2(value!);
                       },
                       side: MaterialStateBorderSide.resolveWith(
-                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -170,7 +170,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         controller.function3(value!);
                       },
                       side: MaterialStateBorderSide.resolveWith(
-                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -195,7 +195,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         controller.function4(value!);
                       },
                       side: MaterialStateBorderSide.resolveWith(
-                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -219,7 +219,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         controller.function5(value!);
                       },
                       side: MaterialStateBorderSide.resolveWith(
-                        (states) => BorderSide(width: 1.0, color: Colors.white),
+                        (states) => const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },

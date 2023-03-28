@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
 class DailyTrackingController extends GetxController {
+  // ignore: todo
   //TODO: Implement DailyTrackingController
 
   final count = 0.obs;
@@ -128,12 +129,14 @@ class DailyTrackingController extends GetxController {
    @override
   void onReady() {
     dailyData.put('date', now);
+    // ignore: todo
     // TODO: implement onReady
     super.onReady();
   }
 
   @override
   void onInit() {
+    // ignore: todo
     // TODO: implement onInit
     hiveDetele();
     super.onInit();

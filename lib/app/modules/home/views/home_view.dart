@@ -8,7 +8,6 @@ import 'package:sizer/sizer.dart';
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../../../../Util/main_button.dart';
-import '../../../service/notification/notification.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
@@ -58,7 +57,7 @@ class HomeView extends GetView<HomeController> {
                             onPressed: () {
                               controller.getusername();
                             },
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.edit,
                               size: 18,
                             )))
@@ -70,9 +69,9 @@ class HomeView extends GetView<HomeController> {
           actions: [
             IconButton(
                 onPressed: () async {
-                  
+                  Get.toNamed(Routes.ABOUT);
                 },
-                icon: Icon(
+                icon: const Icon(
                   CupertinoIcons.heart_circle,
                   color: AppColors.quinaryColor,
                 )),
@@ -192,7 +191,7 @@ class HomeView extends GetView<HomeController> {
                           initState: (_) {},
                           builder: (_) {
                             final getpraylanght = Hive.box('daily').length;
-                            return manuButton("নামাজ", "${getpraylanght}/6",
+                            return manuButton("নামাজ", "$getpraylanght/6",
                                 () => Get.toNamed(Routes.PRAY_TRACKER));
                           },
                         ),
@@ -201,7 +200,7 @@ class HomeView extends GetView<HomeController> {
                           initState: (_) {},
                           builder: (_) {
                             final dinerkaj = Hive.box('Dtrack').length;
-                            return manuButton("দিনের কাজ", "${dinerkaj}/9",
+                            return manuButton("দিনের কাজ", "$dinerkaj/9",
                                 () => Get.toNamed(Routes.DAILY_TRACKING));
                           },
                         ),
@@ -210,7 +209,7 @@ class HomeView extends GetView<HomeController> {
                           initState: (_) {},
                           builder: (_) {
                             final quranData = Hive.box('quranData').length;
-                            return manuButton("কোরআন", "${quranData}/3",
+                            return manuButton("কোরআন", "$quranData/3",
                                 () => Get.toNamed(Routes.QURAN_TRACKER));
                           },
                         ),

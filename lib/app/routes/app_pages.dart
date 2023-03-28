@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:get/get.dart';
 
 import '../modules/AllahName/bindings/allah_name_binding.dart';
@@ -8,6 +10,8 @@ import '../modules/PrayTracker/bindings/pray_tracker_binding.dart';
 import '../modules/PrayTracker/views/pray_tracker_view.dart';
 import '../modules/QuranTracker/bindings/quran_tracker_binding.dart';
 import '../modules/QuranTracker/views/quran_tracker_view.dart';
+import '../modules/about/bindings/about_binding.dart';
+import '../modules/about/views/about_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -43,6 +47,11 @@ class AppPages {
       name: _Paths.QURAN_TRACKER,
       page: () => const QuranTrackerView(),
       binding: QuranTrackerBinding(),
+    ),
+    GetPage(
+      name: _Paths.ABOUT,
+      page: () => const AboutView(),
+      binding: AboutBinding(),
     ),
   ];
 }

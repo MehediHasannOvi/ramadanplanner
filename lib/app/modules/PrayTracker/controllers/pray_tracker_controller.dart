@@ -115,6 +115,7 @@ class PrayTrackerController extends GetxController {
   @override
   void onReady() {
     namazData.put('date', now);
+    // ignore: todo
     // TODO: implement onReady
     super.onReady();
   }
@@ -122,6 +123,7 @@ class PrayTrackerController extends GetxController {
   @override
   void onInit() {
     hiveDetele();
+    // ignore: todo
     // TODO: implement onInit
     super.onInit();
   }
