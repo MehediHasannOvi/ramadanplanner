@@ -31,23 +31,23 @@ class QuranTrackerController extends GetxController {
   }
 
   getquranData() {
-    if (ayatController.text.isEmpty &&
-        paraController.text.isEmpty &&
-        pageController.text.isEmpty) {
-      Get.snackbar("Error", "Please Enter All From",
+    if (ayatController.text.isNotEmpty &&
+        paraController.text.isNotEmpty &&
+        pageController.text.isNotEmpty) {
+      quranData.put("ayat", ayatController.text);
+      quranData.put("para", paraController.text);
+      quranData.put("page", pageController.text);
+      // Get.offNamed(Routes.HOME);
+      ayatController.clear();
+      paraController.clear();
+      pageController.clear();
+      update();
+      Get.snackbar("ধন্যবাদ", "আপনার ডাটা সাবমিট করা হয়েছে ",
           colorText: Colors.black,
           backgroundColor: AppColors.quaternaryColor,
           snackPosition: SnackPosition.BOTTOM);
     } else {
-      quranData.put("ayat", ayatController.text);
-      quranData.put("para", ayatController.text);
-      quranData.put("page", ayatController.text);
-      // Get.offNamed(Routes.HOME);
-       ayatController.clear();
-    paraController.clear();
-    pageController.clear();
-    update();
-       Get.snackbar( "ধন্যবাদ","আপনার ডাটা সাবমিট করা হয়েছে ",
+      Get.snackbar("Error", "অনুগ্রহ করে ফর্মটি পূরণ করুন",
           colorText: Colors.black,
           backgroundColor: AppColors.quaternaryColor,
           snackPosition: SnackPosition.BOTTOM);
@@ -60,8 +60,7 @@ class QuranTrackerController extends GetxController {
     ayatController.clear();
     paraController.clear();
     pageController.clear();
-   
-    
+
     super.onClose();
   }
 }

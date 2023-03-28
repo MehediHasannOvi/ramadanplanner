@@ -202,6 +202,77 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   );
                 },
               ),
+              Spacer(),
+              
+              AppText(
+                text: "আপনার আগের পড়া...",
+                color: AppColors.quaternaryColor,
+                fontSize: 16,
+              ),
+              Divider(
+                color: AppColors.quaternaryColor,
+              ),
+              GetBuilder<QuranTrackerController>(
+                init: QuranTrackerController(),
+                initState: (_) {},
+                builder: (_) {
+                  return Container(
+                    height: 12.h,
+                    width: double.infinity,
+                    padding: EdgeInsets.all(10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            AppText(
+                              text: "আয়াত",
+                              fontSize: 16,
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            AppText(
+                              text: controller.quranData.get("ayat") ?? "0",
+                              fontSize: 16,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            AppText(
+                              text: "পৃষ্ঠা",
+                              fontSize: 16,
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            AppText(
+                              text: controller.quranData.get("page") ?? "0",
+                              fontSize: 16,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            AppText(
+                              text: "পারা",
+                              fontSize: 16,
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            AppText(
+                              text: controller.quranData.get("para") ?? "0",
+                              fontSize: 16,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              )
             ],
           ),
         ));

@@ -8,8 +8,6 @@ import '../modules/PrayTracker/bindings/pray_tracker_binding.dart';
 import '../modules/PrayTracker/views/pray_tracker_view.dart';
 import '../modules/QuranTracker/bindings/quran_tracker_binding.dart';
 import '../modules/QuranTracker/views/quran_tracker_view.dart';
-import '../modules/graph/bindings/graph_binding.dart';
-import '../modules/graph/views/graph_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -32,24 +30,19 @@ class AppPages {
       binding: PrayTrackerBinding(),
     ),
     GetPage(
-      name: _Paths.QURAN_TRACKER,
-      page: () => const QuranTrackerView(),
-      binding: QuranTrackerBinding(),
-    ),
-    GetPage(
       name: _Paths.DAILY_TRACKING,
       page: () => const DailyTrackingView(),
       binding: DailyTrackingBinding(),
     ),
     GetPage(
-      name: _Paths.GRAPH,
-      page: () => const GraphView(),
-      binding: GraphBinding(),
-    ),
-    GetPage(
       name: _Paths.ALLAH_NAME,
       page: () => const AllahNameView(),
       binding: AllahNameBinding(),
+    ),
+    GetPage(
+      name: _Paths.QURAN_TRACKER,
+      page: () => const QuranTrackerView(),
+      binding: QuranTrackerBinding(),
     ),
   ];
 }
