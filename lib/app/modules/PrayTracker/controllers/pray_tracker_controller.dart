@@ -1,4 +1,3 @@
-
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
@@ -6,9 +5,15 @@ class PrayTrackerController extends GetxController {
   // RxBool fazar =   false.obs;
 
   final namazData = Hive.box('daily');
-
-
-
+  RxBool delete = false.obs;
+  final now = DateTime.now().day;
+  hiveDetele() {
+    if (namazData.get('date') == now) {
+    } else {
+      namazData.clear();
+      update();
+    }
+  }
 
   function(bool value) {
     if (value == true) {
@@ -81,10 +86,10 @@ class PrayTrackerController extends GetxController {
 
   function5(bool value) {
     if (value == true) {
-      namazData.put('tahajud', value);
+      namazData.put('Tarabi', value);
     } else {
       namazData.delete(
-        'tahajud',
+        'Tarabi',
       );
     }
 
@@ -105,5 +110,19 @@ class PrayTrackerController extends GetxController {
     // press = false;
     update();
     onClose();
+  }
+
+  @override
+  void onReady() {
+    namazData.put('date', now);
+    // TODO: implement onReady
+    super.onReady();
+  }
+
+  @override
+  void onInit() {
+    hiveDetele();
+    // TODO: implement onInit
+    super.onInit();
   }
 }

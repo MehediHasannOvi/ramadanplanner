@@ -1,49 +1,35 @@
 import 'dart:async';
 
-import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
+import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/timezone.dart' as tz;
 import '../../../../Util/app_colors.dart';
-import '../../../../Util/main_button.dart';
-import '../../../../notification/notification.dart';
+import '../../../service/notification/notification.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
-import '../../../routes/app_pages.dart';
+
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
 
   final TextEditingController name = TextEditingController();
+  HijriCalendar currentDate = HijriCalendar.now();
 
   int getDataIndexForCurrentDate() {
     // Get the current date
-    HijriCalendar currentDate = HijriCalendar.now();
-
-    // Use the day of the year as the index for the list
     int dataIndex = currentDate.hDay % dinerkaj.length;
-    // Timer(Duration(seconds: 0), () {
-    //   triggerNotification("আজকের দিনের কাজ", dinerkaj[dataIndex], null, false);
-    //   print("is it working");
+    update();
+    // Timer(Duration.zero, () {
+    //   sendNotification();
     // });
 
-    print(dinerkaj.length);
-    update();
-    NotificationServices.showNotification(
-      body: '${dinerkaj[dataIndex]}',
-      title: 'আজকের দিনের ',
-    );
     return dataIndex;
   }
 
-  sendNotification() {
-    // Timer(const Duration(seconds: 2), () {
-    //   triggerNotification(
-    //       "আজকের দিনের কাজ", dinerkaj[getDataIndexForCurrentDate()], 9, true);
-    // });
-  }
-
+ 
   int hadiss() {
     // Get the current date
     HijriCalendar currentDate = HijriCalendar.now();
@@ -94,33 +80,13 @@ class HomeController extends GetxController {
             }
           });
     });
-
-    // return Hive.box('user').get('name');
   }
-  // return dinerkaj[i++];
 
-  // if (time == timeServer.get(keytime)) {
-  //   print("This Funsion ar Work  002 ${timeServer.get(keytime)}");
-  //   return dinerkaj[i++];
-  // } else {
-  //   print("This Funsion ar Work  0023 ${timeServer.get(time)}");
-  //   const Text("No");
-  // }
-
-  // final List mainBUtton = [
-  //   manuButton("নামাজ", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
-  //   manuButton("দিনের কাজ", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
-  //   manuButton("Pray Tracker", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
-  //   manuButton("Pray Tracker", "1/13", () => Get.toNamed(Routes.PRAY_TRACKER)),
-  // ];
+ 
 
   @override
   void onInit() async {
-    AwesomeNotifications().isNotificationAllowed().then((isAllowed) {
-      if (!isAllowed) {
-        AwesomeNotifications().requestPermissionToSendNotifications();
-      }
-    });
+  
 
     // TODO: implement onInit
     if (Hive.box("user").get("name") == null) {
@@ -128,11 +94,14 @@ class HomeController extends GetxController {
     } else {
       print("User Name is ${Hive.box("user").get("name")}");
     }
-     await NotificationServices.showNotification(
-          body: '${dinerkaj[getDataIndexForCurrentDate()]}',
-          title: 'আজকের দিনের করেছেন',
-          schedule: true,
-          interval: 28800);
+ 
+
+   NotificationService().scheduleNotification(
+    // scheduledDate: nextInstanceOfOneAm(1),
+     title: "আজকের দিনের কাজ", 
+    body: "${dinerkaj[getDataIndexForCurrentDate()]}",
+    
+    ).then((value) => print("Notification Scheduled" ,));
 
     // getpraylanght;
     super.onInit();

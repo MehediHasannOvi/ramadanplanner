@@ -8,7 +8,7 @@ import 'package:sizer/sizer.dart';
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../../../../Util/main_button.dart';
-import '../../../../notification/notification.dart';
+import '../../../service/notification/notification.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 import '../../../routes/app_pages.dart';
@@ -68,12 +68,9 @@ class HomeView extends GetView<HomeController> {
             ),
           ]),
           actions: [
-           
-               
             IconButton(
-                onPressed: ()async {
-                 
-                
+                onPressed: () async {
+                  
                 },
                 icon: Icon(
                   CupertinoIcons.heart_circle,

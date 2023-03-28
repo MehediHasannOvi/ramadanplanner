@@ -8,6 +8,14 @@ class DailyTrackingController extends GetxController {
   bool press = false;
 
   final dailyData = Hive.box('Dtrack');
+  final now = DateTime.now().day;
+  hiveDetele() {
+    if (dailyData.get('date') == now) {
+    } else {
+      dailyData.clear();
+      update();
+    }
+  }
 
   function(bool value) {
     if (value == true) {
@@ -16,10 +24,9 @@ class DailyTrackingController extends GetxController {
       dailyData.delete(
         'sokalerJikir',
       );
-      
     }
     update();
-      onClose();
+    onClose();
   }
 
   function2(bool value) {
@@ -31,8 +38,9 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
+
   function3(bool value) {
     if (value == true) {
       dailyData.put('dansadka', value);
@@ -42,9 +50,10 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
-   function4(bool value) {
+
+  function4(bool value) {
     if (value == true) {
       dailyData.put('dinerkaj', value);
     } else {
@@ -53,9 +62,10 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
-   function5(bool value) {
+
+  function5(bool value) {
     if (value == true) {
       dailyData.put('jamatenamaz', value);
     } else {
@@ -64,8 +74,9 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
+
   function6(bool value) {
     if (value == true) {
       dailyData.put('istegfa', value);
@@ -75,8 +86,9 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
+
   function7(bool value) {
     if (value == true) {
       dailyData.put('quranteloyat', value);
@@ -86,8 +98,9 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
+
   function8(bool value) {
     if (value == true) {
       dailyData.put('allahnammukhosto', value);
@@ -97,10 +110,9 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
   }
 
-   
   function9(bool value) {
     if (value == true) {
       dailyData.put('ghumerzikir', value);
@@ -110,6 +122,20 @@ class DailyTrackingController extends GetxController {
       );
     }
     update();
-      onClose();
+    onClose();
+  }
+
+   @override
+  void onReady() {
+    dailyData.put('date', now);
+    // TODO: implement onReady
+    super.onReady();
+  }
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    hiveDetele();
+    super.onInit();
   }
 }

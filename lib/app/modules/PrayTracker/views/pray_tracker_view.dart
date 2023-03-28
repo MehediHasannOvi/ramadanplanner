@@ -17,6 +17,23 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
           title: const Text('নামাজ'),
           centerTitle: true,
         ),
+        floatingActionButton: GetBuilder<PrayTrackerController>(
+          init: PrayTrackerController(),
+          initState: (_) {
+    },
+          builder: (_) {
+            return Visibility(
+                  visible: controller.delete.value,
+                  child: FloatingActionButton(
+                    onPressed: () {
+                      controller.namazData.clear();
+                     
+                    },
+                    child: const Icon(Icons.delete),
+                  ),
+                ); 
+          },
+        ),
         body: Container(
           margin: const EdgeInsets.all(20),
           child: ListView(
@@ -197,7 +214,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   builder: (_) {
                     return Checkbox(
                       focusColor: AppColors.quaternaryColor,
-                      value: controller.namazData.get("tahajud") ?? false,
+                      value: controller.namazData.get("Tarabi") ?? false,
                       onChanged: (value) {
                         controller.function5(value!);
                       },

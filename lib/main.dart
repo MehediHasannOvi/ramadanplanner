@@ -1,49 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-import 'package:ramadanplanner/notification/notification.dart';
+
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 import 'Util/app_colors.dart';
+import 'app/data/hivaData.dart';
 import 'app/modules/fastscreen.dart';
 import 'app/routes/app_pages.dart';
 import 'package:firebase_core/firebase_core.dart';
-// Import the generated file
+import 'package:timezone/data/latest.dart' as tz;
+
+import 'app/service/notification/notification.dart';
 import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await NotificationServices.initializeNotification();
+//  await FlutterBackgroundService.initialize(onStart);
+
+  await hiveData();
+//  await  NotificationService().initNotification();
+  tz.initializeTimeZones();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
+ 
   WidgetsFlutterBinding.ensureInitialized();
 
-  // ReceivedAction? receivedAction = await AwesomeNotifications()
-  //     .getInitialNotificationAction(removeFromActionEvents: false);
-  // await AwesomeNotifications().initialize(
-  //     null,
-  //     [
-  //       NotificationChannel(
-  //         channelKey: 'basic_channel',
-  //         channelName: 'Basic notifications',
-  //         channelDescription: 'Notification channel for basic tests',
-  //         defaultColor: AppColors.primaryColor,
-  //         ledColor: AppColors.primaryColor,
-  //       ),
-  //     ],
-  //     debug: true);
-
-// OfflineNotificationService().init();
-
-// Local Data Base
-  await Hive.initFlutter();
-  await Hive.openBox('daily');
-  await Hive.openBox('user');
-  await Hive.openBox('Dtrack');
-  await Hive.openBox('quranData');
-
-  // Local Data Base
   runApp(const MyApp());
 }
 
@@ -53,6 +34,8 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 }
+
+
 
 class _MyAppState extends State<MyApp> {
   @override

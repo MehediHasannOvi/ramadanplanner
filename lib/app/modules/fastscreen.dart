@@ -16,7 +16,7 @@ class Fastpage extends StatefulWidget {
 
 class _FastpageState extends State<Fastpage> {
   
-  
+
 
   @override
   void initState() {
