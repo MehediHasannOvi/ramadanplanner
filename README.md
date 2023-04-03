@@ -36,7 +36,10 @@ Flutter Run
 
 ## Screenshots
 
-![App Screenshot](https://cdn.dribbble.com/users/4383731/screenshots/15469115/media/a5f1811d4d86993292353c941419fd07.png?compress=1&resize=1000x750&vertical=top)
+![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/2.jpg?raw=true)
+![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/1.jpg?raw=true)
+![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/3.jpg?raw=true)
+![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/4.jpg?raw=true)
 
 
 ## Tech Stack
