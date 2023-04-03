@@ -18,8 +18,19 @@ This App You Can Get Pray Time traking , quran , Good Work you Can traking Your 
 To deploy this project run
 
 ```bash
+   git clone https://github.com/MehediHasannOvi/ramadanplanner.git
+```
+
+```bash
+    cd ramadanplanner
+```
+
+```bash
   Flutter Pub get 
-  Flutter Run
+```
+
+```bash
+Flutter Run
 ```
 
 
