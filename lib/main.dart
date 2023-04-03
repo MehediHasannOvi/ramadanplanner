@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages, unused_import
+
 import 'package:flutter/material.dart';
 
 import 'package:sizer/sizer.dart';
@@ -46,6 +48,8 @@ class _MyAppState extends State<MyApp> {
           home: const Fastpage(),
           // initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
+          locale: const Locale('en', 'US'),
+          fallbackLocale: const Locale('en', 'US'),
           theme: ThemeData(
             appBarTheme: const AppBarTheme(
               backgroundColor: AppColors.primaryColor,

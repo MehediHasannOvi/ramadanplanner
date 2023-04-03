@@ -8,6 +8,9 @@
 .buildlog/
 .history
 .svn/
+.firebase/
+.vscode/
+.dart_tool
 migrate_working_dir/
 
 # IntelliJ related

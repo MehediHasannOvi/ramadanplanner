@@ -202,7 +202,9 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   );
                 },
               ),
-              const Spacer(),
+              const SizedBox(
+                height: 20,
+              ),
               
               AppText(
                 text: "আপনার আগের পড়া...",

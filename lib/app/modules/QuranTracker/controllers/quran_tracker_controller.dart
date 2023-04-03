@@ -15,6 +15,7 @@ class QuranTrackerController extends GetxController {
   bool visibility = false;
 
   final quranData = Hive.box('quranData');
+  final now = DateTime.now();
 
   visibilitychange(dynamic value) {
     if (ayatController.text.isEmpty &&
@@ -29,6 +30,8 @@ class QuranTrackerController extends GetxController {
     update();
     // onDelete();
   }
+
+  
 
   getquranData() {
     if (ayatController.text.isNotEmpty &&
