@@ -1,12 +1,12 @@
 // ignore_for_file: unused_import, depend_on_referenced_packages, avoid_print
 
 import 'dart:async';
-
+import 'package:adhan/adhan.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
-
+import 'package:intl/intl.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import '../../../../Util/app_colors.dart';
@@ -14,9 +14,44 @@ import '../../../service/notification/notification.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 
-
 class HomeController extends GetxController {
+  final myCoordinates =
+      Coordinates(23.5449, 90.5296); // Replace with your own location lat, lng.
+  final params = CalculationMethod.karachi.getParameters();
+  final madhab = Madhab.hanafi;
+  PrayerTimes? prayerTimes;
 
+  gettime(
+      CalculationParameters params, Madhab madhab, Coordinates coordinates) {
+    final prayertimes = PrayerTimes.today(
+      coordinates,
+      params,
+    );
+    return prayertimes;
+  }
+
+  String getFajrTime() {
+    final prayerTimes = gettime(params, madhab, myCoordinates);
+    return DateFormat('hh:mm a').format(prayerTimes.fajr);
+  }
+    String getdhuhrTime() {
+    final prayerTimes = gettime(params, madhab, myCoordinates);
+    return DateFormat('hh:mm a').format(prayerTimes.dhuhr);
+  }
+
+    String getasrTime() {
+    final prayerTimes = gettime(params, madhab, myCoordinates);
+    return DateFormat('hh:mm a').format(prayerTimes.asr);
+  }
+
+    String getmaghribTime() {
+    final prayerTimes = gettime(params, madhab, myCoordinates);
+    return DateFormat('hh:mm a').format(prayerTimes.maghrib);
+  }
+    String getishaTime() {
+    final prayerTimes = gettime(params, madhab, myCoordinates);
+    return DateFormat('hh:mm a').format(prayerTimes.isha);
+  }
 
   final TextEditingController name = TextEditingController();
   HijriCalendar currentDate = HijriCalendar.now();
@@ -32,7 +67,6 @@ class HomeController extends GetxController {
     return dataIndex;
   }
 
- 
   int hadiss() {
     // Get the current date
     HijriCalendar currentDate = HijriCalendar.now();
@@ -84,26 +118,23 @@ class HomeController extends GetxController {
     });
   }
 
- 
-
   @override
   void onInit() async {
-  
-
     // ignore: todo
     // TODO: implement onInit
     if (Hive.box("user").get("name") == null) {
       getusername();
-    } else {
-    }
- 
+    } else {}
 
-   NotificationService().scheduleNotification(
-    // scheduledDate: nextInstanceOfOneAm(1),
-     title: "আজকের দিনের কাজ", 
-    body: "${dinerkaj[getDataIndexForCurrentDate()]}",
-    
-    ).then((value) => print("Notification Scheduled" ,));
+    NotificationService()
+        .scheduleNotification(
+          // scheduledDate: nextInstanceOfOneAm(1),
+          title: "আজকের দিনের কাজ",
+          body: "${dinerkaj[getDataIndexForCurrentDate()]}",
+        )
+        .then((value) => print(
+              "Notification Scheduled",
+            ));
 
     // getpraylanght;
     super.onInit();
