@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
+import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
-
+import 'package:daynightbanner/daynightbanner.dart';
 import '../../../../Util/App_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../../../../Util/main_button.dart';
@@ -51,11 +52,15 @@ class HomeView extends GetView<HomeController> {
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
                     ),
+                    // this function is for edit name button
                     Visibility(
                         visible: Hive.box('user').get('name') == null,
                         child: IconButton(
                             onPressed: () {
-                              controller.getusername();
+                              print(
+                                  "Print Fajar Time  ${DateFormat.jm().format(controller.prayerTimes!.fajr)}");
+                              print(
+                                  "Print Fajar Time  ${DateFormat.jm().format(controller.prayerTimes!.dhuhr)}");
                             },
                             icon: const Icon(
                               Icons.edit,
@@ -69,7 +74,12 @@ class HomeView extends GetView<HomeController> {
           actions: [
             IconButton(
                 onPressed: () async {
-                  Get.toNamed(Routes.ABOUT);
+                  // Get.toNamed(Routes.ABOUT);
+                  print("Fajr Time  ${controller.getFajrTime()}");
+                  print("dhuhr Time ${controller.getdhuhrTime()}");
+                  print("Asr Time ${controller.getasrTime()}");
+                  print("Maghrin Time ${controller.getmaghribTime()}");
+                  print("Isha Time ${controller.getishaTime()}");
                 },
                 icon: const Icon(
                   CupertinoIcons.heart_circle,
@@ -121,7 +131,7 @@ class HomeView extends GetView<HomeController> {
               height: 8.h,
             ),
             Container(
-              height: 75.h,
+              height: MediaQuery.of(context).size.height * 1,
               width: double.infinity,
               padding: const EdgeInsets.all(30),
               decoration: const BoxDecoration(
@@ -133,6 +143,26 @@ class HomeView extends GetView<HomeController> {
               ),
               child: Column(
                 children: [
+                  // this is for day night banner here add namaz time and date
+                  // Container(
+                  //   height: 10.h,
+                  //   width: double.infinity,
+                  //   decoration: BoxDecoration(
+                  //     color: AppColors.tertiaryColor,
+                  //     borderRadius: BorderRadius.circular(10),
+                  //   ),
+                  //   child: AppText(
+                  //     text: DateFormat.jm().format(controller.prayerTimes!.fajr).toString(),
+                  //     fontSize: 16,
+                  //     fontWeight: FontWeight.w300,
+                  //     color: Colors.white,
+                  //     textAlign: TextAlign.center,
+                  //   ),
+                  // ),
+                  SizedBox(
+                    height: 4.h,
+                  ),
+                  // this is for hadis section
                   Container(
                     height: 30.h,
                     width: double.infinity,
@@ -157,6 +187,8 @@ class HomeView extends GetView<HomeController> {
                   SizedBox(
                     height: 4.h,
                   ),
+
+                  // this is for daily tracker section
                   Align(
                     alignment: Alignment.centerLeft,
                     child: AppText(
