@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "377917129946",
+    "project_id": "ramadanplanner2024",
+    "storage_bucket": "ramadanplanner2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377917129946:android:e426a59e9606c2b88951e3",
+        "android_client_info": {
+          "package_name": "com.ababildev.ramadanplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf49C2RanI2sN-F32Uc-4M6xD73Anq1r4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
