@@ -21,6 +21,7 @@ dependencies:
   flutter_local_notifications: ^13.0.0
   flashy_tab_bar2: ^0.0.6
   cloud_firestore: ^4.15.4
+  data_table_2: ^2.5.10
 
 
   # firebase_messaging: ^14.3.0

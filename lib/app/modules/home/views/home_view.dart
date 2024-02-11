@@ -64,7 +64,7 @@ class HomeView extends GetView<HomeController> {
           actions: [
             IconButton(
                 onPressed: () {
-                  Get.toNamed(Routes.ABOUT);
+                  Get.toNamed(Routes.CALANDER);
                 },
                 icon: const Icon(
                   CupertinoIcons.heart_circle,

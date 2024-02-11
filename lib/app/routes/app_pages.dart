@@ -12,6 +12,8 @@ import '../modules/about/bindings/about_binding.dart';
 import '../modules/about/views/about_view.dart';
 import '../modules/bottombar/bindings/bottombar_binding.dart';
 import '../modules/bottombar/views/bottombar_view.dart';
+import '../modules/calander/bindings/calander_binding.dart';
+import '../modules/calander/views/calander_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -59,6 +61,11 @@ class AppPages {
       name: _Paths.BOTTOMBAR,
       page: () => const BottombarView(),
       binding: BottombarBinding(),
+    ),
+    GetPage(
+      name: _Paths.CALANDER,
+      page: () => const CalanderView(),
+      binding: CalanderBinding(),
     ),
   ];
 }

@@ -13,6 +13,7 @@ abstract class Routes {
   static const ALLAH_NAME = _Paths.ALLAH_NAME;
   static const ABOUT = _Paths.ABOUT;
   static const BOTTOMBAR = _Paths.BOTTOMBAR;
+  static const CALANDER = _Paths.CALANDER;
 }
 
 abstract class _Paths {
@@ -25,4 +26,5 @@ abstract class _Paths {
   static const ALLAH_NAME = '/allah-name';
   static const ABOUT = '/about';
   static const BOTTOMBAR = '/bottombar';
+  static const CALANDER = '/calander';
 }
