@@ -33,50 +33,32 @@ class AllahNameView extends GetView<AllahNameController> {
                                 mainAxisSpacing: 20),
                         itemCount: allahname.length,
                         itemBuilder: (context, index) {
-                          return GestureDetector(
-                            onTap: () {
-                              controller.getName();
-                              Get.defaultDialog(
-                                title:
-                                    allahname[index].meaning!,
-                                middleText:
-                                    allahname[index].faz!,
-                                // textConfirm: "বাতিল",
-                                // textCancel: "সম্পন্ন",
-                                onConfirm: () {
-                                  Get.back(
-                                    result: true,
-                                  );
-                                },
-                              );
-                            },
-                            child: Container(
-                              height: 25.h,
-                              width: 25.h,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: AppColors.secondaryColor,
-                              ),
-                              alignment: Alignment.center,
-                              child: Column( 
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  Text(allahname[index].arbi!,style: TextStyle(
-                                    fontSize: 20.sp,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontFamily: "arbi"
-                                  
-                                  ),),
-                                  Text(allahname[index].bangla!,style: TextStyle(
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  
-                                  ),)
-                                ],
-                              ),
+                          return Container(
+                            height: 25.h,
+                            width: 25.h,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: AppColors.secondaryColor,
+                            ),
+                            alignment: Alignment.center,
+                            child: Column( 
+                              mainAxisAlignment:
+                                  MainAxisAlignment.spaceAround,
+                              children: [
+                                Text(allahname[index].arbi!,style: TextStyle(
+                                  fontSize: 20.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontFamily: "arbi"
+                                
+                                ),),
+                                Text(allahname[index].bangla!,style: TextStyle(
+                                  fontSize: 16.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                
+                                ),)
+                              ],
                             ),
                           );
                         });
