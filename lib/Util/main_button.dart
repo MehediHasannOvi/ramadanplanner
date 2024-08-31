@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ramadanplanner/Util/App_text.dart';
+import 'package:ramadanplanner/Util/app_text.dart';
 import 'package:ramadanplanner/Util/app_colors.dart';
 import 'package:sizer/sizer.dart';
 

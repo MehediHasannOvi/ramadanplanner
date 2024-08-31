@@ -48,12 +48,12 @@ class QuranTrackerController extends GetxController {
       Get.snackbar("ধন্যবাদ", "আপনার ডাটা সাবমিট করা হয়েছে ",
           colorText: Colors.black,
           backgroundColor: AppColors.quaternaryColor,
-          snackPosition: SnackPosition.BOTTOM);
+          snackPosition: SnackPosition.bottom);
     } else {
       Get.snackbar("Error", "অনুগ্রহ করে ফর্মটি পূরণ করুন",
           colorText: Colors.black,
           backgroundColor: AppColors.quaternaryColor,
-          snackPosition: SnackPosition.BOTTOM);
+          snackPosition: SnackPosition.bottom);
     }
   }
 
