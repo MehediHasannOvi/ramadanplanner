@@ -1,6 +1,7 @@
 // ignore_for_file: depend_on_referenced_packages, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:ramadanplanner/app/modules/navigationbar/views/navigationbar_view.dart';
 
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
@@ -21,10 +22,10 @@ void main() async {
   await hiveData();
 //  await  NotificationService().initNotification();
   tz.initializeTimeZones();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
- 
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(const MyApp());
@@ -37,16 +38,15 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-
-
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Sizer(builder: (context, orientation, deviceType) {
-      return GetMaterialApp(
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return GetMaterialApp(
           title: "Ramadan Planner",
-          home: const Fastpage(),
-          // initialRoute: AppPages.INITIAL,
+          // home: const NavigationbarView(),
+          initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
           locale: const Locale('en', 'US'),
           fallbackLocale: const Locale('en', 'US'),
@@ -54,10 +54,19 @@ class _MyAppState extends State<MyApp> {
             appBarTheme: const AppBarTheme(
               backgroundColor: AppColors.primaryColor,
               elevation: 0,
+              titleTextStyle: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+              ),
+              iconTheme: IconThemeData(color: Colors.white),
             ),
             scaffoldBackgroundColor: AppColors.primaryColor,
             primarySwatch: Colors.green,
-          ));
-    });
+          ),
+        );
+      },
+    );
   }
 }
+
+

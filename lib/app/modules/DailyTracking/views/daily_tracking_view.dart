@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../Util/App_text.dart';
+import '../../../../Util/app_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../controllers/daily_tracking_controller.dart';
 

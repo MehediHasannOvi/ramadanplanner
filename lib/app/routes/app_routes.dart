@@ -12,6 +12,10 @@ abstract class Routes {
   static const GRAPH = _Paths.GRAPH;
   static const ALLAH_NAME = _Paths.ALLAH_NAME;
   static const ABOUT = _Paths.ABOUT;
+  static const NAVIGATIONBAR = _Paths.NAVIGATIONBAR;
+  static const SETTINGS = _Paths.SETTINGS;
+  static const PRAYTIME = _Paths.PRAYTIME;
+  static const COMPASS = _Paths.COMPASS;
 }
 
 abstract class _Paths {
@@ -23,4 +27,8 @@ abstract class _Paths {
   static const GRAPH = '/graph';
   static const ALLAH_NAME = '/allah-name';
   static const ABOUT = '/about';
+  static const NAVIGATIONBAR = '/navigationbar';
+  static const SETTINGS = '/settings';
+  static const PRAYTIME = '/praytime';
+  static const COMPASS = '/compass';
 }

@@ -21,7 +21,7 @@ class _FastpageState extends State<Fastpage> {
   void initState() {
     
     super.initState();
-    Timer(const Duration(seconds: 2), () => Get.offNamed(Routes.HOME));
+    Timer(const Duration(seconds: 2), () => Get.offNamed(Routes.NAVIGATIONBAR));
   }
 
   @override

@@ -7,6 +7,7 @@ import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:ramadanplanner/app/routes/app_pages.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import '../../../../Util/app_colors.dart';
@@ -15,57 +16,26 @@ import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 
 class HomeController extends GetxController {
-  final myCoordinates =
-      Coordinates(23.5449, 90.5296); // Replace with your own location lat, lng.
-  final params = CalculationMethod.karachi.getParameters();
-  final madhab = Madhab.hanafi;
-  PrayerTimes? prayerTimes;
-
-  gettime(
-      CalculationParameters params, Madhab madhab, Coordinates coordinates) {
-    final prayertimes = PrayerTimes.today(
-      coordinates,
-      params,
-    );
-    return prayertimes;
-  }
-
-  String getFajrTime() {
-    final prayerTimes = gettime(params, madhab, myCoordinates);
-    return DateFormat('hh:mm a').format(prayerTimes.fajr);
-  }
-    String getdhuhrTime() {
-    final prayerTimes = gettime(params, madhab, myCoordinates);
-    return DateFormat('hh:mm a').format(prayerTimes.dhuhr);
-  }
-
-    String getasrTime() {
-    final prayerTimes = gettime(params, madhab, myCoordinates);
-    return DateFormat('hh:mm a').format(prayerTimes.asr);
-  }
-
-    String getmaghribTime() {
-    final prayerTimes = gettime(params, madhab, myCoordinates);
-    return DateFormat('hh:mm a').format(prayerTimes.maghrib);
-  }
-    String getishaTime() {
-    final prayerTimes = gettime(params, madhab, myCoordinates);
-    return DateFormat('hh:mm a').format(prayerTimes.isha);
-  }
+  
 
   final TextEditingController name = TextEditingController();
   HijriCalendar currentDate = HijriCalendar.now();
 
+
+  // this function is for diner kaj it will show a diner kaj for the current date
+
   int getDataIndexForCurrentDate() {
     // Get the current date
     int dataIndex = currentDate.hDay % dinerkaj.length;
-    update();
+   
     // Timer(Duration.zero, () {
     //   sendNotification();
     // });
 
     return dataIndex;
   }
+
+// this function is for hadis it will show a hadis for the current date
 
   int hadiss() {
     // Get the current date
@@ -75,6 +45,9 @@ class HomeController extends GetxController {
     int dataIndex = currentDate.hDay % hadis.length;
     return dataIndex;
   }
+
+// This function is for edit name button this will show a dialog box to edit name
+// and when user fast time open the app it will show a dialog box to enter name
 
   getusername() {
     Timer(const Duration(seconds: 0), () {
@@ -107,12 +80,12 @@ class HomeController extends GetxController {
               Get.snackbar("Error", "Please Enter Your Name",
                   colorText: Colors.black,
                   backgroundColor: AppColors.quaternaryColor,
-                  snackPosition: SnackPosition.BOTTOM);
+                  snackPosition: SnackPosition.bottom);
             } else {
               Hive.box("user").put("name", name.text);
-              Get.back();
               update();
-              onClose();
+              // Get.back();
+              Get.close();
             }
           });
     });
@@ -124,13 +97,14 @@ class HomeController extends GetxController {
     // TODO: implement onInit
     if (Hive.box("user").get("name") == null) {
       getusername();
-    } else {}
+    } 
+    getDataIndexForCurrentDate();
 
     NotificationService()
         .scheduleNotification(
           // scheduledDate: nextInstanceOfOneAm(1),
           title: "আজকের দিনের কাজ",
-          body: "${dinerkaj[getDataIndexForCurrentDate()]}",
+         body: "${dinerkaj[getDataIndexForCurrentDate()]}",
         )
         .then((value) => print(
               "Notification Scheduled",
