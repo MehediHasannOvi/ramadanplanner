@@ -23,11 +23,17 @@ class PraytimeView extends GetView<PraytimeController> {
           const SizedBox(
             width: 10,
           ),
-          AppText(
-            text: 'Munshiganj, Bangladesh',
-            color: Colors.white,
-            fontSize: 10.sp,
-            fontWeight: FontWeight.bold,
+          GetBuilder<PraytimeController>(
+            init: PraytimeController(),
+            initState: (_) {},
+            builder: (_) {
+              return AppText(
+                text: controller.location,
+                color: Colors.white,
+                fontSize: 10.sp,
+                fontWeight: FontWeight.normal,
+              );
+            },
           )
         ],
       )),

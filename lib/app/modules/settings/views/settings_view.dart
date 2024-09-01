@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ramadanplanner/Util/app_colors.dart';
 import 'package:ramadanplanner/Util/app_text.dart';
+import 'package:ramadanplanner/app/modules/settings/screen/privacy.dart';
+import 'package:ramadanplanner/app/modules/settings/screen/terms.dart';
 import 'package:sizer/sizer.dart';
 
 import '../controllers/settings_controller.dart';
@@ -32,9 +34,15 @@ class SettingsView extends GetView<SettingsController> {
                   fontWeight: FontWeight.w500,
                 ),
                 settingButton(
-                    Icons.language, "Languages", Icons.arrow_forward_ios, true),
-                settingButton(Icons.notifications_outlined, "Notification",
-                    Icons.check_box_outline_blank, true),
+                    leadingIcon: Icons.language,
+                    title: "Languages",
+                    trailingIcon: Icons.arrow_forward_ios,
+                    isIcon: true),
+                settingButton(
+                    leadingIcon: Icons.notifications_outlined,
+                    title: "Notification",
+                    trailingIcon: Icons.check_box_outline_blank,
+                    isIcon: true),
                 AppText(
                   text: "Theme",
                   color: AppColors.quinaryColor,
@@ -42,8 +50,11 @@ class SettingsView extends GetView<SettingsController> {
                   fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                 ),
-                settingButton(Icons.dark_mode_outlined, "Dark Mode",
-                    Icons.check_box_outline_blank, true),
+                settingButton(
+                    leadingIcon: Icons.dark_mode_outlined,
+                    title: "Dark Mode",
+                    trailingIcon: Icons.check_box_outline_blank,
+                    isIcon: true),
                 AppText(
                   text: "Application",
                   color: AppColors.quinaryColor,
@@ -51,14 +62,37 @@ class SettingsView extends GetView<SettingsController> {
                   fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                 ),
-                settingButton(Icons.description_outlined,
-                    "Terms and Conditions", Icons.arrow_forward_ios, true),
-                settingButton(Icons.privacy_tip_outlined, "Privacy Policy",
-                    Icons.arrow_forward_ios, true),
-                settingButton(Icons.mail_outline, "Help and Feedback",
-                    Icons.arrow_forward_ios, true),
-                settingButton(Icons.info_outlined, "Version",
-                    Icons.arrow_forward_ios, false),
+                settingButton(
+                    leadingIcon: Icons.description_outlined,
+                    title: "Terms and Conditions",
+                    trailingIcon: Icons.arrow_forward_ios,
+                    isIcon: true,
+                    ontap: () {
+                      Get.to(() => const Terms());
+                    }),
+                settingButton(
+                    leadingIcon: Icons.privacy_tip_outlined,
+                    title: "Privacy Policy",
+                    trailingIcon: Icons.arrow_forward_ios,
+                    isIcon: true,
+                    ontap: () {
+                      Get.to(() => const Privacy());
+                    }),
+                settingButton(
+                    leadingIcon: Icons.mail_outline,
+                    title: "Help and Feedback",
+                    trailingIcon: Icons.arrow_forward_ios,
+                    isIcon: true,
+                    ontap: () {
+                      controller.applaunchUrl();
+                    }),
+                    
+                settingButton(
+                    leadingIcon: Icons.info_outlined,
+                    title: "Version",
+                    trailingIcon: Icons.arrow_forward_ios,
+                    isIcon: false,
+                    ontap:null),
               ],
             ),
           )),
@@ -68,7 +102,11 @@ class SettingsView extends GetView<SettingsController> {
   // Setting Button Widget
 
   settingButton(
-      IconData leadingIcon, String title, IconData trailingIcon, bool isIcon) {
+      {IconData? leadingIcon,
+      String? title,
+      IconData? trailingIcon,
+      bool? isIcon,
+      Function? ontap}) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
       child: ListTile(
@@ -77,22 +115,25 @@ class SettingsView extends GetView<SettingsController> {
           color: Colors.white,
         ),
         title: AppText(
-          text: title,
+          text: title!,
           color: Colors.white,
           fontFamily: "Lato",
           fontSize: 12.sp,
           fontWeight: FontWeight.w500,
         ),
-        trailing: isIcon // a boolean value
+        trailing: isIcon! // a boolean value
             ? Icon(
                 trailingIcon, // Your desired icon
                 color: Colors.white,
                 size: 15,
               )
-            : Text(
+            : const Text(
                 "1.0",
                 style: TextStyle(color: Colors.white, fontSize: 15),
               ),
+        onTap: () {
+          ontap!();
+        },
       ),
     );
   }

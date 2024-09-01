@@ -8,7 +8,7 @@ import '../../../../Util/app_colors.dart';
 import '../controllers/quran_tracker_controller.dart';
 
 class QuranTrackerView extends GetView<QuranTrackerController> {
-  const QuranTrackerView({Key? key}) : super(key: key);
+  const QuranTrackerView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,9 +21,8 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
           child: ListView(
             children: [
               Container(
-                height: 20.h,
                 width: 100.w,
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: AppColors.secondaryColor),
@@ -35,8 +34,8 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   ),
                 )),
               ),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               AppText(
                 text: "কুরআন ট্র্যাকিং ",
@@ -173,7 +172,7 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                 ],
               ),
               SizedBox(
-                height: 20.h,
+                height: 5.h,
               ),
               GetBuilder<QuranTrackerController>(
                 init: QuranTrackerController(),
@@ -205,7 +204,6 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
               const SizedBox(
                 height: 20,
               ),
-              
               AppText(
                 text: "আপনার আগের পড়া...",
                 color: AppColors.quaternaryColor,

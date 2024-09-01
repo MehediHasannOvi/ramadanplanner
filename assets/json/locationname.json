@@ -1,0 +1,4999 @@
+[
+      {
+        "id": 1,
+        "place_name": "ঢাকা",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Dhaka",
+        "is_upazila": 0
+      },
+      {
+        "id": 2,
+        "place_name": "বরিশাল",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Barisal",
+        "is_upazila": 0
+      },
+      {
+        "id": 3,
+        "place_name": "খুলনা",
+        "lat": 22.845641,
+        "lng": 89.540328,
+        "division_id": 3,
+        "place_name_eng": "Khulna",
+        "is_upazila": 0
+      },
+      {
+        "id": 4,
+        "place_name": "চট্টগ্রাম",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Chittagong",
+        "is_upazila": 0
+      },
+      {
+        "id": 5,
+        "place_name": "ময়মনসিংহ",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Mymensingh",
+        "is_upazila": 0
+      },
+      {
+        "id": 6,
+        "place_name": "রংপুর",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Rangpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 7,
+        "place_name": "রাজশাহী",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Rajshahi",
+        "is_upazila": 0
+      },
+      {
+        "id": 8,
+        "place_name": "সিলেট",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Sylhet",
+        "is_upazila": 0
+      },
+      {
+        "id": 9,
+        "place_name": "বাগেরহাট",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Bagerhat",
+        "is_upazila": 0
+      },
+      {
+        "id": 10,
+        "place_name": "চুয়াডাঙ্গা",
+        "lat": 23.644170,
+        "lng": 88.847395,
+        "division_id": 3,
+        "place_name_eng": "Chuadanga",
+        "is_upazila": 0
+      },
+      {
+        "id": 11,
+        "place_name": "যশোর",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 3,
+        "place_name_eng": "Jessore",
+        "is_upazila": 0
+      },
+      {
+        "id": 12,
+        "place_name": "ঝিনাইদহ",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 3,
+        "place_name_eng": "Jhenaidah",
+        "is_upazila": 0
+      },
+      {
+        "id": 13,
+        "place_name": "কুষ্টিয়া",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 3,
+        "place_name_eng": "Kushtia",
+        "is_upazila": 0
+      },
+      {
+        "id": 14,
+        "place_name": "মাগুরা",
+        "lat": 23.485466,
+        "lng": 89.419830,
+        "division_id": 3,
+        "place_name_eng": "Magura",
+        "is_upazila": 0
+      },
+      {
+        "id": 15,
+        "place_name": "মেহেরপুর",
+        "lat": 23.772126,
+        "lng": 88.631372,
+        "division_id": 3,
+        "place_name_eng": "Meherpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 16,
+        "place_name": "নড়াইল",
+        "lat": 23.165698,
+        "lng": 89.499022,
+        "division_id": 3,
+        "place_name_eng": "Narail",
+        "is_upazila": 0
+      },
+      {
+        "id": 17,
+        "place_name": "সাতক্ষীরা",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 3,
+        "place_name_eng": "Satkhira",
+        "is_upazila": 0
+      },
+      {
+        "id": 18,
+        "place_name": "বান্দরবান",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 4,
+        "place_name_eng": "Bandarban",
+        "is_upazila": 0
+      },
+      {
+        "id": 19,
+        "place_name": "ব্রাহ্মণবাড়িয়া",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 4,
+        "place_name_eng": "Brahmanbaria",
+        "is_upazila": 0
+      },
+      {
+        "id": 20,
+        "place_name": "চাঁদপুর",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 4,
+        "place_name_eng": "Chandpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 21,
+        "place_name": "কুমিল্লা",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 4,
+        "place_name_eng": "Comilla",
+        "is_upazila": 0
+      },
+      {
+        "id": 22,
+        "place_name": "কক্সবাজার",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 4,
+        "place_name_eng": "Cox's Bazar",
+        "is_upazila": 0
+      },
+      {
+        "id": 23,
+        "place_name": "ফেনী",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 4,
+        "place_name_eng": "Feni",
+        "is_upazila": 0
+      },
+      {
+        "id": 24,
+        "place_name": "খাগড়াছড়ি",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 4,
+        "place_name_eng": "Khagrachhari",
+        "is_upazila": 0
+      },
+      {
+        "id": 25,
+        "place_name": "লক্ষ্মীপুর",
+        "lat": 23.924546,
+        "lng": 90.975495,
+        "division_id": 4,
+        "place_name_eng": "Lakshmipur",
+        "is_upazila": 0
+      },
+      {
+        "id": 26,
+        "place_name": "নোয়াখালী",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 4,
+        "place_name_eng": "Noakhali",
+        "is_upazila": 0
+      },
+      {
+        "id": 27,
+        "place_name": "রাঙামাটি",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 4,
+        "place_name_eng": "Rangamati",
+        "is_upazila": 0
+      },
+      {
+        "id": 28,
+        "place_name": "ফরিদপুর",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 1,
+        "place_name_eng": "Faridpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 29,
+        "place_name": "টাঙ্গাইল",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 1,
+        "place_name_eng": "Tangail",
+        "is_upazila": 0
+      },
+      {
+        "id": 30,
+        "place_name": "গাজীপুর",
+        "lat": 23.991734,
+        "lng": 90.419588,
+        "division_id": 1,
+        "place_name_eng": "Gazipur",
+        "is_upazila": 0
+      },
+      {
+        "id": 31,
+        "place_name": "গোপালগঞ্জ",
+        "lat": 23.013014,
+        "lng": 89.822405,
+        "division_id": 1,
+        "place_name_eng": "Gopalganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 32,
+        "place_name": "কিশোরগঞ্জ",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 1,
+        "place_name_eng": "Kishoreganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 33,
+        "place_name": "মাদারীপুর",
+        "lat": 23.164883,
+        "lng": 90.193993,
+        "division_id": 1,
+        "place_name_eng": "Madaripur",
+        "is_upazila": 0
+      },
+      {
+        "id": 34,
+        "place_name": "মানিকগঞ্জ",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 1,
+        "place_name_eng": "Manikganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 35,
+        "place_name": "মুন্সিগঞ্জ",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 1,
+        "place_name_eng": "Munshiganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 36,
+        "place_name": "নারায়ণগঞ্জ",
+        "lat": 23.622640,
+        "lng": 90.499797,
+        "division_id": 1,
+        "place_name_eng": "Narayanganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 37,
+        "place_name": "নরসিংদী",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 1,
+        "place_name_eng": "Narsingdi",
+        "is_upazila": 0
+      },
+      {
+        "id": 38,
+        "place_name": "রাজবাড়ী",
+        "lat": 23.764370,
+        "lng": 89.647522,
+        "division_id": 1,
+        "place_name_eng": "Rajbari",
+        "is_upazila": 0
+      },
+      {
+        "id": 39,
+        "place_name": "শরিয়তপুর",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 1,
+        "place_name_eng": "Shariatpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 40,
+        "place_name": "বরগুনা",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 2,
+        "place_name_eng": "Barguna",
+        "is_upazila": 0
+      },
+      {
+        "id": 41,
+        "place_name": "ভোলা",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 2,
+        "place_name_eng": "Bhola",
+        "is_upazila": 0
+      },
+      {
+        "id": 42,
+        "place_name": "ঝালকাঠি",
+        "lat": 22.640601,
+        "lng": 90.198680,
+        "division_id": 2,
+        "place_name_eng": "Jhalokati",
+        "is_upazila": 0
+      },
+      {
+        "id": 43,
+        "place_name": "পটুয়াখালী",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 2,
+        "place_name_eng": "Patuakhali",
+        "is_upazila": 0
+      },
+      {
+        "id": 44,
+        "place_name": "পিরোজপুর",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 2,
+        "place_name_eng": "Pirojpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 46,
+        "place_name": "দিনাজপুর",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 6,
+        "place_name_eng": "Dinajpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 47,
+        "place_name": "গাইবান্ধা",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 6,
+        "place_name_eng": "Gaibandha",
+        "is_upazila": 0
+      },
+      {
+        "id": 48,
+        "place_name": "কুড়িগ্রাম",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 6,
+        "place_name_eng": "Kurigram",
+        "is_upazila": 0
+      },
+      {
+        "id": 49,
+        "place_name": "লালমনিরহাট",
+        "lat": 25.916198,
+        "lng": 89.450580,
+        "division_id": 6,
+        "place_name_eng": "Lalmonirhat",
+        "is_upazila": 0
+      },
+      {
+        "id": 50,
+        "place_name": "নীলফামারী",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 6,
+        "place_name_eng": "Nilphamari",
+        "is_upazila": 0
+      },
+      {
+        "id": 51,
+        "place_name": "পঞ্চগড়",
+        "lat": 26.335376,
+        "lng": 88.551698,
+        "division_id": 6,
+        "place_name_eng": "Panchagarh",
+        "is_upazila": 0
+      },
+      {
+        "id": 52,
+        "place_name": "ঠাকুরগাঁও",
+        "lat": 26.027365,
+        "lng": 88.464611,
+        "division_id": 6,
+        "place_name_eng": "Thakurgaon",
+        "is_upazila": 0
+      },
+      {
+        "id": 53,
+        "place_name": "বগুড়া",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 7,
+        "place_name_eng": "Bogura",
+        "is_upazila": 0
+      },
+      {
+        "id": 54,
+        "place_name": "পাবনা",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 7,
+        "place_name_eng": "Pabna",
+        "is_upazila": 0
+      },
+      {
+        "id": 55,
+        "place_name": "জয়পুরহাট",
+        "lat": 25.138494,
+        "lng": 89.056153,
+        "division_id": 7,
+        "place_name_eng": "Joypurhat",
+        "is_upazila": 0
+      },
+      {
+        "id": 56,
+        "place_name": "চাঁপাইনবাবগঞ্জ",
+        "lat": 24.579719,
+        "lng": 88.270450,
+        "division_id": 7,
+        "place_name_eng": "Chapai Nawabganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 57,
+        "place_name": "নওগাঁ",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 7,
+        "place_name_eng": "Naogaon",
+        "is_upazila": 0
+      },
+      {
+        "id": 58,
+        "place_name": "নাটোর",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 7,
+        "place_name_eng": "Natore",
+        "is_upazila": 0
+      },
+      {
+        "id": 59,
+        "place_name": "সিরাজগঞ্জ",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 7,
+        "place_name_eng": "Sirajganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 60,
+        "place_name": "হবিগঞ্জ",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 8,
+        "place_name_eng": "Habiganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 61,
+        "place_name": "মৌলভীবাজার",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 8,
+        "place_name_eng": "Moulvibazar",
+        "is_upazila": 0
+      },
+      {
+        "id": 62,
+        "place_name": "সুনামগঞ্জ",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 8,
+        "place_name_eng": "Sunamganj",
+        "is_upazila": 0
+      },
+      {
+        "id": 63,
+        "place_name": "শেরপুর",
+        "lat": 25.019405,
+        "lng": 90.013733,
+        "division_id": 5,
+        "place_name_eng": "Sherpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 64,
+        "place_name": "জামালপুর",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 5,
+        "place_name_eng": "Jamalpur",
+        "is_upazila": 0
+      },
+      {
+        "id": 65,
+        "place_name": "নেত্রকোনা",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 5,
+        "place_name_eng": "Netrokona",
+        "is_upazila": 0
+      },
+      {
+        "id": 66,
+        "place_name": "সাভার",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Savar",
+        "is_upazila": 1
+      },
+      {
+        "id": 67,
+        "place_name": "ধামরাই",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Dhamrai",
+        "is_upazila": 1
+      },
+      {
+        "id": 68,
+        "place_name": "কেরাণীগঞ্জ",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Keraniganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 69,
+        "place_name": "নবাবগঞ্জ",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Nawabganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 70,
+        "place_name": "দোহার",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Dohar",
+        "is_upazila": 1
+      },
+      {
+        "id": 71,
+        "place_name": "ঢাকা",
+        "lat": 23.810332,
+        "lng": 90.412518,
+        "division_id": 1,
+        "place_name_eng": "Dhaka",
+        "is_upazila": 1
+      },
+      {
+        "id": 72,
+        "place_name": "দেবিদ্বার",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Debidwar",
+        "is_upazila": 1
+      },
+      {
+        "id": 73,
+        "place_name": "বরুড়া",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Barura",
+        "is_upazila": 1
+      },
+      {
+        "id": 74,
+        "place_name": "ব্রাহ্মণপাড়া",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Brahmanpara",
+        "is_upazila": 1
+      },
+      {
+        "id": 75,
+        "place_name": "চান্দিনা",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Chandina",
+        "is_upazila": 1
+      },
+      {
+        "id": 76,
+        "place_name": "চৌদ্দগ্রাম",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Chauddagram",
+        "is_upazila": 1
+      },
+      {
+        "id": 77,
+        "place_name": "দাউদকান্দি",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Daudkandi",
+        "is_upazila": 1
+      },
+      {
+        "id": 78,
+        "place_name": "হোমনা",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Homna",
+        "is_upazila": 1
+      },
+      {
+        "id": 79,
+        "place_name": "লাকসাম",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Laksam",
+        "is_upazila": 1
+      },
+      {
+        "id": 80,
+        "place_name": "মুরাদনগর",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Muradnagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 81,
+        "place_name": "নাঙ্গলকোট",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Nangalkot",
+        "is_upazila": 1
+      },
+      {
+        "id": 82,
+        "place_name": "কুমিল্লা",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Comilla",
+        "is_upazila": 1
+      },
+      {
+        "id": 83,
+        "place_name": "মেঘনা",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Meghna",
+        "is_upazila": 1
+      },
+      {
+        "id": 84,
+        "place_name": "মনোহরগঞ্জ",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Monohargonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 85,
+        "place_name": "সদর দক্ষিণ",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Sadar South",
+        "is_upazila": 1
+      },
+      {
+        "id": 86,
+        "place_name": "তিতাস",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Titas",
+        "is_upazila": 1
+      },
+      {
+        "id": 87,
+        "place_name": "বুড়িচং",
+        "lat": 23.461880,
+        "lng": 91.186911,
+        "division_id": 21,
+        "place_name_eng": "Burichang",
+        "is_upazila": 1
+      },
+      {
+        "id": 88,
+        "place_name": "ছাগলনাইয়া",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 23,
+        "place_name_eng": "Chhagalnaiya",
+        "is_upazila": 1
+      },
+      {
+        "id": 89,
+        "place_name": "ফেনী",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 23,
+        "place_name_eng": "Feni",
+        "is_upazila": 1
+      },
+      {
+        "id": 90,
+        "place_name": "সোনাগাজী",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 23,
+        "place_name_eng": "Sonagazi",
+        "is_upazila": 1
+      },
+      {
+        "id": 91,
+        "place_name": "ফুলগাজী",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 23,
+        "place_name_eng": "Fulgazi",
+        "is_upazila": 1
+      },
+      {
+        "id": 92,
+        "place_name": "পরশুরাম",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 23,
+        "place_name_eng": "Parshuram",
+        "is_upazila": 1
+      },
+      {
+        "id": 93,
+        "place_name": "দাগনভূঞা",
+        "lat": 23.015913,
+        "lng": 91.397583,
+        "division_id": 23,
+        "place_name_eng": "Daganbhuiyan",
+        "is_upazila": 1
+      },
+      {
+        "id": 94,
+        "place_name": "ব্রাহ্মণবাড়িয়া",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Brahmanbaria",
+        "is_upazila": 1
+      },
+      {
+        "id": 95,
+        "place_name": "কসবা",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Kasba",
+        "is_upazila": 1
+      },
+      {
+        "id": 96,
+        "place_name": "নাসিরনগর",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Nasirnagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 97,
+        "place_name": "সরাইল",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Sarail",
+        "is_upazila": 1
+      },
+      {
+        "id": 98,
+        "place_name": "আশুগঞ্জ",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Ashuganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 99,
+        "place_name": "আখাউড়া",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Akhaura",
+        "is_upazila": 1
+      },
+      {
+        "id": 100,
+        "place_name": "নবীনগর",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Nabinagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 101,
+        "place_name": "বাঞ্ছারামপুর",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Bancharampur",
+        "is_upazila": 1
+      },
+      {
+        "id": 102,
+        "place_name": "বিজয়নগর",
+        "lat": 23.961576,
+        "lng": 91.106527,
+        "division_id": 19,
+        "place_name_eng": "Bijoynagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 103,
+        "place_name": "রাঙ্গামাটি",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Rangamati",
+        "is_upazila": 1
+      },
+      {
+        "id": 104,
+        "place_name": "কাপ্তাই",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Kaptai",
+        "is_upazila": 1
+      },
+      {
+        "id": 105,
+        "place_name": "কাউখালী",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Kawkhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 106,
+        "place_name": "বাঘাইছড়ি",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Baghaichari",
+        "is_upazila": 1
+      },
+      {
+        "id": 107,
+        "place_name": "বরকল",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Barkal",
+        "is_upazila": 1
+      },
+      {
+        "id": 108,
+        "place_name": "লংগদু",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Langadu",
+        "is_upazila": 1
+      },
+      {
+        "id": 109,
+        "place_name": "রাজস্থলী",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Rajasthali",
+        "is_upazila": 1
+      },
+      {
+        "id": 110,
+        "place_name": "বিলাইছড়ি",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Belaichari",
+        "is_upazila": 1
+      },
+      {
+        "id": 111,
+        "place_name": "জুরাছড়ি",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Juraichari",
+        "is_upazila": 1
+      },
+      {
+        "id": 112,
+        "place_name": "নানিয়ারচর",
+        "lat": 22.657350,
+        "lng": 92.173271,
+        "division_id": 27,
+        "place_name_eng": "Naniarchar",
+        "is_upazila": 1
+      },
+      {
+        "id": 113,
+        "place_name": "নোয়াখালী",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Noakhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 114,
+        "place_name": "কোম্পানীগঞ্জ",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Companiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 115,
+        "place_name": "বেগমগঞ্জ",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Begumganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 116,
+        "place_name": "হাতিয়া",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Hatia",
+        "is_upazila": 1
+      },
+      {
+        "id": 117,
+        "place_name": "সুবর্ণচর",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Subarnachar",
+        "is_upazila": 1
+      },
+      {
+        "id": 118,
+        "place_name": "সেনবাগ",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Senbug",
+        "is_upazila": 1
+      },
+      {
+        "id": 119,
+        "place_name": "চাটখিল",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Chatkhil",
+        "is_upazila": 1
+      },
+      {
+        "id": 120,
+        "place_name": "সোনাইমুড়ী",
+        "lat": 22.824638,
+        "lng": 91.101733,
+        "division_id": 26,
+        "place_name_eng": "Sonaimori",
+        "is_upazila": 1
+      },
+      {
+        "id": 121,
+        "place_name": "হাইমচর",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Haimchar",
+        "is_upazila": 1
+      },
+      {
+        "id": 122,
+        "place_name": "কচুয়া",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Kachua",
+        "is_upazila": 1
+      },
+      {
+        "id": 123,
+        "place_name": "শাহরাস্তি",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Shahrasti",
+        "is_upazila": 1
+      },
+      {
+        "id": 124,
+        "place_name": "চাঁদপুর",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Chandpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 125,
+        "place_name": "মতলব",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Matlabsouth",
+        "is_upazila": 1
+      },
+      {
+        "id": 126,
+        "place_name": "হাজীগঞ্জ",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Hajiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 127,
+        "place_name": "মতলব",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Matlabnorth",
+        "is_upazila": 1
+      },
+      {
+        "id": 128,
+        "place_name": "ফরিদগঞ্জ",
+        "lat": 23.232099,
+        "lng": 90.663075,
+        "division_id": 20,
+        "place_name_eng": "Faridgonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 129,
+        "place_name": "রাঙ্গুনিয়া",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Rangunia",
+        "is_upazila": 1
+      },
+      {
+        "id": 130,
+        "place_name": "সীতাকুন্ড",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Sitakunda",
+        "is_upazila": 1
+      },
+      {
+        "id": 131,
+        "place_name": "মীরসরাই",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Mirsharai",
+        "is_upazila": 1
+      },
+      {
+        "id": 132,
+        "place_name": "পটিয়া",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Patiya",
+        "is_upazila": 1
+      },
+      {
+        "id": 133,
+        "place_name": "সন্দ্বীপ",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Sandwip",
+        "is_upazila": 1
+      },
+      {
+        "id": 134,
+        "place_name": "বাঁশখালী",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Banshkhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 135,
+        "place_name": "বোয়ালখালী",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Boalkhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 136,
+        "place_name": "আনোয়ারা",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Anwara",
+        "is_upazila": 1
+      },
+      {
+        "id": 137,
+        "place_name": "চন্দনাইশ",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Chandanaish",
+        "is_upazila": 1
+      },
+      {
+        "id": 138,
+        "place_name": "সাতকানিয়া",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Satkania",
+        "is_upazila": 1
+      },
+      {
+        "id": 139,
+        "place_name": "লোহাগাড়া",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Lohagara",
+        "is_upazila": 1
+      },
+      {
+        "id": 140,
+        "place_name": "হাটহাজারী",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Hathazari",
+        "is_upazila": 1
+      },
+      {
+        "id": 141,
+        "place_name": "ফটিকছড়ি",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Fatikchhari",
+        "is_upazila": 1
+      },
+      {
+        "id": 142,
+        "place_name": "রাউজান",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Raozan",
+        "is_upazila": 1
+      },
+      {
+        "id": 143,
+        "place_name": "লক্ষ্মীপুর",
+        "lat": 23.924546,
+        "lng": 90.975495,
+        "division_id": 25,
+        "place_name_eng": "Lakshmipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 144,
+        "place_name": "কমলনগর",
+        "lat": 23.924546,
+        "lng": 90.975495,
+        "division_id": 25,
+        "place_name_eng": "Kamalnagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 145,
+        "place_name": "রায়পুর",
+        "lat": 23.924546,
+        "lng": 90.975495,
+        "division_id": 25,
+        "place_name_eng": "Raipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 146,
+        "place_name": "রামগতি",
+        "lat": 23.924546,
+        "lng": 90.975495,
+        "division_id": 25,
+        "place_name_eng": "Ramgati",
+        "is_upazila": 1
+      },
+      {
+        "id": 147,
+        "place_name": "রামগঞ্জ",
+        "lat": 23.924546,
+        "lng": 90.975495,
+        "division_id": 25,
+        "place_name_eng": "Ramganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 148,
+        "place_name": "চট্টগ্রাম",
+        "lat": 22.347537,
+        "lng": 91.812332,
+        "division_id": 4,
+        "place_name_eng": "Chittagong",
+        "is_upazila": 1
+      },
+      {
+        "id": 149,
+        "place_name": "বারহাট্টা",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Barhatta",
+        "is_upazila": 1
+      },
+      {
+        "id": 150,
+        "place_name": "দুর্গাপুর",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Durgapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 151,
+        "place_name": "কেন্দুয়া",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Kendua",
+        "is_upazila": 1
+      },
+      {
+        "id": 152,
+        "place_name": "আটপাড়া",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Atpara",
+        "is_upazila": 1
+      },
+      {
+        "id": 153,
+        "place_name": "মদন",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Madan",
+        "is_upazila": 1
+      },
+      {
+        "id": 154,
+        "place_name": "খালিয়াজুরী",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Khaliajuri",
+        "is_upazila": 1
+      },
+      {
+        "id": 155,
+        "place_name": "কলমাকান্দা",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Kalmakanda",
+        "is_upazila": 1
+      },
+      {
+        "id": 156,
+        "place_name": "মোহনগঞ্জ",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Mohongonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 157,
+        "place_name": "নেত্রকোণা",
+        "lat": 24.881691,
+        "lng": 90.727148,
+        "division_id": 65,
+        "place_name_eng": "Netrokona",
+        "is_upazila": 1
+      },
+      {
+        "id": 158,
+        "place_name": "জামালপুর",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Jamalpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 159,
+        "place_name": "মেলান্দহ",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Melandah",
+        "is_upazila": 1
+      },
+      {
+        "id": 160,
+        "place_name": "ইসলামপুর",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Islampur",
+        "is_upazila": 1
+      },
+      {
+        "id": 161,
+        "place_name": "দেওয়ানগঞ্জ",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Dewangonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 162,
+        "place_name": "সরিষাবাড়ী",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Sarishabari",
+        "is_upazila": 1
+      },
+      {
+        "id": 163,
+        "place_name": "মাদারগঞ্জ",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Madarganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 164,
+        "place_name": "বকশীগঞ্জ",
+        "lat": 24.924979,
+        "lng": 89.946341,
+        "division_id": 64,
+        "place_name_eng": "Bokshiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 165,
+        "place_name": "ফুলবাড়ীয়া",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Fulbaria",
+        "is_upazila": 1
+      },
+      {
+        "id": 166,
+        "place_name": "ত্রিশাল",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Trishal",
+        "is_upazila": 1
+      },
+      {
+        "id": 167,
+        "place_name": "ভালুকা",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Bhaluka",
+        "is_upazila": 1
+      },
+      {
+        "id": 168,
+        "place_name": "মুক্তাগাছা",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Muktagacha",
+        "is_upazila": 1
+      },
+      {
+        "id": 169,
+        "place_name": "ময়মনসিংহ",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Mymensingh",
+        "is_upazila": 1
+      },
+      {
+        "id": 170,
+        "place_name": "ধোবাউড়া",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Dhobaura",
+        "is_upazila": 1
+      },
+      {
+        "id": 171,
+        "place_name": "ফুলপুর",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Phulpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 172,
+        "place_name": "হালুয়াঘাট",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Haluaghat",
+        "is_upazila": 1
+      },
+      {
+        "id": 173,
+        "place_name": "গৌরীপুর",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Gouripur",
+        "is_upazila": 1
+      },
+      {
+        "id": 174,
+        "place_name": "গফরগাঁও",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Gafargaon",
+        "is_upazila": 1
+      },
+      {
+        "id": 175,
+        "place_name": "ঈশ্বরগঞ্জ",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Iswarganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 176,
+        "place_name": "নান্দাইল",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Nandail",
+        "is_upazila": 1
+      },
+      {
+        "id": 177,
+        "place_name": "তারাকান্দা",
+        "lat": 24.743448,
+        "lng": 90.398383,
+        "division_id": 5,
+        "place_name_eng": "Tarakanda",
+        "is_upazila": 1
+      },
+      {
+        "id": 178,
+        "place_name": "শেরপুর",
+        "lat": 25.019405,
+        "lng": 90.013733,
+        "division_id": 63,
+        "place_name_eng": "Sherpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 179,
+        "place_name": "নালিতাবাড়ী",
+        "lat": 25.019405,
+        "lng": 90.013733,
+        "division_id": 63,
+        "place_name_eng": "Nalitabari",
+        "is_upazila": 1
+      },
+      {
+        "id": 180,
+        "place_name": "শ্রীবরদী",
+        "lat": 25.019405,
+        "lng": 90.013733,
+        "division_id": 63,
+        "place_name_eng": "Sreebordi",
+        "is_upazila": 1
+      },
+      {
+        "id": 181,
+        "place_name": "নকলা",
+        "lat": 25.019405,
+        "lng": 90.013733,
+        "division_id": 63,
+        "place_name_eng": "Nokla",
+        "is_upazila": 1
+      },
+      {
+        "id": 182,
+        "place_name": "ঝিনাইগাতী",
+        "lat": 25.019405,
+        "lng": 90.013733,
+        "division_id": 63,
+        "place_name_eng": "Jhenaigati",
+        "is_upazila": 1
+      },
+      {
+        "id": 183,
+        "place_name": "কুড়িগ্রাম",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Kurigram",
+        "is_upazila": 1
+      },
+      {
+        "id": 184,
+        "place_name": "নাগেশ্বরী",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Nageshwari",
+        "is_upazila": 1
+      },
+      {
+        "id": 185,
+        "place_name": "ভুরুঙ্গামারী",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Bhurungamari",
+        "is_upazila": 1
+      },
+      {
+        "id": 186,
+        "place_name": "ফুলবাড়ী",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Phulbari",
+        "is_upazila": 1
+      },
+      {
+        "id": 187,
+        "place_name": "রাজারহাট",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Rajarhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 188,
+        "place_name": "উলিপুর",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Ulipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 189,
+        "place_name": "চিলমারী",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Chilmari",
+        "is_upazila": 1
+      },
+      {
+        "id": 190,
+        "place_name": "রৌমারী",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Rowmari",
+        "is_upazila": 1
+      },
+      {
+        "id": 191,
+        "place_name": "চর রাজিবপুর",
+        "lat": 25.810346,
+        "lng": 89.648698,
+        "division_id": 48,
+        "place_name_eng": "Char Rajibpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 192,
+        "place_name": "রংপুর",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Rangpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 193,
+        "place_name": "গংগাচড়া",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Gangachara",
+        "is_upazila": 1
+      },
+      {
+        "id": 194,
+        "place_name": "তারাগঞ্জ",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Taragonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 195,
+        "place_name": "বদরগঞ্জ",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Badargonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 196,
+        "place_name": "মিঠাপুকুর",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Mithapukur",
+        "is_upazila": 1
+      },
+      {
+        "id": 197,
+        "place_name": "পীরগঞ্জ",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Pirgonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 198,
+        "place_name": "কাউনিয়া",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Kaunia",
+        "is_upazila": 1
+      },
+      {
+        "id": 199,
+        "place_name": "পীরগাছা",
+        "lat": 25.743892,
+        "lng": 89.275227,
+        "division_id": 6,
+        "place_name_eng": "Pirgacha",
+        "is_upazila": 1
+      },
+      {
+        "id": 200,
+        "place_name": "ঠাকুরগাঁও",
+        "lat": 26.027365,
+        "lng": 88.464611,
+        "division_id": 52,
+        "place_name_eng": "Thakurgaon",
+        "is_upazila": 1
+      },
+      {
+        "id": 201,
+        "place_name": "পীরগঞ্জ",
+        "lat": 26.027365,
+        "lng": 88.464611,
+        "division_id": 52,
+        "place_name_eng": "Pirganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 202,
+        "place_name": "রাণীশংকৈল",
+        "lat": 26.027365,
+        "lng": 88.464611,
+        "division_id": 52,
+        "place_name_eng": "Ranisankail",
+        "is_upazila": 1
+      },
+      {
+        "id": 203,
+        "place_name": "হরিপুর",
+        "lat": 26.027365,
+        "lng": 88.464611,
+        "division_id": 52,
+        "place_name_eng": "Haripur",
+        "is_upazila": 1
+      },
+      {
+        "id": 204,
+        "place_name": "বালিয়াডাঙ্গী",
+        "lat": 26.027365,
+        "lng": 88.464611,
+        "division_id": 52,
+        "place_name_eng": "Baliadangi",
+        "is_upazila": 1
+      },
+      {
+        "id": 205,
+        "place_name": "সাদুল্লাপুর",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Sadullapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 206,
+        "place_name": "গাইবান্ধা",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Gaibandha",
+        "is_upazila": 1
+      },
+      {
+        "id": 207,
+        "place_name": "পলাশবাড়ী",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Palashbari",
+        "is_upazila": 1
+      },
+      {
+        "id": 208,
+        "place_name": "সাঘাটা",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Saghata",
+        "is_upazila": 1
+      },
+      {
+        "id": 209,
+        "place_name": "গোবিন্দগঞ্জ",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Gobindaganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 210,
+        "place_name": "সুন্দরগঞ্জ",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Sundarganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 211,
+        "place_name": "ফুলছড়ি",
+        "lat": 25.328978,
+        "lng": 89.541507,
+        "division_id": 47,
+        "place_name_eng": "Phulchari",
+        "is_upazila": 1
+      },
+      {
+        "id": 212,
+        "place_name": "সৈয়দপুর",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 50,
+        "place_name_eng": "Syedpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 213,
+        "place_name": "ডোমার",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 50,
+        "place_name_eng": "Domar",
+        "is_upazila": 1
+      },
+      {
+        "id": 214,
+        "place_name": "ডিমলা",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 50,
+        "place_name_eng": "Dimla",
+        "is_upazila": 1
+      },
+      {
+        "id": 215,
+        "place_name": "জলঢাকা",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 50,
+        "place_name_eng": "Jaldhaka",
+        "is_upazila": 1
+      },
+      {
+        "id": 216,
+        "place_name": "কিশোরগঞ্জ",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 50,
+        "place_name_eng": "Kishorganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 217,
+        "place_name": "নীলফামারী",
+        "lat": 25.936273,
+        "lng": 88.840704,
+        "division_id": 50,
+        "place_name_eng": "Nilphamari",
+        "is_upazila": 1
+      },
+      {
+        "id": 218,
+        "place_name": "লালমনিরহাট",
+        "lat": 25.916198,
+        "lng": 89.450580,
+        "division_id": 49,
+        "place_name_eng": "Lalmonirhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 219,
+        "place_name": "কালীগঞ্জ",
+        "lat": 25.916198,
+        "lng": 89.450580,
+        "division_id": 49,
+        "place_name_eng": "Kaliganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 220,
+        "place_name": "হাতীবান্ধা",
+        "lat": 25.916198,
+        "lng": 89.450580,
+        "division_id": 49,
+        "place_name_eng": "Hatibandha",
+        "is_upazila": 1
+      },
+      {
+        "id": 221,
+        "place_name": "পাটগ্রাম",
+        "lat": 25.916198,
+        "lng": 89.450580,
+        "division_id": 49,
+        "place_name_eng": "Patgram",
+        "is_upazila": 1
+      },
+      {
+        "id": 222,
+        "place_name": "আদিতমারী",
+        "lat": 25.916198,
+        "lng": 89.450580,
+        "division_id": 49,
+        "place_name_eng": "Aditmari",
+        "is_upazila": 1
+      },
+      {
+        "id": 223,
+        "place_name": "নবাবগঞ্জ",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Nawabganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 224,
+        "place_name": "বীরগঞ্জ",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Birganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 225,
+        "place_name": "ঘোড়াঘাট",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Ghoraghat",
+        "is_upazila": 1
+      },
+      {
+        "id": 226,
+        "place_name": "বিরামপুর",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Birampur",
+        "is_upazila": 1
+      },
+      {
+        "id": 227,
+        "place_name": "পার্বতীপুর",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Parbatipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 228,
+        "place_name": "বোচাগঞ্জ",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Bochaganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 229,
+        "place_name": "কাহারোল",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Kaharol",
+        "is_upazila": 1
+      },
+      {
+        "id": 230,
+        "place_name": "ফুলবাড়ী",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Fulbari",
+        "is_upazila": 1
+      },
+      {
+        "id": 231,
+        "place_name": "দিনাজপুর",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Dinajpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 232,
+        "place_name": "হাকিমপুর",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Hakimpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 233,
+        "place_name": "খানসামা",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Khansama",
+        "is_upazila": 1
+      },
+      {
+        "id": 234,
+        "place_name": "বিরল",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Birol",
+        "is_upazila": 1
+      },
+      {
+        "id": 235,
+        "place_name": "চিরিরবন্দর",
+        "lat": 25.621647,
+        "lng": 88.635425,
+        "division_id": 46,
+        "place_name_eng": "Chirirbandar",
+        "is_upazila": 1
+      },
+      {
+        "id": 236,
+        "place_name": "পঞ্চগড়",
+        "lat": 26.335376,
+        "lng": 88.551698,
+        "division_id": 51,
+        "place_name_eng": "Panchagarh",
+        "is_upazila": 1
+      },
+      {
+        "id": 237,
+        "place_name": "দেবীগঞ্জ",
+        "lat": 26.335376,
+        "lng": 88.551698,
+        "division_id": 51,
+        "place_name_eng": "Debiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 238,
+        "place_name": "বোদা",
+        "lat": 26.335376,
+        "lng": 88.551698,
+        "division_id": 51,
+        "place_name_eng": "Boda",
+        "is_upazila": 1
+      },
+      {
+        "id": 239,
+        "place_name": "আটোয়ারী",
+        "lat": 26.335376,
+        "lng": 88.551698,
+        "division_id": 51,
+        "place_name_eng": "Atwari",
+        "is_upazila": 1
+      },
+      {
+        "id": 240,
+        "place_name": "তেতুলিয়া",
+        "lat": 26.335376,
+        "lng": 88.551698,
+        "division_id": 51,
+        "place_name_eng": "Tetulia",
+        "is_upazila": 1
+      },
+      {
+        "id": 241,
+        "place_name": "ফরিদপুর",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Faridpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 242,
+        "place_name": "আলফাডাঙ্গা",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Alfadanga",
+        "is_upazila": 1
+      },
+      {
+        "id": 243,
+        "place_name": "বোয়ালমারী",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Boalmari",
+        "is_upazila": 1
+      },
+      {
+        "id": 244,
+        "place_name": "সদরপুর",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Sadarpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 245,
+        "place_name": "নগরকান্দা",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Nagarkanda",
+        "is_upazila": 1
+      },
+      {
+        "id": 246,
+        "place_name": "ভাঙ্গা",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Bhanga",
+        "is_upazila": 1
+      },
+      {
+        "id": 247,
+        "place_name": "চরভদ্রাসন",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Charbhadrasan",
+        "is_upazila": 1
+      },
+      {
+        "id": 248,
+        "place_name": "মধুখালী",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Madhukhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 249,
+        "place_name": "সালথা",
+        "lat": 23.602524,
+        "lng": 89.836456,
+        "division_id": 28,
+        "place_name_eng": "Saltha",
+        "is_upazila": 1
+      },
+      {
+        "id": 250,
+        "place_name": "গোপালগঞ্জ",
+        "lat": 23.013014,
+        "lng": 89.822405,
+        "division_id": 31,
+        "place_name_eng": "Gopalganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 251,
+        "place_name": "কাশিয়ানী",
+        "lat": 23.013014,
+        "lng": 89.822405,
+        "division_id": 31,
+        "place_name_eng": "Kashiani",
+        "is_upazila": 1
+      },
+      {
+        "id": 252,
+        "place_name": "টুংগীপাড়া",
+        "lat": 23.013014,
+        "lng": 89.822405,
+        "division_id": 31,
+        "place_name_eng": "Tungipara",
+        "is_upazila": 1
+      },
+      {
+        "id": 253,
+        "place_name": "কোটালীপাড়া",
+        "lat": 23.013014,
+        "lng": 89.822405,
+        "division_id": 31,
+        "place_name_eng": "Kotalipara",
+        "is_upazila": 1
+      },
+      {
+        "id": 254,
+        "place_name": "মুকসুদপুর",
+        "lat": 23.013014,
+        "lng": 89.822405,
+        "division_id": 31,
+        "place_name_eng": "Muksudpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 255,
+        "place_name": "মাদারীপুর",
+        "lat": 23.164883,
+        "lng": 90.193993,
+        "division_id": 33,
+        "place_name_eng": "Madaripur",
+        "is_upazila": 1
+      },
+      {
+        "id": 256,
+        "place_name": "শিবচর",
+        "lat": 23.164883,
+        "lng": 90.193993,
+        "division_id": 33,
+        "place_name_eng": "Shibchar",
+        "is_upazila": 1
+      },
+      {
+        "id": 257,
+        "place_name": "কালকিনি",
+        "lat": 23.164883,
+        "lng": 90.193993,
+        "division_id": 33,
+        "place_name_eng": "Kalkini",
+        "is_upazila": 1
+      },
+      {
+        "id": 258,
+        "place_name": "রাজৈর",
+        "lat": 23.164883,
+        "lng": 90.193993,
+        "division_id": 33,
+        "place_name_eng": "Rajoir",
+        "is_upazila": 1
+      },
+      {
+        "id": 259,
+        "place_name": "রাজবাড়ী",
+        "lat": 23.764370,
+        "lng": 89.647522,
+        "division_id": 38,
+        "place_name_eng": "Rajbari",
+        "is_upazila": 1
+      },
+      {
+        "id": 260,
+        "place_name": "গোয়ালন্দ",
+        "lat": 23.764370,
+        "lng": 89.647522,
+        "division_id": 38,
+        "place_name_eng": "Goalanda",
+        "is_upazila": 1
+      },
+      {
+        "id": 261,
+        "place_name": "পাংশা",
+        "lat": 23.764370,
+        "lng": 89.647522,
+        "division_id": 38,
+        "place_name_eng": "Pangsa",
+        "is_upazila": 1
+      },
+      {
+        "id": 262,
+        "place_name": "বালিয়াকান্দি",
+        "lat": 23.764370,
+        "lng": 89.647522,
+        "division_id": 38,
+        "place_name_eng": "Baliakandi",
+        "is_upazila": 1
+      },
+      {
+        "id": 263,
+        "place_name": "কালুখালী",
+        "lat": 23.764370,
+        "lng": 89.647522,
+        "division_id": 38,
+        "place_name_eng": "Kalukhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 264,
+        "place_name": "মুন্সিগঞ্জ",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 35,
+        "place_name_eng": "Munshiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 265,
+        "place_name": "শ্রীনগর",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 35,
+        "place_name_eng": "Sreenagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 266,
+        "place_name": "সিরাজদিখান",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 35,
+        "place_name_eng": "Sirajdikhan",
+        "is_upazila": 1
+      },
+      {
+        "id": 267,
+        "place_name": "লৌহজং",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 35,
+        "place_name_eng": "Louhajanj",
+        "is_upazila": 1
+      },
+      {
+        "id": 268,
+        "place_name": "গজারিয়া",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 35,
+        "place_name_eng": "Gajaria",
+        "is_upazila": 1
+      },
+      {
+        "id": 269,
+        "place_name": "টংগীবাড়ি",
+        "lat": 23.542190,
+        "lng": 90.530509,
+        "division_id": 35,
+        "place_name_eng": "Tongibari",
+        "is_upazila": 1
+      },
+      {
+        "id": 270,
+        "place_name": "হরিরামপুর",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Harirampur",
+        "is_upazila": 1
+      },
+      {
+        "id": 271,
+        "place_name": "সাটুরিয়া",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Saturia",
+        "is_upazila": 1
+      },
+      {
+        "id": 272,
+        "place_name": "মানিকগঞ্জ",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Sadar",
+        "is_upazila": 1
+      },
+      {
+        "id": 273,
+        "place_name": "ঘিওর",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Gior",
+        "is_upazila": 1
+      },
+      {
+        "id": 274,
+        "place_name": "শিবালয়",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Shibaloy",
+        "is_upazila": 1
+      },
+      {
+        "id": 275,
+        "place_name": "দৌলতপুর",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Doulatpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 276,
+        "place_name": "সিংগাইর",
+        "lat": 23.864422,
+        "lng": 90.004663,
+        "division_id": 34,
+        "place_name_eng": "Singair",
+        "is_upazila": 1
+      },
+      {
+        "id": 277,
+        "place_name": "ইটনা",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Itna",
+        "is_upazila": 1
+      },
+      {
+        "id": 278,
+        "place_name": "কটিয়াদী",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Katiadi",
+        "is_upazila": 1
+      },
+      {
+        "id": 279,
+        "place_name": "ভৈরব",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Bhairab",
+        "is_upazila": 1
+      },
+      {
+        "id": 280,
+        "place_name": "তাড়াইল",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Tarail",
+        "is_upazila": 1
+      },
+      {
+        "id": 281,
+        "place_name": "হোসেনপুর",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Hossainpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 282,
+        "place_name": "পাকুন্দিয়া",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Pakundia",
+        "is_upazila": 1
+      },
+      {
+        "id": 283,
+        "place_name": "কুলিয়ারচর",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Kuliarchar",
+        "is_upazila": 1
+      },
+      {
+        "id": 284,
+        "place_name": "কিশোরগঞ্জ",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Kishoreganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 285,
+        "place_name": "করিমগঞ্জ",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Karimgonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 286,
+        "place_name": "বাজিতপুর",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Bajitpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 287,
+        "place_name": "অষ্টগ্রাম",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Austagram",
+        "is_upazila": 1
+      },
+      {
+        "id": 288,
+        "place_name": "মিঠামইন",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Mithamoin",
+        "is_upazila": 1
+      },
+      {
+        "id": 289,
+        "place_name": "নিকলী",
+        "lat": 24.433123,
+        "lng": 90.786566,
+        "division_id": 32,
+        "place_name_eng": "Nikli",
+        "is_upazila": 1
+      },
+      {
+        "id": 290,
+        "place_name": "বাসাইল",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Basail",
+        "is_upazila": 1
+      },
+      {
+        "id": 291,
+        "place_name": "ভুয়াপুর",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Bhuapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 292,
+        "place_name": "দেলদুয়ার",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Delduar",
+        "is_upazila": 1
+      },
+      {
+        "id": 293,
+        "place_name": "ঘাটাইল",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Ghatail",
+        "is_upazila": 1
+      },
+      {
+        "id": 294,
+        "place_name": "গোপালপুর",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Gopalpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 295,
+        "place_name": "মধুপুর",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Madhupur",
+        "is_upazila": 1
+      },
+      {
+        "id": 296,
+        "place_name": "মির্জাপুর",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Mirzapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 297,
+        "place_name": "নাগরপুর",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Nagarpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 298,
+        "place_name": "সখিপুর",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Sakhipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 299,
+        "place_name": "টাঙ্গাইল",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Tangail",
+        "is_upazila": 1
+      },
+      {
+        "id": 300,
+        "place_name": "কালিহাতী",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Kalihati",
+        "is_upazila": 1
+      },
+      {
+        "id": 301,
+        "place_name": "ধনবাড়ী",
+        "lat": 24.244968,
+        "lng": 89.911305,
+        "division_id": 29,
+        "place_name_eng": "Dhanbari",
+        "is_upazila": 1
+      },
+      {
+        "id": 302,
+        "place_name": "বালাগঞ্জ",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Balaganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 303,
+        "place_name": "বিয়ানীবাজার",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Beanibazar",
+        "is_upazila": 1
+      },
+      {
+        "id": 304,
+        "place_name": "বিশ্বনাথ",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Bishwanath",
+        "is_upazila": 1
+      },
+      {
+        "id": 305,
+        "place_name": "কোম্পানীগঞ্জ",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Companiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 306,
+        "place_name": "ফেঞ্চুগঞ্জ",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Fenchuganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 307,
+        "place_name": "গোলাপগঞ্জ",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Golapganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 308,
+        "place_name": "গোয়াইনঘাট",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Gowainghat",
+        "is_upazila": 1
+      },
+      {
+        "id": 309,
+        "place_name": "জৈন্তাপুর",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Jaintiapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 310,
+        "place_name": "কানাইঘাট",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Kanaighat",
+        "is_upazila": 1
+      },
+      {
+        "id": 311,
+        "place_name": "সিলেট",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Sylhet",
+        "is_upazila": 1
+      },
+      {
+        "id": 312,
+        "place_name": "জকিগঞ্জ",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Zakiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 313,
+        "place_name": "দক্ষিণ সুরমা",
+        "lat": 24.904539,
+        "lng": 91.861101,
+        "division_id": 8,
+        "place_name_eng": "Dakshin Surma",
+        "is_upazila": 1
+      },
+      {
+        "id": 314,
+        "place_name": "বড়লেখা",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Barlekha",
+        "is_upazila": 1
+      },
+      {
+        "id": 315,
+        "place_name": "কমলগঞ্জ",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Kamolganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 316,
+        "place_name": "কুলাউড়া",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Kulaura",
+        "is_upazila": 1
+      },
+      {
+        "id": 317,
+        "place_name": "মৌলভীবাজার",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Moulvibazar",
+        "is_upazila": 1
+      },
+      {
+        "id": 318,
+        "place_name": "রাজনগর",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Rajnagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 319,
+        "place_name": "শ্রীমঙ্গল",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Sreemangal",
+        "is_upazila": 1
+      },
+      {
+        "id": 320,
+        "place_name": "জুড়ী",
+        "lat": 24.484266,
+        "lng": 91.768487,
+        "division_id": 61,
+        "place_name_eng": "Juri",
+        "is_upazila": 1
+      },
+      {
+        "id": 321,
+        "place_name": "নবীগঞ্জ",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Nabiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 322,
+        "place_name": "বাহুবল",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Bahubal",
+        "is_upazila": 1
+      },
+      {
+        "id": 323,
+        "place_name": "আজমিরীগঞ্জ",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Ajmiriganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 324,
+        "place_name": "বানিয়াচং",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Baniachong",
+        "is_upazila": 1
+      },
+      {
+        "id": 325,
+        "place_name": "লাখাই",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Lakhai",
+        "is_upazila": 1
+      },
+      {
+        "id": 326,
+        "place_name": "চুনারুঘাট",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Chunarughat",
+        "is_upazila": 1
+      },
+      {
+        "id": 327,
+        "place_name": "হবিগঞ্জ",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Habiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 328,
+        "place_name": "মাধবপুর",
+        "lat": 24.384006,
+        "lng": 91.416897,
+        "division_id": 60,
+        "place_name_eng": "Madhabpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 329,
+        "place_name": "সুনামগঞ্জ",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Sunamganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 330,
+        "place_name": "দক্ষিণ সুনামগঞ্জ",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "South Sunamganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 331,
+        "place_name": "বিশ্বম্ভরপুর",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Bishwambarpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 332,
+        "place_name": "ছাতক",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Chhatak",
+        "is_upazila": 1
+      },
+      {
+        "id": 333,
+        "place_name": "জগন্নাথপুর",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Jagannathpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 334,
+        "place_name": "দোয়ারাবাজার",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Dowarabazar",
+        "is_upazila": 1
+      },
+      {
+        "id": 335,
+        "place_name": "তাহিরপুর",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Tahirpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 336,
+        "place_name": "ধর্মপাশা",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Dharmapasha",
+        "is_upazila": 1
+      },
+      {
+        "id": 337,
+        "place_name": "জামালগঞ্জ",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Jamalganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 338,
+        "place_name": "শাল্লা",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Shalla",
+        "is_upazila": 1
+      },
+      {
+        "id": 339,
+        "place_name": "দিরাই",
+        "lat": 25.066655,
+        "lng": 91.407239,
+        "division_id": 62,
+        "place_name_eng": "Derai",
+        "is_upazila": 1
+      },
+      {
+        "id": 340,
+        "place_name": "বেলাবো",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 37,
+        "place_name_eng": "Belabo",
+        "is_upazila": 1
+      },
+      {
+        "id": 341,
+        "place_name": "মনোহরদী",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 37,
+        "place_name_eng": "Monohardi",
+        "is_upazila": 1
+      },
+      {
+        "id": 342,
+        "place_name": "নরসিংদী",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 37,
+        "place_name_eng": "Narsingdi",
+        "is_upazila": 1
+      },
+      {
+        "id": 343,
+        "place_name": "পলাশ",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 37,
+        "place_name_eng": "Palash",
+        "is_upazila": 1
+      },
+      {
+        "id": 344,
+        "place_name": "রায়পুরা",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 37,
+        "place_name_eng": "Raipura",
+        "is_upazila": 1
+      },
+      {
+        "id": 345,
+        "place_name": "শিবপুর",
+        "lat": 23.919267,
+        "lng": 90.717649,
+        "division_id": 37,
+        "place_name_eng": "Shibpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 346,
+        "place_name": "কালীগঞ্জ",
+        "lat": 23.991734,
+        "lng": 90.419588,
+        "division_id": 30,
+        "place_name_eng": "Kaliganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 347,
+        "place_name": "কালিয়াকৈর",
+        "lat": 23.991734,
+        "lng": 90.419588,
+        "division_id": 30,
+        "place_name_eng": "Kaliakair",
+        "is_upazila": 1
+      },
+      {
+        "id": 348,
+        "place_name": "কাপাসিয়া",
+        "lat": 23.991734,
+        "lng": 90.419588,
+        "division_id": 30,
+        "place_name_eng": "Kapasia",
+        "is_upazila": 1
+      },
+      {
+        "id": 349,
+        "place_name": "গাজীপুর",
+        "lat": 23.991734,
+        "lng": 90.419588,
+        "division_id": 30,
+        "place_name_eng": "Gazipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 350,
+        "place_name": "শ্রীপুর",
+        "lat": 23.991734,
+        "lng": 90.419588,
+        "division_id": 30,
+        "place_name_eng": "Sreepur",
+        "is_upazila": 1
+      },
+      {
+        "id": 351,
+        "place_name": "শরিয়তপুর",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 39,
+        "place_name_eng": "Shariatpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 352,
+        "place_name": "নড়িয়া",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 39,
+        "place_name_eng": "Naria",
+        "is_upazila": 1
+      },
+      {
+        "id": 353,
+        "place_name": "জাজিরা",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 39,
+        "place_name_eng": "Zajira",
+        "is_upazila": 1
+      },
+      {
+        "id": 354,
+        "place_name": "গোসাইরহাট",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 39,
+        "place_name_eng": "Gosairhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 355,
+        "place_name": "ভেদরগঞ্জ",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 39,
+        "place_name_eng": "Bhedarganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 356,
+        "place_name": "ডামুড্যা",
+        "lat": 23.219703,
+        "lng": 90.350126,
+        "division_id": 39,
+        "place_name_eng": "Damudya",
+        "is_upazila": 1
+      },
+      {
+        "id": 357,
+        "place_name": "আড়াইহাজার",
+        "lat": 23.622640,
+        "lng": 90.499797,
+        "division_id": 36,
+        "place_name_eng": "Araihazar",
+        "is_upazila": 1
+      },
+      {
+        "id": 358,
+        "place_name": "নারায়নগঞ্জ",
+        "lat": 23.622640,
+        "lng": 90.499797,
+        "division_id": 36,
+        "place_name_eng": "Narayanganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 359,
+        "place_name": "রূপগঞ্জ",
+        "lat": 23.622640,
+        "lng": 90.499797,
+        "division_id": 36,
+        "place_name_eng": "Rupganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 360,
+        "place_name": "সোনারগাঁ",
+        "lat": 23.622640,
+        "lng": 90.499797,
+        "division_id": 36,
+        "place_name_eng": "Sonargaon",
+        "is_upazila": 1
+      },
+      {
+        "id": 361,
+        "place_name": "মুজিবনগর",
+        "lat": 23.772126,
+        "lng": 88.631372,
+        "division_id": 15,
+        "place_name_eng": "Mujibnagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 362,
+        "place_name": "মেহেরপুর",
+        "lat": 23.772126,
+        "lng": 88.631372,
+        "division_id": 15,
+        "place_name_eng": "Meherpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 363,
+        "place_name": "গাংনী",
+        "lat": 23.772126,
+        "lng": 88.631372,
+        "division_id": 15,
+        "place_name_eng": "Gangni",
+        "is_upazila": 1
+      },
+      {
+        "id": 364,
+        "place_name": "আশাশুনি",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Assasuni",
+        "is_upazila": 1
+      },
+      {
+        "id": 365,
+        "place_name": "দেবহাটা",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Debhata",
+        "is_upazila": 1
+      },
+      {
+        "id": 366,
+        "place_name": "কলারোয়া",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Kalaroa",
+        "is_upazila": 1
+      },
+      {
+        "id": 367,
+        "place_name": "সাতক্ষীরা",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Satkhira",
+        "is_upazila": 1
+      },
+      {
+        "id": 368,
+        "place_name": "শ্যামনগর",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Shyamnagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 369,
+        "place_name": "তালা",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Tala",
+        "is_upazila": 1
+      },
+      {
+        "id": 370,
+        "place_name": "কালিগঞ্জ",
+        "lat": 22.718485,
+        "lng": 89.070477,
+        "division_id": 17,
+        "place_name_eng": "Kaliganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 371,
+        "place_name": "মণিরামপুর",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Manirampur",
+        "is_upazila": 1
+      },
+      {
+        "id": 372,
+        "place_name": "অভয়নগর",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Abhaynagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 373,
+        "place_name": "বাঘারপাড়া",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Bagherpara",
+        "is_upazila": 1
+      },
+      {
+        "id": 374,
+        "place_name": "চৌগাছা",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Chougachha",
+        "is_upazila": 1
+      },
+      {
+        "id": 375,
+        "place_name": "ঝিকরগাছা",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Jhikargacha",
+        "is_upazila": 1
+      },
+      {
+        "id": 376,
+        "place_name": "কেশবপুর",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Keshabpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 377,
+        "place_name": "যশোর",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Jessore",
+        "is_upazila": 1
+      },
+      {
+        "id": 378,
+        "place_name": "শার্শা",
+        "lat": 23.177768,
+        "lng": 89.180122,
+        "division_id": 11,
+        "place_name_eng": "Sharsha",
+        "is_upazila": 1
+      },
+      {
+        "id": 379,
+        "place_name": "মহাদেবপুর",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Mohadevpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 380,
+        "place_name": "বদলগাছী",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Badalgachi",
+        "is_upazila": 1
+      },
+      {
+        "id": 381,
+        "place_name": "পত্নিতলা",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Patnitala",
+        "is_upazila": 1
+      },
+      {
+        "id": 382,
+        "place_name": "ধামইরহাট",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Dhamoirhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 383,
+        "place_name": "নিয়ামতপুর",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Niamatpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 384,
+        "place_name": "মান্দা",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Manda",
+        "is_upazila": 1
+      },
+      {
+        "id": 385,
+        "place_name": "আত্রাই",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Atrai",
+        "is_upazila": 1
+      },
+      {
+        "id": 386,
+        "place_name": "রাণীনগর",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Raninagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 387,
+        "place_name": "নওগাঁ",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Naogaon",
+        "is_upazila": 1
+      },
+      {
+        "id": 388,
+        "place_name": "পোরশা",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Porsha",
+        "is_upazila": 1
+      },
+      {
+        "id": 389,
+        "place_name": "সাপাহার",
+        "lat": 24.793607,
+        "lng": 88.931808,
+        "division_id": 57,
+        "place_name_eng": "Sapahar",
+        "is_upazila": 1
+      },
+      {
+        "id": 390,
+        "place_name": "চাঁপাইনবাবগঞ্জ",
+        "lat": 24.579719,
+        "lng": 88.270450,
+        "division_id": 56,
+        "place_name_eng": "Chapai Nawabganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 391,
+        "place_name": "গোমস্তাপুর",
+        "lat": 24.579719,
+        "lng": 88.270450,
+        "division_id": 56,
+        "place_name_eng": "Gomostapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 392,
+        "place_name": "নাচোল",
+        "lat": 24.579719,
+        "lng": 88.270450,
+        "division_id": 56,
+        "place_name_eng": "Nachol",
+        "is_upazila": 1
+      },
+      {
+        "id": 393,
+        "place_name": "ভোলাহাট",
+        "lat": 24.579719,
+        "lng": 88.270450,
+        "division_id": 56,
+        "place_name_eng": "Bholahat",
+        "is_upazila": 1
+      },
+      {
+        "id": 394,
+        "place_name": "শিবগঞ্জ",
+        "lat": 24.579719,
+        "lng": 88.270450,
+        "division_id": 56,
+        "place_name_eng": "Shibganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 395,
+        "place_name": "আক্কেলপুর",
+        "lat": 25.138494,
+        "lng": 89.056153,
+        "division_id": 55,
+        "place_name_eng": "Akkelpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 396,
+        "place_name": "কালাই",
+        "lat": 25.138494,
+        "lng": 89.056153,
+        "division_id": 55,
+        "place_name_eng": "Kalai",
+        "is_upazila": 1
+      },
+      {
+        "id": 397,
+        "place_name": "ক্ষেতলাল",
+        "lat": 25.138494,
+        "lng": 89.056153,
+        "division_id": 55,
+        "place_name_eng": "Khetlal",
+        "is_upazila": 1
+      },
+      {
+        "id": 398,
+        "place_name": "পাঁচবিবি",
+        "lat": 25.138494,
+        "lng": 89.056153,
+        "division_id": 55,
+        "place_name_eng": "Panchbibi",
+        "is_upazila": 1
+      },
+      {
+        "id": 399,
+        "place_name": "জয়পুরহাট",
+        "lat": 25.138494,
+        "lng": 89.056153,
+        "division_id": 55,
+        "place_name_eng": "Joypurhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 400,
+        "place_name": "নাটোর",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 58,
+        "place_name_eng": "Natore",
+        "is_upazila": 1
+      },
+      {
+        "id": 401,
+        "place_name": "সিংড়া",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 58,
+        "place_name_eng": "Singra",
+        "is_upazila": 1
+      },
+      {
+        "id": 402,
+        "place_name": "বড়াইগ্রাম",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 58,
+        "place_name_eng": "Baraigram",
+        "is_upazila": 1
+      },
+      {
+        "id": 403,
+        "place_name": "বাগাতিপাড়া",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 58,
+        "place_name_eng": "Bagatipara",
+        "is_upazila": 1
+      },
+      {
+        "id": 404,
+        "place_name": "লালপুর",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 58,
+        "place_name_eng": "Lalpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 405,
+        "place_name": "গুরুদাসপুর",
+        "lat": 24.407939,
+        "lng": 88.974893,
+        "division_id": 58,
+        "place_name_eng": "Gurudaspur",
+        "is_upazila": 1
+      },
+      {
+        "id": 406,
+        "place_name": "পবা",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Paba",
+        "is_upazila": 1
+      },
+      {
+        "id": 407,
+        "place_name": "দুর্গাপুর",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Durgapur",
+        "is_upazila": 1
+      },
+      {
+        "id": 408,
+        "place_name": "মোহনপুর",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Mohonpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 409,
+        "place_name": "চারঘাট",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Charghat",
+        "is_upazila": 1
+      },
+      {
+        "id": 410,
+        "place_name": "পুঠিয়া",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Puthia",
+        "is_upazila": 1
+      },
+      {
+        "id": 411,
+        "place_name": "বাঘা",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Bagha",
+        "is_upazila": 1
+      },
+      {
+        "id": 412,
+        "place_name": "গোদাগাড়ী",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Godagari",
+        "is_upazila": 1
+      },
+      {
+        "id": 413,
+        "place_name": "তানোর",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Tanore",
+        "is_upazila": 1
+      },
+      {
+        "id": 414,
+        "place_name": "বাগমারা",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Bagmara",
+        "is_upazila": 1
+      },
+      {
+        "id": 415,
+        "place_name": "রাজশাহী",
+        "lat": 24.363589,
+        "lng": 88.624135,
+        "division_id": 7,
+        "place_name_eng": "Rajshahi",
+        "is_upazila": 1
+      },
+      {
+        "id": 416,
+        "place_name": "কাহালু",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Kahaloo",
+        "is_upazila": 1
+      },
+      {
+        "id": 417,
+        "place_name": "বগুড়া",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Bogura",
+        "is_upazila": 1
+      },
+      {
+        "id": 418,
+        "place_name": "সারিয়াকান্দি",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Shariakandi",
+        "is_upazila": 1
+      },
+      {
+        "id": 419,
+        "place_name": "শাজাহানপুর",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Shajahanpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 420,
+        "place_name": "দুপচাচিঁয়া",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Dupchanchia",
+        "is_upazila": 1
+      },
+      {
+        "id": 421,
+        "place_name": "আদমদিঘি",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Adamdighi",
+        "is_upazila": 1
+      },
+      {
+        "id": 422,
+        "place_name": "নন্দিগ্রাম",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Nondigram",
+        "is_upazila": 1
+      },
+      {
+        "id": 423,
+        "place_name": "সোনাতলা",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Sonatala",
+        "is_upazila": 1
+      },
+      {
+        "id": 424,
+        "place_name": "ধুনট",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Dhunot",
+        "is_upazila": 1
+      },
+      {
+        "id": 425,
+        "place_name": "গাবতলী",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Gabtali",
+        "is_upazila": 1
+      },
+      {
+        "id": 426,
+        "place_name": "শেরপুর",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Sherpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 427,
+        "place_name": "শিবগঞ্জ",
+        "lat": 24.843559,
+        "lng": 89.370108,
+        "division_id": 53,
+        "place_name_eng": "Shibganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 428,
+        "place_name": "সুজানগর",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Sujanagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 429,
+        "place_name": "ঈশ্বরদী",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Ishurdi",
+        "is_upazila": 1
+      },
+      {
+        "id": 430,
+        "place_name": "ভাঙ্গুড়া",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Bhangura",
+        "is_upazila": 1
+      },
+      {
+        "id": 431,
+        "place_name": "পাবনা",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Pabna",
+        "is_upazila": 1
+      },
+      {
+        "id": 432,
+        "place_name": "বেড়া",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Bera",
+        "is_upazila": 1
+      },
+      {
+        "id": 433,
+        "place_name": "আটঘরিয়া",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Atghoria",
+        "is_upazila": 1
+      },
+      {
+        "id": 434,
+        "place_name": "চাটমোহর",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Chatmohar",
+        "is_upazila": 1
+      },
+      {
+        "id": 435,
+        "place_name": "সাঁথিয়া",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Santhia",
+        "is_upazila": 1
+      },
+      {
+        "id": 436,
+        "place_name": "ফরিদপুর",
+        "lat": 24.011326,
+        "lng": 89.256224,
+        "division_id": 54,
+        "place_name_eng": "Faridpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 437,
+        "place_name": "বেলকুচি",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Belkuchi",
+        "is_upazila": 1
+      },
+      {
+        "id": 438,
+        "place_name": "চৌহালি",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Chauhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 439,
+        "place_name": "কামারখন্দ",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Kamarkhand",
+        "is_upazila": 1
+      },
+      {
+        "id": 440,
+        "place_name": "কাজীপুর",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Kazipur",
+        "is_upazila": 1
+      },
+      {
+        "id": 441,
+        "place_name": "রায়গঞ্জ",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Raigonj",
+        "is_upazila": 1
+      },
+      {
+        "id": 442,
+        "place_name": "শাহজাদপুর",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Shahjadpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 443,
+        "place_name": "সিরাজগঞ্জ",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Sirajganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 444,
+        "place_name": "তাড়াশ",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Tarash",
+        "is_upazila": 1
+      },
+      {
+        "id": 445,
+        "place_name": "উল্লাপাড়া",
+        "lat": 24.452646,
+        "lng": 89.681621,
+        "division_id": 59,
+        "place_name_eng": "Ullapara",
+        "is_upazila": 1
+      },
+      {
+        "id": 446,
+        "place_name": "বান্দরবান",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Bandarban",
+        "is_upazila": 1
+      },
+      {
+        "id": 447,
+        "place_name": "আলীকদম",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Alikadam",
+        "is_upazila": 1
+      },
+      {
+        "id": 448,
+        "place_name": "নাইক্ষ্যংছড়ি",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Naikhongchhari",
+        "is_upazila": 1
+      },
+      {
+        "id": 449,
+        "place_name": "রোয়াংছড়ি",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Rowangchhari",
+        "is_upazila": 1
+      },
+      {
+        "id": 450,
+        "place_name": "লামা",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Lama",
+        "is_upazila": 1
+      },
+      {
+        "id": 451,
+        "place_name": "রুমা",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Ruma",
+        "is_upazila": 1
+      },
+      {
+        "id": 452,
+        "place_name": "থানচি",
+        "lat": 22.193563,
+        "lng": 92.218748,
+        "division_id": 18,
+        "place_name_eng": "Thanchi",
+        "is_upazila": 1
+      },
+      {
+        "id": 453,
+        "place_name": "খাগড়াছড়ি",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Khagrachari",
+        "is_upazila": 1
+      },
+      {
+        "id": 454,
+        "place_name": "দিঘীনালা",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Dighinala",
+        "is_upazila": 1
+      },
+      {
+        "id": 455,
+        "place_name": "পানছড়ি",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Panchari",
+        "is_upazila": 1
+      },
+      {
+        "id": 456,
+        "place_name": "লক্ষীছড়ি",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Laxmichhari",
+        "is_upazila": 1
+      },
+      {
+        "id": 457,
+        "place_name": "মহালছড়ি",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Mohalchari",
+        "is_upazila": 1
+      },
+      {
+        "id": 458,
+        "place_name": "মানিকছড়ি",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Manikchari",
+        "is_upazila": 1
+      },
+      {
+        "id": 459,
+        "place_name": "রামগড়",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Ramgarh",
+        "is_upazila": 1
+      },
+      {
+        "id": 460,
+        "place_name": "মাটিরাঙ্গা",
+        "lat": 23.132175,
+        "lng": 91.949021,
+        "division_id": 24,
+        "place_name_eng": "Matiranga",
+        "is_upazila": 1
+      },
+      {
+        "id": 461,
+        "place_name": "কক্সবাজার",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Cox's Bazar",
+        "is_upazila": 1
+      },
+      {
+        "id": 462,
+        "place_name": "চকরিয়া",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Chakaria",
+        "is_upazila": 1
+      },
+      {
+        "id": 463,
+        "place_name": "কুতুবদিয়া",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Kutubdia",
+        "is_upazila": 1
+      },
+      {
+        "id": 464,
+        "place_name": "উখিয়া",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Ukhiya",
+        "is_upazila": 1
+      },
+      {
+        "id": 465,
+        "place_name": "মহেশখালী",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Moheshkhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 466,
+        "place_name": "পেকুয়া",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Pekua",
+        "is_upazila": 1
+      },
+      {
+        "id": 467,
+        "place_name": "রামু",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Ramu",
+        "is_upazila": 1
+      },
+      {
+        "id": 468,
+        "place_name": "টেকনাফ",
+        "lat": 21.439464,
+        "lng": 92.007732,
+        "division_id": 22,
+        "place_name_eng": "Teknaf",
+        "is_upazila": 1
+      },
+      {
+        "id": 469,
+        "place_name": "আমতলী",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 40,
+        "place_name_eng": "Amtali",
+        "is_upazila": 1
+      },
+      {
+        "id": 470,
+        "place_name": "বরগুনা",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 40,
+        "place_name_eng": "Barguna",
+        "is_upazila": 1
+      },
+      {
+        "id": 471,
+        "place_name": "বেতাগী",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 40,
+        "place_name_eng": "Betagi",
+        "is_upazila": 1
+      },
+      {
+        "id": 472,
+        "place_name": "বামনা",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 40,
+        "place_name_eng": "Bamna",
+        "is_upazila": 1
+      },
+      {
+        "id": 473,
+        "place_name": "পাথরঘাটা",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 40,
+        "place_name_eng": "Pathorghata",
+        "is_upazila": 1
+      },
+      {
+        "id": 474,
+        "place_name": "তালতলি",
+        "lat": 22.157885,
+        "lng": 90.114408,
+        "division_id": 40,
+        "place_name_eng": "Taltali",
+        "is_upazila": 1
+      },
+      {
+        "id": 475,
+        "place_name": "ভোলা",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Bhola",
+        "is_upazila": 1
+      },
+      {
+        "id": 476,
+        "place_name": "বোরহান উদ্দিন",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Borhanuddin",
+        "is_upazila": 1
+      },
+      {
+        "id": 477,
+        "place_name": "দৌলতখান",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Doulatkhan",
+        "is_upazila": 1
+      },
+      {
+        "id": 478,
+        "place_name": "মনপুরা",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Monpura",
+        "is_upazila": 1
+      },
+      {
+        "id": 479,
+        "place_name": "তজুমদ্দিন",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Tazumuddin",
+        "is_upazila": 1
+      },
+      {
+        "id": 480,
+        "place_name": "লালমোহন",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Lalmohan",
+        "is_upazila": 1
+      },
+      {
+        "id": 481,
+        "place_name": "বরিশাল",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Barisal",
+        "is_upazila": 1
+      },
+      {
+        "id": 482,
+        "place_name": "বাকেরগঞ্জ",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Bakerganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 483,
+        "place_name": "বাবুগঞ্জ",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Babuganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 484,
+        "place_name": "উজিরপুর",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Wazirpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 485,
+        "place_name": "বানারীপাড়া",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Banaripara",
+        "is_upazila": 1
+      },
+      {
+        "id": 486,
+        "place_name": "গৌরনদী",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Gournadi",
+        "is_upazila": 1
+      },
+      {
+        "id": 487,
+        "place_name": "আগৈলঝাড়া",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Agailjhara",
+        "is_upazila": 1
+      },
+      {
+        "id": 488,
+        "place_name": "মেহেন্দিগঞ্জ",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Mehendiganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 489,
+        "place_name": "মুলাদী",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Muladi",
+        "is_upazila": 1
+      },
+      {
+        "id": 490,
+        "place_name": "হিজলা",
+        "lat": 22.702921,
+        "lng": 90.346597,
+        "division_id": 2,
+        "place_name_eng": "Hizla",
+        "is_upazila": 1
+      },
+      {
+        "id": 491,
+        "place_name": "পিরোজপুর",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Pirojpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 492,
+        "place_name": "নাজিরপুর",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Nazirpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 493,
+        "place_name": "কাউখালী",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Kawkhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 494,
+        "place_name": "জিয়ানগর",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Zianagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 495,
+        "place_name": "ভান্ডারিয়া",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Bhandaria",
+        "is_upazila": 1
+      },
+      {
+        "id": 496,
+        "place_name": "মঠবাড়ীয়া",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Mathbaria",
+        "is_upazila": 1
+      },
+      {
+        "id": 497,
+        "place_name": "নেছারাবাদ",
+        "lat": 22.584105,
+        "lng": 89.972013,
+        "division_id": 44,
+        "place_name_eng": "Nesarabad",
+        "is_upazila": 1
+      },
+      {
+        "id": 498,
+        "place_name": "বাউফল",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Bauphal",
+        "is_upazila": 1
+      },
+      {
+        "id": 499,
+        "place_name": "পটুয়াখালী",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Patuakhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 500,
+        "place_name": "দুমকি",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Dumki",
+        "is_upazila": 1
+      },
+      {
+        "id": 501,
+        "place_name": "দশমিনা",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Dashmina",
+        "is_upazila": 1
+      },
+      {
+        "id": 502,
+        "place_name": "কলাপাড়া",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Kalapara",
+        "is_upazila": 1
+      },
+      {
+        "id": 503,
+        "place_name": "মির্জাগঞ্জ",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Mirzaganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 504,
+        "place_name": "গলাচিপা",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Galachipa",
+        "is_upazila": 1
+      },
+      {
+        "id": 505,
+        "place_name": "রাঙ্গাবালী",
+        "lat": 22.354295,
+        "lng": 90.334837,
+        "division_id": 43,
+        "place_name_eng": "Rangabali",
+        "is_upazila": 1
+      },
+      {
+        "id": 506,
+        "place_name": "ঝালকাঠি",
+        "lat": 22.640601,
+        "lng": 90.198680,
+        "division_id": 42,
+        "place_name_eng": "Jhalokati",
+        "is_upazila": 1
+      },
+      {
+        "id": 507,
+        "place_name": "কাঠালিয়া",
+        "lat": 22.640601,
+        "lng": 90.198680,
+        "division_id": 42,
+        "place_name_eng": "Kathalia",
+        "is_upazila": 1
+      },
+      {
+        "id": 508,
+        "place_name": "নলছিটি",
+        "lat": 22.640601,
+        "lng": 90.198680,
+        "division_id": 42,
+        "place_name_eng": "Nalchity",
+        "is_upazila": 1
+      },
+      {
+        "id": 509,
+        "place_name": "ঝিনাইদহ",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 12,
+        "place_name_eng": "Jhenaidah",
+        "is_upazila": 1
+      },
+      {
+        "id": 510,
+        "place_name": "শৈলকুপা",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 12,
+        "place_name_eng": "Shailkupa",
+        "is_upazila": 1
+      },
+      {
+        "id": 511,
+        "place_name": "হরিণাকুন্ডু",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 12,
+        "place_name_eng": "Harinakundu",
+        "is_upazila": 1
+      },
+      {
+        "id": 512,
+        "place_name": "কালীগঞ্জ",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 12,
+        "place_name_eng": "Kaliganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 513,
+        "place_name": "কোটচাঁদপুর",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 12,
+        "place_name_eng": "Kotchandpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 514,
+        "place_name": "মহেশপুর",
+        "lat": 23.552820,
+        "lng": 89.175361,
+        "division_id": 12,
+        "place_name_eng": "Moheshpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 515,
+        "place_name": "ফকিরহাট",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Fakirhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 516,
+        "place_name": "বাগেরহাট",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Bagerhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 517,
+        "place_name": "মোল্লাহাট",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Mollahat",
+        "is_upazila": 1
+      },
+      {
+        "id": 518,
+        "place_name": "শরণখোলা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Sarankhola",
+        "is_upazila": 1
+      },
+      {
+        "id": 519,
+        "place_name": "রামপাল",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Rampal",
+        "is_upazila": 1
+      },
+      {
+        "id": 520,
+        "place_name": "মোড়েলগঞ্জ",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Morrelganj",
+        "is_upazila": 1
+      },
+      {
+        "id": 521,
+        "place_name": "কচুয়া",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Kachua",
+        "is_upazila": 1
+      },
+      {
+        "id": 522,
+        "place_name": "মোংলা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Mongla",
+        "is_upazila": 1
+      },
+      {
+        "id": 523,
+        "place_name": "চিতলমারী",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 9,
+        "place_name_eng": "Chitalmari",
+        "is_upazila": 1
+      },
+      {
+        "id": 524,
+        "place_name": "পাইকগাছা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Paikgasa",
+        "is_upazila": 1
+      },
+      {
+        "id": 525,
+        "place_name": "ফুলতলা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Fultola",
+        "is_upazila": 1
+      },
+      {
+        "id": 526,
+        "place_name": "দিঘলিয়া",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Digholia",
+        "is_upazila": 1
+      },
+      {
+        "id": 527,
+        "place_name": "রূপসা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Rupsha",
+        "is_upazila": 1
+      },
+      {
+        "id": 528,
+        "place_name": "তেরখাদা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Terokhada",
+        "is_upazila": 1
+      },
+      {
+        "id": 529,
+        "place_name": "ডুমুরিয়া",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Dumuria",
+        "is_upazila": 1
+      },
+      {
+        "id": 530,
+        "place_name": "বটিয়াঘাটা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Botiaghata",
+        "is_upazila": 1
+      },
+      {
+        "id": 531,
+        "place_name": "দাকোপ",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Dakop",
+        "is_upazila": 1
+      },
+      {
+        "id": 532,
+        "place_name": "কয়রা",
+        "lat": 22.655452,
+        "lng": 89.766153,
+        "division_id": 3,
+        "place_name_eng": "Koyra",
+        "is_upazila": 1
+      },
+      {
+        "id": 533,
+        "place_name": "খুলনা",
+        "lat": 22.845641,
+        "lng": 89.540328,
+        "division_id": 3,
+        "place_name_eng": "Khulna",
+        "is_upazila": 1
+      },
+      {
+        "id": 534,
+        "place_name": "শালিখা",
+        "lat": 23.485466,
+        "lng": 89.419830,
+        "division_id": 14,
+        "place_name_eng": "Shalikha",
+        "is_upazila": 1
+      },
+      {
+        "id": 535,
+        "place_name": "শ্রীপুর",
+        "lat": 23.485466,
+        "lng": 89.419830,
+        "division_id": 14,
+        "place_name_eng": "Sreepur",
+        "is_upazila": 1
+      },
+      {
+        "id": 536,
+        "place_name": "মাগুরা",
+        "lat": 23.485466,
+        "lng": 89.419830,
+        "division_id": 14,
+        "place_name_eng": "Magura",
+        "is_upazila": 1
+      },
+      {
+        "id": 537,
+        "place_name": "মহম্মদপুর",
+        "lat": 23.485466,
+        "lng": 89.419830,
+        "division_id": 14,
+        "place_name_eng": "Mohammadpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 538,
+        "place_name": "কুষ্টিয়া",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 13,
+        "place_name_eng": "Kushtia",
+        "is_upazila": 1
+      },
+      {
+        "id": 539,
+        "place_name": "কুমারখালী",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 13,
+        "place_name_eng": "Kumarkhali",
+        "is_upazila": 1
+      },
+      {
+        "id": 540,
+        "place_name": "খোকসা",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 13,
+        "place_name_eng": "Khoksa",
+        "is_upazila": 1
+      },
+      {
+        "id": 541,
+        "place_name": "মিরপুর",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 13,
+        "place_name_eng": "Mirpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 542,
+        "place_name": "দৌলতপুর",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 13,
+        "place_name_eng": "Daulatpur",
+        "is_upazila": 1
+      },
+      {
+        "id": 543,
+        "place_name": "ভেড়ামারা",
+        "lat": 23.897601,
+        "lng": 89.118185,
+        "division_id": 13,
+        "place_name_eng": "Bheramara",
+        "is_upazila": 1
+      },
+      {
+        "id": 544,
+        "place_name": "চুয়াডাঙ্গা",
+        "lat": 23.644170,
+        "lng": 88.847395,
+        "division_id": 10,
+        "place_name_eng": "Chuadanga",
+        "is_upazila": 1
+      },
+      {
+        "id": 545,
+        "place_name": "আলমডাঙ্গা",
+        "lat": 23.644170,
+        "lng": 88.847395,
+        "division_id": 10,
+        "place_name_eng": "Alamdanga",
+        "is_upazila": 1
+      },
+      {
+        "id": 546,
+        "place_name": "দামুড়হুদা",
+        "lat": 23.644170,
+        "lng": 88.847395,
+        "division_id": 10,
+        "place_name_eng": "Damurhuda",
+        "is_upazila": 1
+      },
+      {
+        "id": 547,
+        "place_name": "জীবননগর",
+        "lat": 23.644170,
+        "lng": 88.847395,
+        "division_id": 10,
+        "place_name_eng": "Jibannagar",
+        "is_upazila": 1
+      },
+      {
+        "id": 548,
+        "place_name": "নড়াইল",
+        "lat": 23.165698,
+        "lng": 89.499022,
+        "division_id": 16,
+        "place_name_eng": "Narail",
+        "is_upazila": 1
+      },
+      {
+        "id": 549,
+        "place_name": "লোহাগড়া",
+        "lat": 23.165698,
+        "lng": 89.499022,
+        "division_id": 16,
+        "place_name_eng": "Lohagara",
+        "is_upazila": 1
+      },
+      {
+        "id": 550,
+        "place_name": "কালিয়া",
+        "lat": 23.165698,
+        "lng": 89.499022,
+        "division_id": 16,
+        "place_name_eng": "Kalia",
+        "is_upazila": 1
+      },
+      {
+        "id": 551,
+        "place_name": "চর ফ্যাশন ",
+        "lat": 22.331667,
+        "lng": 90.829400,
+        "division_id": 41,
+        "place_name_eng": "Char Fasson",
+        "is_upazila": 1
+      },
+      {
+        "id": 552,
+        "place_name": "টঙ্গী",
+        "lat": 23.9010,     
+         "lng": 90.4088,
+        "divisin_id": 30,
+        "place_name_eng": "Tongi",
+        "is_upazila": 1
+      },
+      {
+        "id": 553,
+        "place_name": "নরুন্দি",
+        "lat": 24.8675,       
+         "lng": 90.1170,
+        "divisin_id": 64,
+        "place_name_eng": "Narundi",
+        "is_upazila": 1
+      },
+      {
+        "id": 554,
+        "place_name": "বন্দর",
+        "lat": 23.6314,     
+         "lng": 90.5352,
+        "divisin_id": 36,
+        "place_name_eng": "Bandar",
+        "is_upazila": 1
+      },
+      {
+        "id": 555,
+        "place_name": "কবিরহাট",
+        "lat": 22.7956,        
+        "lng": 91.1989,
+        "divisin_id": 26,
+        "place_name_eng": "Kabirhat",
+        "is_upazila": 1
+      },
+      {
+        "id": 556,
+        "place_name": "গুইমারা",
+        "lat": 22.9604,
+        "lng": 91.8695 ,
+        "divisin_id": 24,
+        "place_name_eng": "Guimara",
+        "is_upazila": 1
+      
+      }
+    ]
+  

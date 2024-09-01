@@ -7,7 +7,6 @@ import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 import 'Util/app_colors.dart';
 import 'app/data/hivaData.dart';
-import 'app/modules/fastscreen.dart';
 import 'app/routes/app_pages.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:timezone/data/latest.dart' as tz;

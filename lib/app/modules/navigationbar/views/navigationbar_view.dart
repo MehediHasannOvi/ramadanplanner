@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ramadanplanner/Util/app_colors.dart';
 import 'package:ramadanplanner/app/modules/compass/views/compass_view.dart';
-import 'package:ramadanplanner/app/modules/home/controllers/home_controller.dart';
 import 'package:ramadanplanner/app/modules/home/views/home_view.dart';
 import 'package:ramadanplanner/app/modules/praytime/views/praytime_view.dart';
 import 'package:ramadanplanner/app/modules/settings/views/settings_view.dart';

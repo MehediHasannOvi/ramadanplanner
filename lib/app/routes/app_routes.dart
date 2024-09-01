@@ -16,6 +16,7 @@ abstract class Routes {
   static const SETTINGS = _Paths.SETTINGS;
   static const PRAYTIME = _Paths.PRAYTIME;
   static const COMPASS = _Paths.COMPASS;
+  static const FASTSCREEN = _Paths.FASTSCREEN;
 }
 
 abstract class _Paths {
@@ -31,4 +32,5 @@ abstract class _Paths {
   static const SETTINGS = '/settings';
   static const PRAYTIME = '/praytime';
   static const COMPASS = '/compass';
+  static const FASTSCREEN = '/fastscreen';
 }
