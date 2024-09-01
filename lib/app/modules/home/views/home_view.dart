@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:intl/intl.dart';
+
 import 'package:sizer/sizer.dart';
-import 'package:daynightbanner/daynightbanner.dart';
+
 import '../../../../Util/app_text.dart';
 import '../../../../Util/app_colors.dart';
 import '../../../../Util/main_button.dart';
@@ -54,17 +54,8 @@ class HomeView extends GetView<HomeController> {
                     fontWeight: FontWeight.w400,
                     color: Colors.white,
                   ),
-                  // this function is for edit name button
-                  Visibility(
-                      visible: Hive.box('user').get('name') == null,
-                      child: IconButton(
-                          onPressed: () {
-                            controller.getusername();
-                          },
-                          icon: const Icon(
-                            Icons.edit,
-                            size: 18,
-                          )))
+                  
+                 
                 ],
               );
             },
@@ -73,7 +64,19 @@ class HomeView extends GetView<HomeController> {
         actions: [
           IconButton(
               onPressed: () async {
-                Get.toNamed(Routes.ABOUT);
+                // Get.toNamed(Routes.ABOUT);
+               Hive.box("user").delete('name');
+                Hive.box("user").delete('location');
+              // print(Hive.box("user").get("location"),);
+              },
+              icon: const Icon(
+                CupertinoIcons.heart_circle,
+                color: AppColors.quinaryColor,
+              )),
+          IconButton(
+              onPressed: () async {
+                 Get.toNamed(Routes.ABOUT);
+               
               },
               icon: const Icon(
                 CupertinoIcons.heart_circle,

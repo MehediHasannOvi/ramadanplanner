@@ -1,24 +1,29 @@
 // ignore_for_file: unused_import, depend_on_referenced_packages, avoid_print
 
 import 'dart:async';
+import 'dart:convert';
 import 'package:adhan/adhan.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:ramadanplanner/Util/app_text.dart';
+import 'package:ramadanplanner/app/model/locationmodel.dart';
+import 'package:ramadanplanner/app/modules/praytime/controllers/praytime_controller.dart';
 import 'package:ramadanplanner/app/routes/app_pages.dart';
+import 'package:sizer/sizer.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import '../../../../Util/app_colors.dart';
 import '../../../service/notification/notification.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
+import 'package:http/http.dart' as http;
 
 class HomeController extends GetxController {
   
-
-  final TextEditingController name = TextEditingController();
   HijriCalendar currentDate = HijriCalendar.now();
 
 
@@ -27,7 +32,7 @@ class HomeController extends GetxController {
   int getDataIndexForCurrentDate() {
     // Get the current date
     int dataIndex = currentDate.hDay % dinerkaj.length;
-   
+
     // Timer(Duration.zero, () {
     //   sendNotification();
     // });
@@ -49,66 +54,46 @@ class HomeController extends GetxController {
 // This function is for edit name button this will show a dialog box to edit name
 // and when user fast time open the app it will show a dialog box to enter name
 
-  getusername() {
-    Timer(const Duration(seconds: 0), () {
-      Get.defaultDialog(
-          backgroundColor: AppColors.secondaryColor,
-          buttonColor: AppColors.quaternaryColor,
-          titleStyle: const TextStyle(color: Colors.white),
-          titlePadding: const EdgeInsets.all(10),
-          confirmTextColor: Colors.black,
-          barrierDismissible: false,
-          radius: 5,
-          title: "আপনার নাম টি লিখুন ",
-          content: TextFormField(
-              controller: name,
-              decoration: const InputDecoration(
-                hintText: "নাম",
-                hintStyle: TextStyle(color: Colors.white),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
-              ),
-              keyboardType: TextInputType.name,
-              style: const TextStyle(color: Colors.white)),
-          textConfirm: "সেভ করুন",
-          onConfirm: () {
-            if (name.text.isEmpty && name.text.length < 3) {
-              Get.snackbar("Error", "Please Enter Your Name",
-                  colorText: Colors.black,
-                  backgroundColor: AppColors.quaternaryColor,
-                  snackPosition: SnackPosition.bottom);
-            } else {
-              Hive.box("user").put("name", name.text);
-              update();
-              // Get.back();
-              Get.close();
-            }
-          });
-    });
-  }
+  // getusername() {
+  //   Timer(const Duration(seconds: 0), () {
+  //     Get.defaultDialog(
+  //         backgroundColor: AppColors.secondaryColor,
+  //         buttonColor: AppColors.quaternaryColor,
+  //         titleStyle: const TextStyle(color: Colors.white),
+  //         titlePadding: const EdgeInsets.all(10),
+  //         confirmTextColor: Colors.black,
+  //         barrierDismissible: false,
+  //         radius: 5,
+  //         title: "আপনার নাম এবং লোকেশন সিলেক্ট করুন",
+  //         content:
+          
+  //         onConfirm: () {
+           
+  //         });
+  //   });
+  // }
+
+  // THis function use for Location and Timezone for the app to get the current time and location
+
 
   @override
   void onInit() async {
     // ignore: todo
     // TODO: implement onInit
-    if (Hive.box("user").get("name") == null) {
-      getusername();
-    } 
+    
     getDataIndexForCurrentDate();
 
     NotificationService()
         .scheduleNotification(
           // scheduledDate: nextInstanceOfOneAm(1),
           title: "আজকের দিনের কাজ",
-         body: "${dinerkaj[getDataIndexForCurrentDate()]}",
+          body: "${dinerkaj[getDataIndexForCurrentDate()]}",
         )
         .then((value) => print(
               "Notification Scheduled",
             ));
+
+// here load the location and timezone
 
     // getpraylanght;
     super.onInit();

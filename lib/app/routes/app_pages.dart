@@ -2,8 +2,6 @@ import 'package:get/get.dart';
 
 import '../modules/AllahName/bindings/allah_name_binding.dart';
 import '../modules/AllahName/views/allah_name_view.dart';
-import '../modules/compass/bindings/compass_binding.dart';
-import '../modules/compass/views/compass_view.dart';
 import '../modules/DailyTracking/bindings/daily_tracking_binding.dart';
 import '../modules/DailyTracking/views/daily_tracking_view.dart';
 import '../modules/PrayTracker/bindings/pray_tracker_binding.dart';
@@ -12,6 +10,10 @@ import '../modules/QuranTracker/bindings/quran_tracker_binding.dart';
 import '../modules/QuranTracker/views/quran_tracker_view.dart';
 import '../modules/about/bindings/about_binding.dart';
 import '../modules/about/views/about_view.dart';
+import '../modules/compass/bindings/compass_binding.dart';
+import '../modules/compass/views/compass_view.dart';
+import '../modules/fastscreen/bindings/fastscreen_binding.dart';
+import '../modules/fastscreen/views/fastscreen_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/navigationbar/bindings/navigationbar_binding.dart';
@@ -28,7 +30,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.NAVIGATIONBAR;
+  static const INITIAL = Routes.FASTSCREEN;
 
   static final routes = [
     GetPage(
@@ -80,6 +82,11 @@ class AppPages {
       name: _Paths.COMPASS,
       page: () => const CompassView(),
       binding: CompassBinding(),
+    ),
+    GetPage(
+      name: _Paths.FASTSCREEN,
+      page: () => const FastscreenView(),
+      binding: FastscreenBinding(),
     ),
   ];
 }

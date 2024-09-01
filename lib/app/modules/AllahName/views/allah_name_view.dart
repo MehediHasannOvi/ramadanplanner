@@ -8,7 +8,7 @@ import '../../../model/allahname.dart';
 import '../controllers/allah_name_controller.dart';
 
 class AllahNameView extends GetView<AllahNameController> {
-  const AllahNameView({Key? key}) : super(key: key);
+  const AllahNameView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

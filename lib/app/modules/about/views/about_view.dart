@@ -7,7 +7,7 @@ import '../../../../Util/app_colors.dart';
 import '../controllers/about_controller.dart';
 
 class AboutView extends GetView<AboutController> {
-  const AboutView({Key? key}) : super(key: key);
+  const AboutView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

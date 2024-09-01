@@ -9,7 +9,7 @@ import '../../../../Util/app_colors.dart';
 import '../controllers/pray_tracker_controller.dart';
 
 class PrayTrackerView extends GetView<PrayTrackerController> {
-  const PrayTrackerView({Key? key}) : super(key: key);
+  const PrayTrackerView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,19 +19,17 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
         ),
         floatingActionButton: GetBuilder<PrayTrackerController>(
           init: PrayTrackerController(),
-          initState: (_) {
-    },
+          initState: (_) {},
           builder: (_) {
             return Visibility(
-                  visible: controller.delete.value,
-                  child: FloatingActionButton(
-                    onPressed: () {
-                      controller.namazData.clear();
-                     
-                    },
-                    child: const Icon(Icons.delete),
-                  ),
-                ); 
+              visible: controller.delete.value,
+              child: FloatingActionButton(
+                onPressed: () {
+                  controller.namazData.clear();
+                },
+                child: const Icon(Icons.delete),
+              ),
+            );
           },
         ),
         body: Container(
@@ -40,9 +38,8 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
             children: [
               // Top Size Banner Hadis
               Container(
-                height: 20.h,
                 width: 100.w,
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: AppColors.secondaryColor),
@@ -82,7 +79,6 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -93,8 +89,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function(value!);
                       },
-                      side: MaterialStateBorderSide.resolveWith(
-                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      side: WidgetStateBorderSide.resolveWith(
+                        (states) =>
+                            const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -107,7 +104,6 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                     // fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                 
                   trailing: GetBuilder<PrayTrackerController>(
                     init: PrayTrackerController(),
                     initState: (_) {},
@@ -118,7 +114,7 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                         onChanged: (value) {
                           controller.function1(value!);
                         },
-                        side: MaterialStateBorderSide.resolveWith(
+                        side: WidgetStateBorderSide.resolveWith(
                           (states) =>
                               const BorderSide(width: 1.0, color: Colors.white),
                         ),
@@ -133,7 +129,6 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -144,8 +139,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function2(value!);
                       },
-                      side: MaterialStateBorderSide.resolveWith(
-                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      side: WidgetStateBorderSide.resolveWith(
+                        (states) =>
+                            const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -158,7 +154,6 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -169,8 +164,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function3(value!);
                       },
-                      side: MaterialStateBorderSide.resolveWith(
-                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      side: WidgetStateBorderSide.resolveWith(
+                        (states) =>
+                            const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -183,7 +179,6 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                   // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                
                 trailing: GetBuilder<PrayTrackerController>(
                   init: PrayTrackerController(),
                   initState: (_) {},
@@ -194,8 +189,9 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function4(value!);
                       },
-                      side: MaterialStateBorderSide.resolveWith(
-                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      side: WidgetStateBorderSide.resolveWith(
+                        (states) =>
+                            const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
@@ -218,14 +214,14 @@ class PrayTrackerView extends GetView<PrayTrackerController> {
                       onChanged: (value) {
                         controller.function5(value!);
                       },
-                      side: MaterialStateBorderSide.resolveWith(
-                        (states) => const BorderSide(width: 1.0, color: Colors.white),
+                      side: WidgetStateBorderSide.resolveWith(
+                        (states) =>
+                            const BorderSide(width: 1.0, color: Colors.white),
                       ),
                     );
                   },
                 ),
               ),
-              
             ],
           ),
         ));
