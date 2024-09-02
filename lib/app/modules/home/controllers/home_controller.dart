@@ -23,7 +23,7 @@ import '../../../data/hadis.dart';
 import 'package:http/http.dart' as http;
 
 class HomeController extends GetxController {
-  
+ 
   HijriCalendar currentDate = HijriCalendar.now();
 
 
@@ -51,29 +51,6 @@ class HomeController extends GetxController {
     return dataIndex;
   }
 
-// This function is for edit name button this will show a dialog box to edit name
-// and when user fast time open the app it will show a dialog box to enter name
-
-  // getusername() {
-  //   Timer(const Duration(seconds: 0), () {
-  //     Get.defaultDialog(
-  //         backgroundColor: AppColors.secondaryColor,
-  //         buttonColor: AppColors.quaternaryColor,
-  //         titleStyle: const TextStyle(color: Colors.white),
-  //         titlePadding: const EdgeInsets.all(10),
-  //         confirmTextColor: Colors.black,
-  //         barrierDismissible: false,
-  //         radius: 5,
-  //         title: "আপনার নাম এবং লোকেশন সিলেক্ট করুন",
-  //         content:
-          
-  //         onConfirm: () {
-           
-  //         });
-  //   });
-  // }
-
-  // THis function use for Location and Timezone for the app to get the current time and location
 
 
   @override
@@ -83,18 +60,7 @@ class HomeController extends GetxController {
     
     getDataIndexForCurrentDate();
 
-    NotificationService()
-        .scheduleNotification(
-          // scheduledDate: nextInstanceOfOneAm(1),
-          title: "আজকের দিনের কাজ",
-          body: "${dinerkaj[getDataIndexForCurrentDate()]}",
-        )
-        .then((value) => print(
-              "Notification Scheduled",
-            ));
-
-// here load the location and timezone
-
+    
     // getpraylanght;
     super.onInit();
   }

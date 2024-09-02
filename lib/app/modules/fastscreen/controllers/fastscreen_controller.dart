@@ -6,8 +6,11 @@ import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 import 'package:ramadanplanner/app/model/locationmodel.dart';
 import 'package:ramadanplanner/app/routes/app_pages.dart';
+import 'package:ramadanplanner/app/service/notification/firebasenotification.dart';
 
 class FastscreenController extends GetxController {
+  final FirebaseNotificationService firebasenotificationService = FirebaseNotificationService();
+      
   final TextEditingController name = TextEditingController();
   List<LocationModel> locationList = [];
   LocationModel? selectedLocation;
@@ -48,16 +51,29 @@ class FastscreenController extends GetxController {
     }
   }
 
+  screenChange() {
+    if (Hive.box("user").get("name") != null) {
+      Get.offAllNamed(Routes.NAVIGATIONBAR);
+    }
+  }
+
   @override
-  void onInit() {
-    Future.delayed(Duration.zero, () {
-      if (Hive.box("user").get("name") != null) {
-        Get.offAllNamed(Routes.NAVIGATIONBAR);
-      }
+  void onInit()  {
+    Future.delayed( const Duration(
+      milliseconds: 10,
+    ), () {
+    screenChange();
+     firebasenotificationService.requestNotificationPermissions();
     });
 
     super.onInit();
 
     fetchLocations();
+  }
+
+  @override
+  void onClose() {
+    name.dispose();
+    super.onClose();
   }
 }

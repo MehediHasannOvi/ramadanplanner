@@ -1,242 +1,115 @@
-// ignore_for_file: unused_import, unnecessary_brace_in_string_interps
-
-import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'dart:isolate';
-
-import 'package:hive_flutter/adapters.dart';
-import 'package:ramadanplanner/Util/app_colors.dart';
+import 'package:get/get.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:ramadanplanner/app/data/dinerkaj.dart';
+import 'package:ramadanplanner/app/routes/app_pages.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-class NotificationService {
-  final FlutterLocalNotificationsPlugin notificationsPlugin =
+class NotificationService extends GetxService {
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
-  Future<void> initNotification() async {
-    AndroidInitializationSettings initializationSettingsAndroid =
-        const AndroidInitializationSettings('@mipmap/ic_launcher');
+  Future<NotificationService> init() async {
+    // Initialize the flutter_local_notifications plugin
+    const AndroidInitializationSettings initializationSettingsAndroid =
+        AndroidInitializationSettings('@mipmap/ic_launcher');
+    const InitializationSettings initializationSettings = InitializationSettings(
+      android: initializationSettingsAndroid,
+    );
 
-    var initializationSettingsIOS = DarwinInitializationSettings(
-        requestAlertPermission: true,
-        requestBadgePermission: true,
-        requestSoundPermission: true,
-        defaultPresentAlert: true,
-        defaultPresentBadge: true,
-        defaultPresentSound: true,
-        onDidReceiveLocalNotification:
-            (int id, String? title, String? body, String? payload) async {});
+    await flutterLocalNotificationsPlugin.initialize(
+      initializationSettings,
+      onDidReceiveNotificationResponse: (details) {
+        // Handle notification tap
+        Get.toNamed(Routes.DAILY_TRACKING);
+      },
+    );
 
-    var initializationSettings = InitializationSettings(
-        android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
-    await notificationsPlugin.initialize(initializationSettings,
-        onDidReceiveNotificationResponse:
-            (NotificationResponse notificationResponse) async {});
+    // Initialize time zone data
+    tz.initializeTimeZones();
+
+    // Request notification permissions
+    await requestPermissions();
+
+    // Schedule daily notifications
+    scheduleDailyNotifications();
+
+    return this;
   }
 
-  notificationDetails() {
-    return const NotificationDetails(
+  Future<void> requestPermissions() async {
+    final status = await Permission.notification.status;
+    if (status.isDenied) {
+      // Request permission
+      final result = await Permission.notification.request();
+      if (result.isDenied) {
+        // Handle the case when permission is denied
+        Get.snackbar(
+          'Permission Denied',
+          'Notification permissions are required to receive notifications.',
+          snackPosition: SnackPosition.bottom,
+        );
+      } else if (result.isPermanentlyDenied) {
+        // Handle the case when permission is permanently denied
+        Get.snackbar(
+          'Permission Required',
+          'Notification permissions are required. Please enable them in app settings.',
+          snackPosition: SnackPosition.bottom,
+        );
+        // Redirect to app settings
+        openAppSettings();
+      }
+    } else if (status.isPermanentlyDenied) {
+      // Handle the case when permission is permanently denied
+      Get.snackbar(
+        'Permission Required',
+        'Notification permissions are required. Please enable them in app settings.',
+        snackPosition: SnackPosition.bottom,
+      );
+      // Redirect to app settings
+      openAppSettings();
+    }
+  }
+
+  void scheduleDailyNotifications() {
+    // Schedule 6 PM notification
+    _scheduleNotification(18, 0, 'আস-সালামু আলাইকুম', "আজকের দিনের কাজ \n ${dinerkaj[DateTime.now().day]}");
+
+    // Schedule 8 AM notification
+    _scheduleNotification(8, 0, 'আস-সালামু আলাইকুম', "আজকের দিনের কাজ \n ${dinerkaj[DateTime.now().day]}");
+  }
+
+  void _scheduleNotification(int hour, int minute, String title, String body) {
+    final tz.TZDateTime now = tz.TZDateTime.now(tz.local);
+    final tz.TZDateTime scheduledDate = tz.TZDateTime(
+      tz.local,
+      now.year,
+      now.month,
+      now.day,
+      hour,
+      minute,
+    );
+
+    flutterLocalNotificationsPlugin.zonedSchedule(
+      0,
+      title,
+      body,
+      scheduledDate.isBefore(now)
+          ? scheduledDate.add(const Duration(days: 1))
+          : scheduledDate,
+      const NotificationDetails(
         android: AndroidNotificationDetails(
-          'channelId',
-          'channelName',
+          'your_channel_id',
+          'your_channel_name',
           importance: Importance.max,
           priority: Priority.high,
-          visibility: NotificationVisibility.public,
-          color: AppColors.primaryColor,
-          playSound: true,
-          enableVibration: true,
-          icon: 'flutter_logo',
-          fullScreenIntent: true,
-          showWhen: true,
-          showProgress: true,
-          ledColor: Colors.red,
-          ledOnMs: 1000,
-          ledOffMs: 500,
-          autoCancel: true,
         ),
-        iOS: DarwinNotificationDetails());
-  }
-
-  Future showNotification(
-      {int id = 0, String? title, String? body, String? payLoad}) async {
-    return notificationsPlugin.show(
-        id, title, body, await notificationDetails());
-  }
-
-  Future scheduleNotification({
-    int id = 0,
-    String? title,
-    String? body,
-    String? payLoad,
-  }) async {
-    return notificationsPlugin.zonedSchedule(
-        id, title, body, nextInstanceOfOneAm(), await notificationDetails(),
-        androidAllowWhileIdle: true,
-        uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime);
+      ),
+      androidAllowWhileIdle: true,
+      uiLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.wallClockTime,
+      matchDateTimeComponents: DateTimeComponents.time, // Repeat daily
+    );
   }
 }
-
-tz.TZDateTime nextInstanceOfOneAm() {
-  final tz.TZDateTime now = tz.TZDateTime.now(tz.local);
-  tz.TZDateTime scheduledDate =
-      tz.TZDateTime(tz.local, now.year, now.month, now.day, 6); // 1 am
-  if (scheduledDate.isBefore(now)) {
-    scheduledDate = scheduledDate.add(const Duration(days: 1));
-  }
-  print("This is tha Time is notifi ${scheduledDate}");
-
-  return scheduledDate;
-}
-
-
-
-
-
-
-
-
-
-
-
-// class NotificationServices {
-//   static Future<void> initializeNotification() async {
-//     await AwesomeNotifications().initialize(
-//         null,
-//         [
-//           NotificationChannel(
-//             channelKey: 'high_importance_channel',
-//             channelGroupKey: 'High Importance Notifications',
-//             channelName: 'basic Notification',
-//             channelDescription: 'Notification channel for basic tests',
-//             defaultColor: AppColors.primaryColor,
-//             ledColor: AppColors.primaryColor,
-//             channelShowBadge: true,
-//             onlyAlertOnce: true,
-//             playSound: true,
-//             enableLights: true,
-//             enableVibration: true,
-//             criticalAlerts: true,
-//           )
-//         ],
-//         channelGroups: [
-//           NotificationChannelGroup(
-//             channelGroupName: 'group1',
-//             channelGroupKey: 'High Importance Notifications',
-//           ),
-//         ],
-//         debug: true);
-//     await AwesomeNotifications().isNotificationAllowed().then(
-//       (isAllowed) async {
-//         if (!isAllowed) {
-//           await AwesomeNotifications().requestPermissionToSendNotifications();
-//         }
-//       },
-//     );
-//     await AwesomeNotifications().setListeners(
-//       onActionReceivedMethod: onActionReceivedMethod,
-//       onNotificationDisplayedMethod: onNotificationDisplayedMethod,
-//       onDismissActionReceivedMethod: onDismissActionReceivedMethod,
-//       onNotificationCreatedMethod: onNotificationCreatedMethod,
-    
-//     );
-//   }
-//   static Future <void> onNotificationCreatedMethod ( ReceivedNotification receivedNotification) async {
-//     print('Notification Created');
-//   }
-
-//   static Future <void> onNotificationDisplayedMethod ( ReceivedNotification receivedNotification) async {
-//     print('Notification Created');
-//   }
-
-//   static Future <void> onDismissActionReceivedMethod ( ReceivedAction receivedAction) async {
-//     print('Notification Created');
-//   }
-
-//   static Future <void> onActionReceivedMethod ( ReceivedAction receivedAction) async {
-//     print('Notification Created');
-//     final payload = receivedAction.payload ?? {};
-//     if (payload['navigate'] == 'true') {
-//       Get.toNamed(Routes.PRAY_TRACKER);
-//     }
-
-//   }
-
-//   static Future<void> showNotification({
-//    required final String title,
-//    required final String body,
-//    final String? summary,
-//    final Map<String, String>? payload,
-//    final ActionType actionType = ActionType.Default,
-//    final NotificationLayout notificationLayout = NotificationLayout.Default,
-//    final NotificationCategory? category,
-//    final String? bigPicture,
-//    final List<NotificationActionButton>? actionButtons,
-//    final bool schedule = false,
-//    final int? interval,
-//   //  final bool isrepeat = false,
-//   })async{
-//     assert (!schedule || (schedule != null));
-//     await AwesomeNotifications().createNotification(content: 
-//     NotificationContent(
-//       id: -1,
-//       channelKey: 'high_importance_channel',
-//       title: title,
-//       body: body,
-//       notificationLayout: notificationLayout,
-//       summary: summary,
-//       actionType: actionType,
-//       payload: payload,
-//       displayOnForeground: true,
-//       displayOnBackground: true,
-//       fullScreenIntent: true,
-//       category: category,
-//       bigPicture: bigPicture,
-//       backgroundColor: AppColors.primaryColor,
-//       badge: 1,
-      
-//     ),
-//     actionButtons: actionButtons,
-//     schedule: schedule ? NotificationInterval(
-//       timeZone: await AwesomeNotifications().getLocalTimeZoneIdentifier(),
-//       // repeats: true,
-//       interval: nextInstanceOfOneAm().minute,
-//       preciseAlarm: true,
-//       // repeats: isrepeat,
-      
-//     ) : null,
-
-    
-//     );
-//   }
-
-// }
-
-
-// // triggerNotification(
-// //     String titel, String body, dynamic schedule, bool isRepeat) {
-// //   AwesomeNotifications().createNotification(
-// //     content: NotificationContent(
-// //       // customSound: "assets/sound/notification.mp3",
-// //       id: 10,
-// //       channelKey: 'basic_channel',
-// //       title: titel,
-// //       body: body,
-// //       notificationLayout: NotificationLayout.BigText,
-// //       // icon: "assets/images/logo.png",
-// //       backgroundColor: AppColors.primaryColor,
-// //       badge: 1,
-// //       displayOnForeground: true,
-// //       displayOnBackground: true,
-// //       fullScreenIntent: true,
-// //     ),
-   
-// //   // );
-// //   schedule: NotificationCalendar(
-// //     timeZone: DateTime.now().timeZoneName,
-// //     repeats: isRepeat,
-   
-// //   ));
-// // }
-
-

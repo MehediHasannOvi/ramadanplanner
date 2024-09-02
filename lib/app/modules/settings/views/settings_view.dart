@@ -23,7 +23,7 @@ class SettingsView extends GetView<SettingsController> {
             fontSize: 14.sp,
           )),
           body: Container(
-            margin: const EdgeInsets.all(25),
+            margin: const EdgeInsets.only(top: 25, left: 20, right: 20),
             child: ListView(
               children: [
                 AppText(
@@ -86,13 +86,12 @@ class SettingsView extends GetView<SettingsController> {
                     ontap: () {
                       controller.applaunchUrl();
                     }),
-                    
                 settingButton(
                     leadingIcon: Icons.info_outlined,
                     title: "Version",
                     trailingIcon: Icons.arrow_forward_ios,
                     isIcon: false,
-                    ontap:null),
+                    ontap: null),
               ],
             ),
           )),

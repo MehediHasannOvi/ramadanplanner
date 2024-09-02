@@ -15,14 +15,14 @@ class PraytimeController extends GetxController {
   late double latitude;
   late double longitude;
   late Coordinates myCoordinates;
-  
+
   final params = CalculationMethod.karachi.getParameters();
   final madhab = Madhab.hanafi;
   PrayerTimes? prayerTimes;
 
   // Get formatted time as a String
   String get formattedTime {
-    return DateFormat('HH:mm').format(currentTime.value);
+    return DateFormat('HH:mm').format(currentTime.value,);
   }
 
   String date = DateFormat('d MMMM, yyyy').format(DateTime.now());
@@ -68,19 +68,20 @@ class PraytimeController extends GetxController {
 
     // List of prayer times in order, each with a name and time
     final List<Map<String, dynamic>> prayerTimesList = [
-      {'name': 'Fajr', 'time': prayerTimes.fajr},
-      {'name': 'Sunrise', 'time': prayerTimes.sunrise},
-      {'name': 'Dhuhr', 'time': prayerTimes.dhuhr},
-      {'name': 'Asr', 'time': prayerTimes.asr},
-      {'name': 'Maghrib', 'time': prayerTimes.maghrib},
-      {'name': 'Isha', 'time': prayerTimes.isha},
+      {'name': 'ফজর', 'time': prayerTimes.fajr},
+      {'name': 'সূর্যোদয়', 'time': prayerTimes.sunrise},
+      {'name': 'যুহর', 'time': prayerTimes.dhuhr},
+      {'name': 'আসর', 'time': prayerTimes.asr},
+      {'name': 'মাগরিব', 'time': prayerTimes.maghrib},
+      {'name': 'ইশা', 'time': prayerTimes.isha},
     ];
 
     // Find the current prayer time
     final currentPrayer = prayerTimesList.lastWhere(
-      (prayer) => now.isAfter(prayer['time'] as DateTime) || now.isAtSameMomentAs(prayer['time'] as DateTime),
-      orElse: () => {'name': 'None', 'time': prayerTimesList.first['time']}
-    );
+        (prayer) =>
+            now.isAfter(prayer['time'] as DateTime) ||
+            now.isAtSameMomentAs(prayer['time'] as DateTime),
+        orElse: () => {'name': 'None', 'time': prayerTimesList.first['time']});
 
     final nextPrayer = prayerTimesList.firstWhere(
       (prayer) => (prayer['time'] as DateTime).isAfter(now),
@@ -93,13 +94,13 @@ class PraytimeController extends GetxController {
     final minutes = difference.inMinutes % 60;
 
     // Format the output
-    return '${currentPrayer['name']} ${hours < 0 && minutes < 0 ? 'Less than 0h 01m' : '${hours}h ${minutes}m'} until ${nextPrayer['name']} (${DateFormat('hh:mm a').format(nextPrayer['time'] as DateTime)})';
+    return '${currentPrayer['name']} ${hours < 0 && minutes < 0 ? 'Less than 0h 01m' : '${hours}h ${minutes}m'} পরবর্তী নামাজ ${nextPrayer['name']} (${DateFormat('hh:mm a').format(nextPrayer['time'] as DateTime)})';
   }
 
   @override
   void onInit() {
     super.onInit();
-    
+
     // Initialize latitude and longitude
     latitude = Hive.box("user").get("latitude");
     longitude = Hive.box("user").get("longitude");

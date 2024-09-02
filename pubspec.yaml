@@ -29,12 +29,13 @@ dependencies:
   # geolocator: ^11.1.0
   flutter_widget_from_html: ^0.15.2
   url_launcher: ^6.3.0
+  
   # http: ^1.2.2
  
  
 
 
-  # firebase_messaging: ^14.3.0
+  firebase_messaging: ^14.3.0
   # firebase_crashlytics: ^3.0.17
 
   
