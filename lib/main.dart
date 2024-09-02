@@ -1,8 +1,9 @@
 // ignore_for_file: depend_on_referenced_packages, unused_import
 
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:ramadanplanner/app/modules/navigationbar/views/navigationbar_view.dart';
-
+import 'package:ramadanplanner/app/service/notification/firebasenotification.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 import 'Util/app_colors.dart';
@@ -19,13 +20,18 @@ void main() async {
 //  await FlutterBackgroundService.initialize(onStart);
 
   await hiveData();
-//  await  NotificationService().initNotification();
-  tz.initializeTimeZones();
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
+// Initialize NotificationService
+  
+  tz.initializeTimeZones(); 
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  await Firebase.initializeApp();
+   FirebaseNotificationService().initialize();
+   await NotificationService().init();
+  // Register background message handler
+  FirebaseMessaging.onBackgroundMessage(FirebaseNotificationService.backgroundMessageHandler);
 
-  WidgetsFlutterBinding.ensureInitialized();
 
   runApp(const MyApp());
 }
@@ -62,6 +68,7 @@ class _MyAppState extends State<MyApp> {
             scaffoldBackgroundColor: AppColors.primaryColor,
             primarySwatch: Colors.green,
           ),
+           defaultTransition: Transition.noTransition, 
         );
       },
     );

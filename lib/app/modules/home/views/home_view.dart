@@ -25,70 +25,46 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
       extendBody: true,
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          SizedBox(
-            height: 2.h,
-          ),
-          AppText(
-            text: "আস-সালামু আলাইকুম",
-            fontSize: 14,
-            fontWeight: FontWeight.normal,
-            color: Colors.grey,
-            // textAlign: TextAlign.left,
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          GetBuilder<HomeController>(
-            init: HomeController(),
-            initState: (_) {},
-            builder: (_) {
-              return Row(
-                children: [
-                  AppText(
-                    text: Hive.box('user').get('name') ?? "User",
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.white,
-                  ),
-                  
-                 
-                ],
-              );
-            },
-          ),
-        ]),
-        actions: [
-          IconButton(
-              onPressed: () async {
-                // Get.toNamed(Routes.ABOUT);
-               Hive.box("user").delete('name');
-                Hive.box("user").delete('location');
-              // print(Hive.box("user").get("location"),);
-              },
-              icon: const Icon(
-                CupertinoIcons.heart_circle,
-                color: AppColors.quinaryColor,
-              )),
-          IconButton(
-              onPressed: () async {
-                 Get.toNamed(Routes.ABOUT);
-               
-              },
-              icon: const Icon(
-                CupertinoIcons.heart_circle,
-                color: AppColors.quinaryColor,
-              )),
-        ],
-      ),
       body: ListView(
         padding: EdgeInsets.zero,
         children: [
           SizedBox(
-            height: 10.h,
+            height: 4.h,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: AppText(
+              text: "আস-সালামু আলাইকুম",
+              fontSize: 14,
+              fontWeight: FontWeight.normal,
+              color: Colors.grey,
+              // textAlign: TextAlign.left,
+            ),
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: GetBuilder<HomeController>(
+              init: HomeController(),
+              initState: (_) {},
+              builder: (_) {
+                return Row(
+                  children: [
+                    AppText(
+                      text: Hive.box('user').get('name') ?? "User",
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white,
+                    ),
+                  ],
+                );
+              },
+            ),
+          ),
+          SizedBox(
+            height: 4.h,
           ),
           Container(
             margin: const EdgeInsets.all(20),
@@ -204,7 +180,7 @@ class HomeView extends GetView<HomeController> {
                         builder: (_) {
                           final dinerkaj = Hive.box('Dtrack').length;
                           return manuButton("দিনের কাজ", "$dinerkaj/9",
-                              () => Get.toNamed(Routes.DAILY_TRACKING));
+                              () => Get.toNamed(Routes.DAILY_TRACKING , ));
                         },
                       ),
                       GetBuilder<QuranTrackerController>(
@@ -212,8 +188,11 @@ class HomeView extends GetView<HomeController> {
                         initState: (_) {},
                         builder: (_) {
                           final quranData = Hive.box('quranData').length;
-                          return manuButton("কোরআন", "$quranData/3",
-                              () => Get.toNamed(Routes.QURAN_TRACKER));
+                          return manuButton(
+                              "কোরআন",
+                              "$quranData/3",
+                              () => Get.toNamed(Routes.QURAN_TRACKER,
+                                 ));
                         },
                       ),
                       manuButton("আল্লাহ'র নাম", "99",

@@ -112,7 +112,7 @@ class PraytimeView extends GetView<PraytimeController> {
               height: 20,
             ),
             prayTime(
-              title: 'Fajr',
+              title: 'ফজর',
               time: controller.getFajrTime(),
               icon: 'assets/icon/Icon_Fajr.svg',
             ),
@@ -122,22 +122,22 @@ class PraytimeView extends GetView<PraytimeController> {
               icon: 'assets/icon/Sunrise.svg',
             ),
             prayTime(
-              title: 'Dhuhr',
+              title: 'সূর্যোদয়',
               time: controller.getdhuhrTime(),
               icon: 'assets/icon/Icon_Dhuhr.svg',
             ),
             prayTime(
-              title: 'Asr',
+              title: 'আসর',
               time: controller.getasrTime(),
               icon: 'assets/icon/Icon_Asr.svg',
             ),
             prayTime(
-              title: 'Maghrib',
+              title: 'মাগরিব',
               time: controller.getmaghribTime(),
               icon: 'assets/icon/Icon_Maghrib.svg',
             ),
             prayTime(
-              title: 'Isha',
+              title: 'ইশা',
               time: controller.getishaTime(),
               icon: 'assets/icon/Icon_Isha.svg',
             ),
