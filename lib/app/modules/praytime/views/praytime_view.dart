@@ -117,12 +117,12 @@ class PraytimeView extends GetView<PraytimeController> {
               icon: 'assets/icon/Icon_Fajr.svg',
             ),
             prayTime(
-              title: 'Sunrise',
+              title: 'সূর্যোদয়',
               time: controller.getSunRiceTime(),
               icon: 'assets/icon/Sunrise.svg',
             ),
             prayTime(
-              title: 'সূর্যোদয়',
+              title: 'যুহর',
               time: controller.getdhuhrTime(),
               icon: 'assets/icon/Icon_Dhuhr.svg',
             ),

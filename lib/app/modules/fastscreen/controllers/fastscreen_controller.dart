@@ -1,16 +1,17 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
+import 'package:ramadanplanner/app/data/dinerkaj.dart';
 import 'package:ramadanplanner/app/model/locationmodel.dart';
 import 'package:ramadanplanner/app/routes/app_pages.dart';
-import 'package:ramadanplanner/app/service/notification/firebasenotification.dart';
+// import 'package:ramadanplanner/app/service/notification/firebasenotification.dart';
+import 'package:ramadanplanner/app/service/notification/notification_service_mobile.dart';
 
 class FastscreenController extends GetxController {
-  final FirebaseNotificationService firebasenotificationService = FirebaseNotificationService();
-      
+  final NotificationService notificationService = NotificationService();
+
   final TextEditingController name = TextEditingController();
   List<LocationModel> locationList = [];
   LocationModel? selectedLocation;
@@ -58,17 +59,26 @@ class FastscreenController extends GetxController {
   }
 
   @override
-  void onInit()  {
-    Future.delayed( const Duration(
-      milliseconds: 10,
-    ), () {
-    screenChange();
-     firebasenotificationService.requestNotificationPermissions();
+  void onInit() {
+    Future.delayed(
+        const Duration(
+          milliseconds: 100,
+        ), () {
+      screenChange();
+      update();
+      NotificationService().dalyscheduleNotifications(
+        payLoad: 'DailyTask',
+        title: "আস-সালামু আলাইকুম \n আজকের দিনের কাজ হলো",
+        body: "${dinerkaj[DateTime.now().day - 1]}",
+        timeSlots: [
+          {'hour': 6, 'minute': 0},
+          {'hour': 17, 'minute': 0},
+        ],
+      );
+      fetchLocations();
     });
 
     super.onInit();
-
-    fetchLocations();
   }
 
   @override

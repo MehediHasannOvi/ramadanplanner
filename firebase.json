@@ -1,10 +1,37 @@
 {
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ramadanplannerbd",
+          "appId": "1:123081775898:android:3790bdec5a64dec58a6aa3",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ramadanplannerbd",
+          "configurations": {
+            "android": "1:123081775898:android:3790bdec5a64dec58a6aa3",
+            "ios": "1:123081775898:ios:14596f687d7ec5058a6aa3",
+            "web": "1:123081775898:web:8407066bc5eb1f158a6aa3"
+          }
+        }
+      }
+    }
+  },
   "hosting": {
-    "public": "build/web",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
