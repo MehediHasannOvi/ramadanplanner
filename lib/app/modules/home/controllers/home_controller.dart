@@ -17,7 +17,7 @@ import 'package:sizer/sizer.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import '../../../../Util/app_colors.dart';
-import '../../../service/notification/notification.dart';
+import '../../../service/notification/notification_service_mobile.dart';
 import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 import 'package:http/http.dart' as http;

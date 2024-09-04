@@ -19,6 +19,8 @@ class FirebaseNotificationService {
     await Firebase.initializeApp();
     _initializeLocalNotifications();
     _setupFirebaseMessaging();
+    requestNotificationPermissions();
+
   }
 
   // Initialize local notifications

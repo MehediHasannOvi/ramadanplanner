@@ -11,27 +11,31 @@ import 'app/data/hivaData.dart';
 import 'app/routes/app_pages.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:timezone/data/latest.dart' as tz;
-
-import 'app/service/notification/notification.dart';
+import 'package:flutter/foundation.dart';
+import 'app/service/notification/notification_service_mobile.dart';
 import 'firebase_options.dart';
 
 void main() async {
+  final NotificationService notificationService = NotificationService();
   WidgetsFlutterBinding.ensureInitialized();
+  notificationService.initNotification();
+
 //  await FlutterBackgroundService.initialize(onStart);
 
   await hiveData();
 // Initialize NotificationService
-  
-  tz.initializeTimeZones(); 
+
+  tz.initializeTimeZones();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await Firebase.initializeApp();
-   FirebaseNotificationService().initialize();
-   await NotificationService().init();
-  // Register background message handler
-  FirebaseMessaging.onBackgroundMessage(FirebaseNotificationService.backgroundMessageHandler);
 
+  FirebaseNotificationService().initialize();
+
+  // Register background message handler
+  FirebaseMessaging.onBackgroundMessage(
+      FirebaseNotificationService.backgroundMessageHandler);
 
   runApp(const MyApp());
 }
@@ -68,11 +72,9 @@ class _MyAppState extends State<MyApp> {
             scaffoldBackgroundColor: AppColors.primaryColor,
             primarySwatch: Colors.green,
           ),
-           defaultTransition: Transition.noTransition, 
+          defaultTransition: Transition.noTransition,
         );
       },
     );
   }
 }
-
-
