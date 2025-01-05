@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:ramadanplanner/app/data/dinerkaj.dart';
-import 'package:ramadanplanner/app/model/locationmodel.dart';
-import 'package:ramadanplanner/app/routes/app_pages.dart';
+import 'package:ramadan_planner/app/data/dinerkaj.dart';
+import 'package:ramadan_planner/app/model/locationmodel.dart';
+import 'package:ramadan_planner/app/routes/app_pages.dart';
 // import 'package:ramadanplanner/app/service/notification/firebasenotification.dart';
-import 'package:ramadanplanner/app/service/notification/notification_service_mobile.dart';
+import 'package:ramadan_planner/app/service/notification/notification_service_mobile.dart';
 
 class FastscreenController extends GetxController {
   final NotificationService notificationService = NotificationService();
@@ -46,7 +46,7 @@ class FastscreenController extends GetxController {
       Get.offAllNamed(Routes.NAVIGATIONBAR);
     } else {
       Get.snackbar("Error", "Please enter a valid name and select a location",
-          snackPosition: SnackPosition.top,
+          snackPosition: SnackPosition.TOP,
           // backgroundColor: Colors.red,
           colorText: Colors.white);
     }

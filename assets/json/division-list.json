@@ -1,0 +1,42 @@
+[
+  {
+      "id": 1,
+      "nameBn": "বরিশাল",
+      "nameEn": "Barishal"
+  },
+  {
+      "id": 2,
+      "nameBn": "চট্টগ্রাম",
+      "nameEn": "Chittagong"
+  },
+  {
+      "id": 3,
+      "nameBn": "ঢাকা",
+      "nameEn": "Dhaka"
+  },
+  {
+      "id": 4,
+      "nameBn": "খুলনা",
+      "nameEn": "Khulna"
+  },
+  {
+      "id": 5,
+      "nameBn": "ময়মনসিংহ",
+      "nameEn": "Mymensingh"
+  },
+  {
+      "id": 6,
+      "nameBn": "রাজশাহী",
+      "nameEn": "Rajshahi"
+  },
+  {
+      "id": 7,
+      "nameBn": "রংপুর",
+      "nameEn": "Rangpur"
+  },
+  {
+      "id": 8,
+      "nameBn": "সিলেট",
+      "nameEn": "Sylhet"
+  }
+]

@@ -9,10 +9,10 @@ import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:ramadanplanner/Util/app_text.dart';
-import 'package:ramadanplanner/app/model/locationmodel.dart';
-import 'package:ramadanplanner/app/modules/praytime/controllers/praytime_controller.dart';
-import 'package:ramadanplanner/app/routes/app_pages.dart';
+import 'package:ramadan_planner/Util/app_text.dart';
+import 'package:ramadan_planner/app/model/locationmodel.dart';
+import 'package:ramadan_planner/app/modules/praytime/controllers/praytime_controller.dart';
+import 'package:ramadan_planner/app/routes/app_pages.dart';
 import 'package:sizer/sizer.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
@@ -23,9 +23,7 @@ import '../../../data/hadis.dart';
 import 'package:http/http.dart' as http;
 
 class HomeController extends GetxController {
- 
   HijriCalendar currentDate = HijriCalendar.now();
-
 
   // this function is for diner kaj it will show a diner kaj for the current date
 
@@ -51,16 +49,13 @@ class HomeController extends GetxController {
     return dataIndex;
   }
 
-
-
   @override
   void onInit() async {
     // ignore: todo
     // TODO: implement onInit
-    
+
     getDataIndexForCurrentDate();
 
-    
     // getpraylanght;
     super.onInit();
   }

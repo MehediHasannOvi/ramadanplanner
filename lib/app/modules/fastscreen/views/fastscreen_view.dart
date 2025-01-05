@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ramadanplanner/Util/app_text.dart';
-import 'package:ramadanplanner/app/model/locationmodel.dart';
+import 'package:ramadan_planner/Util/app_text.dart';
+import 'package:ramadan_planner/app/model/locationmodel.dart';
 
 import 'package:sizer/sizer.dart';
 
@@ -104,11 +104,10 @@ class FastscreenView extends GetView<FastscreenController> {
               child: TextButton(
                 onPressed: () {
                   controller.saveName();
-                  
                 },
                 child: AppText(
                   text: "সাবমিট",
-                  fontSize: 10.sp,
+                  fontSize: 15,
                   color: Colors.black,
                 ),
               ),

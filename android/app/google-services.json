@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "123081775898",
-    "project_id": "ramadanplannerbd",
-    "storage_bucket": "ramadanplannerbd.appspot.com"
+    "project_number": "18193449539",
+    "project_id": "ramadan-planner-2025",
+    "storage_bucket": "ramadan-planner-2025.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:123081775898:android:3790bdec5a64dec58a6aa3",
+        "mobilesdk_app_id": "1:18193449539:android:4f44f7d41dfb20395f4af6",
         "android_client_info": {
-          "package_name": "com.ababildev.ramadanplanner"
+          "package_name": "com.mehediovi.ramadan_planner"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB5l4HwLkylYvk7_9P0aQk95zGXv4lbGFQ"
+          "current_key": "AIzaSyD7Q_HYMu1sqplzcql0KnTNY3XbNK9tTI0"
         }
       ],
       "services": {

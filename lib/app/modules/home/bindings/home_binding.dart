@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:ramadanplanner/app/modules/praytime/controllers/praytime_controller.dart';
+import 'package:ramadan_planner/app/modules/praytime/controllers/praytime_controller.dart';
 
 import '../controllers/home_controller.dart';
 

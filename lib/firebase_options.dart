@@ -25,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -47,29 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC2U6xN8mASwR5Qa0SR6WT4gs58BjjiRJg',
-    appId: '1:123081775898:web:8407066bc5eb1f158a6aa3',
-    messagingSenderId: '123081775898',
-    projectId: 'ramadanplannerbd',
-    authDomain: 'ramadanplannerbd.firebaseapp.com',
-    storageBucket: 'ramadanplannerbd.appspot.com',
-    measurementId: 'G-0RB8B28120',
+    apiKey: 'AIzaSyArEP-6Lct5OC0LjRcGWqA3PXoIp0TIc9o',
+    appId: '1:18193449539:web:9a189e5a469ea0895f4af6',
+    messagingSenderId: '18193449539',
+    projectId: 'ramadan-planner-2025',
+    authDomain: 'ramadan-planner-2025.firebaseapp.com',
+    storageBucket: 'ramadan-planner-2025.firebasestorage.app',
+    measurementId: 'G-QZPE9BTQ10',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB5l4HwLkylYvk7_9P0aQk95zGXv4lbGFQ',
-    appId: '1:123081775898:android:3790bdec5a64dec58a6aa3',
-    messagingSenderId: '123081775898',
-    projectId: 'ramadanplannerbd',
-    storageBucket: 'ramadanplannerbd.appspot.com',
+    apiKey: 'AIzaSyD7Q_HYMu1sqplzcql0KnTNY3XbNK9tTI0',
+    appId: '1:18193449539:android:4f44f7d41dfb20395f4af6',
+    messagingSenderId: '18193449539',
+    projectId: 'ramadan-planner-2025',
+    storageBucket: 'ramadan-planner-2025.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDVhmublVOOxovziiXqbwonZvGnKJVESaU',
-    appId: '1:123081775898:ios:14596f687d7ec5058a6aa3',
-    messagingSenderId: '123081775898',
-    projectId: 'ramadanplannerbd',
-    storageBucket: 'ramadanplannerbd.appspot.com',
-    iosBundleId: 'com.ababildev.ramadanplanner',
+    apiKey: 'AIzaSyApXsLVFn0QakO03tivvCCM-dqqN5489Mc',
+    appId: '1:18193449539:ios:a3e19a634c4ca57a5f4af6',
+    messagingSenderId: '18193449539',
+    projectId: 'ramadan-planner-2025',
+    storageBucket: 'ramadan-planner-2025.firebasestorage.app',
+    iosBundleId: 'com.mehediovi.ramadanPlanner',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyApXsLVFn0QakO03tivvCCM-dqqN5489Mc',
+    appId: '1:18193449539:ios:a3e19a634c4ca57a5f4af6',
+    messagingSenderId: '18193449539',
+    projectId: 'ramadan-planner-2025',
+    storageBucket: 'ramadan-planner-2025.firebasestorage.app',
+    iosBundleId: 'com.mehediovi.ramadanPlanner',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyArEP-6Lct5OC0LjRcGWqA3PXoIp0TIc9o',
+    appId: '1:18193449539:web:7291d63668899c1b5f4af6',
+    messagingSenderId: '18193449539',
+    projectId: 'ramadan-planner-2025',
+    authDomain: 'ramadan-planner-2025.firebaseapp.com',
+    storageBucket: 'ramadan-planner-2025.firebasestorage.app',
+    measurementId: 'G-2NHVFD7YEN',
+  );
+
 }

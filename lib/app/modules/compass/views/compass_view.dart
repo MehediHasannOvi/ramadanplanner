@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:ramadanplanner/Util/app_colors.dart';
-import 'package:ramadanplanner/Util/app_text.dart';
+import 'package:ramadan_planner/Util/app_colors.dart';
+import 'package:ramadan_planner/Util/app_text.dart';
 import '../controllers/compass_controller.dart';
 
 class CompassView extends GetView<CompassController> {

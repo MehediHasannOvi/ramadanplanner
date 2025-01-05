@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class AppText extends StatelessWidget {
   String text;
@@ -21,7 +22,7 @@ class AppText extends StatelessWidget {
     return Text(text,
         textAlign: textAlign,
         style: TextStyle(
-            fontSize: fontSize,
+            fontSize: fontSize.sp,
             fontWeight: fontWeight,
             color: color,
             fontFamily: fontFamily));

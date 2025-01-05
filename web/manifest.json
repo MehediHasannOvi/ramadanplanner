@@ -1,6 +1,6 @@
 {
-    "name": "ramadanplanner",
-    "short_name": "ramadanplanner",
+    "name": "ramadan_planner",
+    "short_name": "ramadan_planner",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

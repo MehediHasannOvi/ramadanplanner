@@ -2,8 +2,8 @@
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:ramadanplanner/app/modules/navigationbar/views/navigationbar_view.dart';
-import 'package:ramadanplanner/app/service/notification/firebasenotification.dart';
+import 'package:ramadan_planner/app/service/notification/firebasenotification.dart';
+
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 import 'Util/app_colors.dart';

@@ -5,12 +5,11 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
-.firebase/
-.vscode/
-.dart_tool
+.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
@@ -30,7 +29,6 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-.packages
 .pub-cache/
 .pub/
 /build/

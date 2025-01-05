@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
-import 'package:ramadanplanner/Util/app_text.dart';
+import 'package:ramadan_planner/Util/app_text.dart';
 import 'package:sizer/sizer.dart';
 
 import '../controllers/praytime_controller.dart';
@@ -30,7 +30,7 @@ class PraytimeView extends GetView<PraytimeController> {
               return AppText(
                 text: controller.location,
                 color: Colors.white,
-                fontSize: 10.sp,
+                fontSize: 15.sp,
                 fontWeight: FontWeight.normal,
               );
             },
@@ -51,7 +51,7 @@ class PraytimeView extends GetView<PraytimeController> {
                 return AppText(
                   text: controller.formattedTime,
                   color: Colors.white,
-                  fontSize: 34.sp,
+                  fontSize: 20.sp,
                   fontWeight: FontWeight.w500,
                   fontFamily: "Lato",
                 );
@@ -60,7 +60,7 @@ class PraytimeView extends GetView<PraytimeController> {
             AppText(
               text: controller.getCurrentPrayerTime(),
               color: Colors.white,
-              fontSize: 10.sp,
+              fontSize: 15.sp,
               fontWeight: FontWeight.w400,
               fontFamily: "Lato",
             ),
@@ -72,7 +72,7 @@ class PraytimeView extends GetView<PraytimeController> {
                 AppText(
                   text: 'Date',
                   color: Colors.white,
-                  fontSize: 10.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   fontFamily: "Lato",
                 ),
@@ -94,7 +94,7 @@ class PraytimeView extends GetView<PraytimeController> {
             AppText(
               text: controller.hijriDate.toString(),
               color: Colors.white,
-              fontSize: 14.sp,
+              fontSize: 15.sp,
               fontWeight: FontWeight.w600,
               fontFamily: "Lato",
             ),
@@ -104,7 +104,7 @@ class PraytimeView extends GetView<PraytimeController> {
             AppText(
               text: controller.date.toString(),
               color: Colors.white,
-              fontSize: 10.sp,
+              fontSize: 15.sp,
               fontWeight: FontWeight.w600,
               fontFamily: "Lato",
             ),
@@ -158,14 +158,14 @@ class PraytimeView extends GetView<PraytimeController> {
       title: AppText(
         text: title!,
         color: Colors.white,
-        fontSize: 12.sp,
+        fontSize: 15.sp,
         fontWeight: FontWeight.w500,
         fontFamily: "Lato",
       ),
       trailing: AppText(
         text: time!,
         color: Colors.white,
-        fontSize: 10.sp,
+        fontSize: 15.sp,
         fontWeight: FontWeight.w500,
         fontFamily: "Lato",
       ),

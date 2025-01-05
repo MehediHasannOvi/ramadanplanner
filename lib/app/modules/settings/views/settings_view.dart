@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:ramadanplanner/Util/app_colors.dart';
-import 'package:ramadanplanner/Util/app_text.dart';
-import 'package:ramadanplanner/app/modules/settings/screen/privacy.dart';
-import 'package:ramadanplanner/app/modules/settings/screen/terms.dart';
+import 'package:ramadan_planner/Util/app_colors.dart';
+import 'package:ramadan_planner/Util/app_text.dart';
+import 'package:ramadan_planner/app/modules/settings/screen/privacy.dart';
+import 'package:ramadan_planner/app/modules/settings/screen/terms.dart';
 import 'package:sizer/sizer.dart';
 
 import '../controllers/settings_controller.dart';
@@ -20,7 +20,8 @@ class SettingsView extends GetView<SettingsController> {
             text: "Settings",
             color: Colors.white,
             fontFamily: "Lato",
-            fontSize: 14.sp,
+            fontSize: 16.sp,
+            fontWeight: FontWeight.w600,
           )),
           body: Container(
             margin: const EdgeInsets.only(top: 25, left: 20, right: 20),
@@ -30,7 +31,7 @@ class SettingsView extends GetView<SettingsController> {
                   text: "Genaral",
                   color: AppColors.quinaryColor,
                   fontFamily: "Lato",
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                 ),
                 settingButton(
@@ -47,7 +48,7 @@ class SettingsView extends GetView<SettingsController> {
                   text: "Theme",
                   color: AppColors.quinaryColor,
                   fontFamily: "Lato",
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                 ),
                 settingButton(
@@ -59,7 +60,7 @@ class SettingsView extends GetView<SettingsController> {
                   text: "Application",
                   color: AppColors.quinaryColor,
                   fontFamily: "Lato",
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                 ),
                 settingButton(
@@ -117,7 +118,7 @@ class SettingsView extends GetView<SettingsController> {
           text: title!,
           color: Colors.white,
           fontFamily: "Lato",
-          fontSize: 12.sp,
+          fontSize: 15.sp,
           fontWeight: FontWeight.w500,
         ),
         trailing: isIcon! // a boolean value

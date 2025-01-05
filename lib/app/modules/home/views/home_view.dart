@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -73,7 +71,7 @@ class HomeView extends GetView<HomeController> {
               children: [
                 AppText(
                   text: "পবিত্র মাহে \nরামাদানের শুভেচ্ছা",
-                  fontSize: 35,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: AppColors.quinaryColor,
                   textAlign: TextAlign.left,
@@ -179,8 +177,12 @@ class HomeView extends GetView<HomeController> {
                         initState: (_) {},
                         builder: (_) {
                           final dinerkaj = Hive.box('Dtrack').length;
-                          return manuButton("দিনের কাজ", "$dinerkaj/9",
-                              () => Get.toNamed(Routes.DAILY_TRACKING , ));
+                          return manuButton(
+                              "দিনের কাজ",
+                              "$dinerkaj/9",
+                              () => Get.toNamed(
+                                    Routes.DAILY_TRACKING,
+                                  ));
                         },
                       ),
                       GetBuilder<QuranTrackerController>(
@@ -191,8 +193,9 @@ class HomeView extends GetView<HomeController> {
                           return manuButton(
                               "কোরআন",
                               "$quranData/3",
-                              () => Get.toNamed(Routes.QURAN_TRACKER,
-                                 ));
+                              () => Get.toNamed(
+                                    Routes.QURAN_TRACKER,
+                                  ));
                         },
                       ),
                       manuButton("আল্লাহ'র নাম", "99",

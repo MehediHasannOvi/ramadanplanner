@@ -17,6 +17,7 @@ abstract class Routes {
   static const PRAYTIME = _Paths.PRAYTIME;
   static const COMPASS = _Paths.COMPASS;
   static const FASTSCREEN = _Paths.FASTSCREEN;
+  static const RAMADANCALENDAR = _Paths.RAMADANCALENDAR;
 }
 
 abstract class _Paths {
@@ -33,4 +34,5 @@ abstract class _Paths {
   static const PRAYTIME = '/praytime';
   static const COMPASS = '/compass';
   static const FASTSCREEN = '/fastscreen';
+  static const RAMADANCALENDAR = '/ramadancalendar';
 }

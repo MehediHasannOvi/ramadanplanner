@@ -1,12 +1,10 @@
-
-
 // lib/app/service/notification/notification_service_mobile.dart
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:ramadanplanner/app/routes/app_pages.dart';
+import 'package:ramadan_planner/app/routes/app_pages.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
@@ -29,8 +27,8 @@ class NotificationService {
       defaultPresentAlert: true,
       defaultPresentBadge: true,
       defaultPresentSound: true,
-      onDidReceiveLocalNotification:
-          (int id, String? title, String? body, String? payload) async {},
+      // onDidReceiveLocalNotification:
+      //     (int id, String? title, String? body, String? payload) async {},
     );
 
     var initializationSettings = InitializationSettings(
@@ -43,7 +41,6 @@ class NotificationService {
       onDidReceiveNotificationResponse: (NotificationResponse details) {
         Get.offNamed(Routes.DAILY_TRACKING);
       },
-    
     );
 
     const AndroidNotificationChannel channel = AndroidNotificationChannel(
@@ -71,13 +68,13 @@ class NotificationService {
           Get.snackbar(
             'Permission Denied',
             'Notification permissions are required to receive notifications.',
-            snackPosition: SnackPosition.bottom,
+            snackPosition: SnackPosition.BOTTOM,
           );
         } else if (result.isPermanentlyDenied) {
           Get.snackbar(
             'Permission Required',
             'Notification permissions are required. Please enable them in app settings.',
-            snackPosition: SnackPosition.bottom,
+            snackPosition: SnackPosition.BOTTOM,
           );
           openAppSettings();
         }
@@ -85,7 +82,7 @@ class NotificationService {
         Get.snackbar(
           'Permission Required',
           'Notification permissions are required. Please enable them in app settings.',
-          snackPosition: SnackPosition.bottom,
+          snackPosition: SnackPosition.BOTTOM,
         );
         openAppSettings();
       }
@@ -185,7 +182,7 @@ class NotificationService {
       scheduledDate = scheduledDate.add(const Duration(days: 1));
     }
 
-    print("Notification Scheduled ${scheduledDate}");
+    print("Notification Scheduled $scheduledDate");
     return scheduledDate;
   }
 }

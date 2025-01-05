@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ramadanplanner/Util/app_text.dart';
-import 'package:ramadanplanner/Util/app_colors.dart';
+import 'package:ramadan_planner/Util/app_text.dart';
+import 'package:ramadan_planner/Util/app_colors.dart';
 import 'package:sizer/sizer.dart';
 
 manuButton(String name, String com, Function()? tap) {
@@ -34,13 +34,13 @@ manuButton(String name, String com, Function()? tap) {
             children: [
               AppText(
                 text: name,
-                fontSize: 10.sp,
+                fontSize: 15,
                 color: Colors.white,
                 textAlign: TextAlign.left,
               ),
               AppText(
                 text: com,
-                fontSize: 8.sp,
+                fontSize: 13,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
                 textAlign: TextAlign.left,

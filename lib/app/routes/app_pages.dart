@@ -20,6 +20,8 @@ import '../modules/navigationbar/bindings/navigationbar_binding.dart';
 import '../modules/navigationbar/views/navigationbar_view.dart';
 import '../modules/praytime/bindings/praytime_binding.dart';
 import '../modules/praytime/views/praytime_view.dart';
+import '../modules/ramadancalendar/bindings/ramadancalendar_binding.dart';
+import '../modules/ramadancalendar/views/ramadancalendar_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
 import '../modules/settings/views/settings_view.dart';
 
@@ -87,6 +89,11 @@ class AppPages {
       name: _Paths.FASTSCREEN,
       page: () => const FastscreenView(),
       binding: FastscreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.RAMADANCALENDAR,
+      page: () => const RamadancalendarView(),
+      binding: RamadancalendarBinding(),
     ),
   ];
 }

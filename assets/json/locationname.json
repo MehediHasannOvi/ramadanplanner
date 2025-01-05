@@ -366,7 +366,11 @@
         "lng": 90.829400,
         "division_id": 2,
         "place_name_eng": "Bhola",
-        "is_upazila": 0
+        "is_upazila": 0,
+        "seheriTimeDifference": -2,
+        "ifterTimeDifference": -2,
+        "seheriTimeDifferenceRamadan": 0,
+        "ifterTimeDifferenceRamadan": -2
       },
       {
         "id": 42,
