@@ -15,6 +15,14 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
         appBar: AppBar(
           title: const Text('কোরআন'),
           centerTitle: true,
+          actions: [
+            IconButton(
+                onPressed: () {
+                  controller.getHadisData();
+                  print("Hadis***********************************");
+                },
+                icon: Icon(Icons.troubleshoot))
+          ],
         ),
         body: Container(
           margin: const EdgeInsets.all(20),
@@ -26,13 +34,26 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: AppColors.secondaryColor),
-                child: const Center(
-                    child: Text(
-                  "আবূ হাযিম (রহ.) সাহল ইবনু সা‘দ (রাযি.) হতে বর্ণনা করেন যে, সাহাবায়ে কিরাম নবী সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম -এর সঙ্গে তহবন্দ কাঁধে বেঁধে সালাত আদায় করেছিলেন।",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                )),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    AppText(
+                      text:  controller.hadisName ?? "হাদিস লোড হচ্ছে...",
+                      fontSize: 16,
+                      color:Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Li",
+                    ),
+                    SizedBox(height: 5,),
+                    AppText(
+                      text:  controller.hadisdescription ?? "হাদিস লোড হচ্ছে...",
+                      fontSize: 15,
+                      color:Colors.white,
+                      fontFamily: "Li",
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 20.h,

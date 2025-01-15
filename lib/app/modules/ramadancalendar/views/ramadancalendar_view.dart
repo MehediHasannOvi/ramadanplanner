@@ -26,8 +26,8 @@ class RamadancalendarView extends GetView<RamadancalendarController> {
             ),
             SizedBox(height: 20),
             Container(
-              height: 5.h,
-              margin: EdgeInsets.symmetric(horizontal: 120),
+               padding: EdgeInsets.all(20),
+               margin: EdgeInsets.symmetric(horizontal: 80),
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 border: Border.all(color: AppColors.secondaryColor),
@@ -40,6 +40,7 @@ class RamadancalendarView extends GetView<RamadancalendarController> {
                   fontFamily: "Lato",
                   fontSize: 15,
                   fontWeight: FontWeight.w500,
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
@@ -110,7 +111,8 @@ class RamadancalendarView extends GetView<RamadancalendarController> {
                 return Container(
                   margin: EdgeInsets.only(top: 15),
                   height: 6.h,
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                   decoration: BoxDecoration(
                     color: AppColors.secondaryColor,
                     borderRadius: BorderRadius.circular(10),
@@ -136,7 +138,8 @@ class RamadancalendarView extends GetView<RamadancalendarController> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           AppText(
-                            text: "০৬:৩০ pm", // Example Iftar time (Bangla format)
+                            text:
+                                "০৬:৩০ pm", // Example Iftar time (Bangla format)
                             color: Colors.white70,
                             fontFamily: "Lato",
                             fontSize: 15,
@@ -147,7 +150,7 @@ class RamadancalendarView extends GetView<RamadancalendarController> {
                               text: label,
                               color: Colors.amber,
                               fontFamily: "Lato",
-                              fontSize: 13,
+                              fontSize: 14,
                               fontWeight: FontWeight.w600,
                             ),
                         ],

@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:adhan/adhan.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
@@ -22,7 +21,7 @@ class PraytimeController extends GetxController {
 
   // Get formatted time as a String
   String get formattedTime {
-    return DateFormat('HH:mm').format(currentTime.value,);
+    return DateFormat('HH:mm').format(currentTime.value);
   }
 
   String date = DateFormat('d MMMM, yyyy').format(DateTime.now());
@@ -62,9 +61,37 @@ class PraytimeController extends GetxController {
     return DateFormat('hh:mm a').format(prayerTimes.isha);
   }
 
+  // Check if the current time is within forbidden prayer times
+  bool isForbiddenTime(DateTime currentTime) {
+    final prayerTimes = getPrayerTimes();
+
+    // Check if before sunrise
+    if (currentTime.isBefore(prayerTimes.sunrise)) {
+      return true;
+    }
+
+    // Check if at noon (when the sun is at its peak)
+    if (currentTime.isAfter(prayerTimes.dhuhr.subtract(Duration(minutes: 5))) &&
+        currentTime.isBefore(prayerTimes.dhuhr.add(Duration(minutes: 5)))) {
+      return true;
+    }
+
+    // Check if after sunset (during the time the sun is setting)
+    if (currentTime.isAfter(prayerTimes.maghrib.subtract(Duration(minutes: 5))) &&
+        currentTime.isBefore(prayerTimes.maghrib.add(Duration(minutes: 5)))) {
+      return true;
+    }
+
+    return false;
+  }
+
   String getCurrentPrayerTime() {
     final prayerTimes = getPrayerTimes();
     final now = DateTime.now();
+
+    if (isForbiddenTime(now)) {
+      return "এটি নামাজ পড়ার নিষিদ্ধ সময়।";
+    }
 
     // List of prayer times in order, each with a name and time
     final List<Map<String, dynamic>> prayerTimesList = [
@@ -78,10 +105,11 @@ class PraytimeController extends GetxController {
 
     // Find the current prayer time
     final currentPrayer = prayerTimesList.lastWhere(
-        (prayer) =>
-            now.isAfter(prayer['time'] as DateTime) ||
-            now.isAtSameMomentAs(prayer['time'] as DateTime),
-        orElse: () => {'name': 'None', 'time': prayerTimesList.first['time']});
+      (prayer) =>
+          now.isAfter(prayer['time'] as DateTime) ||
+          now.isAtSameMomentAs(prayer['time'] as DateTime),
+      orElse: () => {'name': 'None', 'time': prayerTimesList.first['time']},
+    );
 
     final nextPrayer = prayerTimesList.firstWhere(
       (prayer) => (prayer['time'] as DateTime).isAfter(now),

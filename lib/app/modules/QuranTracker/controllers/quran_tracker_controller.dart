@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
+import 'package:ramadan_planner/app/model/hadismodel.dart';
 
 import '../../../../Util/app_colors.dart';
 
@@ -11,6 +15,8 @@ class QuranTrackerController extends GetxController {
   TextEditingController ayatController = TextEditingController();
   TextEditingController paraController = TextEditingController();
   TextEditingController pageController = TextEditingController();
+  String? hadisdescription;
+  String? hadisName;
 
   bool visibility = false;
 
@@ -30,8 +36,6 @@ class QuranTrackerController extends GetxController {
     update();
     // onDelete();
   }
-
-  
 
   getquranData() {
     if (ayatController.text.isNotEmpty &&
@@ -57,6 +61,23 @@ class QuranTrackerController extends GetxController {
     }
   }
 
+  Future<List<HadisModel>> getHadisData() async {
+    String data = await rootBundle.loadString('assets/json/hadis.json');
+    List<dynamic> mapData = json.decode(data);
+
+// Parse into a list of HadisModel
+    List<HadisModel> hadisList =
+        mapData.map((e) => HadisModel.fromJson(e)).toList();
+
+// ramdom one hadis data show
+    HadisModel randomHadis =
+        hadisList[DateTime.now().second % hadisList.length];
+    hadisdescription = randomHadis.description;
+    hadisName = randomHadis.name;
+
+    return hadisList;
+  }
+
   @override
   void onClose() {
     // ignore: todo
@@ -66,5 +87,11 @@ class QuranTrackerController extends GetxController {
     pageController.clear();
 
     super.onClose();
+  }
+
+  @override
+  void onInit() {
+    // ignore: todo
+    getHadisData();
   }
 }

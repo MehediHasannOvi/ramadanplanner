@@ -27,7 +27,7 @@ class HomeView extends GetView<HomeController> {
         padding: EdgeInsets.zero,
         children: [
           SizedBox(
-            height: 4.h,
+            height: 6.h,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20),

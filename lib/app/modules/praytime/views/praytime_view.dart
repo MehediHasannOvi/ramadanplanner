@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 import 'package:flutter_svg/flutter_svg.dart';
-
 import 'package:get/get.dart';
 import 'package:ramadan_planner/Util/app_text.dart';
 import 'package:sizer/sizer.dart';
-
 import '../controllers/praytime_controller.dart';
 
 class PraytimeView extends GetView<PraytimeController> {
   const PraytimeView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +17,7 @@ class PraytimeView extends GetView<PraytimeController> {
           Icon(
             Icons.location_on_outlined,
             color: Colors.white,
-            size: 14.sp,
+            size: 14,
           ),
           const SizedBox(
             width: 10,
@@ -28,9 +27,9 @@ class PraytimeView extends GetView<PraytimeController> {
             initState: (_) {},
             builder: (_) {
               return AppText(
-                text: controller.location,
+                text: controller.location ?? 'Location not set',
                 color: Colors.white,
-                fontSize: 15.sp,
+                fontSize: 15,
                 fontWeight: FontWeight.normal,
               );
             },
@@ -51,7 +50,7 @@ class PraytimeView extends GetView<PraytimeController> {
                 return AppText(
                   text: controller.formattedTime,
                   color: Colors.white,
-                  fontSize: 20.sp,
+                  fontSize: 20,
                   fontWeight: FontWeight.w500,
                   fontFamily: "Lato",
                 );
@@ -60,7 +59,7 @@ class PraytimeView extends GetView<PraytimeController> {
             AppText(
               text: controller.getCurrentPrayerTime(),
               color: Colors.white,
-              fontSize: 15.sp,
+              fontSize: 15,
               fontWeight: FontWeight.w400,
               fontFamily: "Lato",
             ),
@@ -72,7 +71,7 @@ class PraytimeView extends GetView<PraytimeController> {
                 AppText(
                   text: 'Date',
                   color: Colors.white,
-                  fontSize: 15.sp,
+                  fontSize: 15,
                   fontWeight: FontWeight.w500,
                   fontFamily: "Lato",
                 ),
@@ -89,12 +88,10 @@ class PraytimeView extends GetView<PraytimeController> {
             const SizedBox(
               height: 10,
             ),
-
-            // HijriDate Widget
             AppText(
               text: controller.hijriDate.toString(),
               color: Colors.white,
-              fontSize: 15.sp,
+              fontSize: 15,
               fontWeight: FontWeight.w600,
               fontFamily: "Lato",
             ),
@@ -104,7 +101,7 @@ class PraytimeView extends GetView<PraytimeController> {
             AppText(
               text: controller.date.toString(),
               color: Colors.white,
-              fontSize: 15.sp,
+              fontSize: 15,
               fontWeight: FontWeight.w600,
               fontFamily: "Lato",
             ),
@@ -158,14 +155,14 @@ class PraytimeView extends GetView<PraytimeController> {
       title: AppText(
         text: title!,
         color: Colors.white,
-        fontSize: 15.sp,
+        fontSize: 15,
         fontWeight: FontWeight.w500,
         fontFamily: "Lato",
       ),
       trailing: AppText(
         text: time!,
         color: Colors.white,
-        fontSize: 15.sp,
+        fontSize: 15,
         fontWeight: FontWeight.w500,
         fontFamily: "Lato",
       ),
