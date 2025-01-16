@@ -15,14 +15,7 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
         appBar: AppBar(
           title: const Text('কোরআন'),
           centerTitle: true,
-          actions: [
-            IconButton(
-                onPressed: () {
-                  controller.getHadisData();
-                  print("Hadis***********************************");
-                },
-                icon: Icon(Icons.troubleshoot))
-          ],
+        
         ),
         body: Container(
           margin: const EdgeInsets.all(20),
@@ -39,17 +32,19 @@ class QuranTrackerView extends GetView<QuranTrackerController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     AppText(
-                      text:  controller.hadisName ?? "হাদিস লোড হচ্ছে...",
+                      text: controller.hadisName ?? "হাদিস লোড হচ্ছে...",
                       fontSize: 16,
-                      color:Colors.white,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Li",
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     AppText(
-                      text:  controller.hadisdescription ?? "হাদিস লোড হচ্ছে...",
+                      text: controller.hadisdescription ?? "হাদিস লোড হচ্ছে...",
                       fontSize: 15,
-                      color:Colors.white,
+                      color: Colors.white,
                       fontFamily: "Li",
                     ),
                   ],
