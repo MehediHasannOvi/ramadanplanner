@@ -1,1 +1,39 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"ramadan-planner-2025","appId":"1:18193449539:android:4f44f7d41dfb20395f4af6","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"ramadan-planner-2025","configurations":{"android":"1:18193449539:android:4f44f7d41dfb20395f4af6","ios":"1:18193449539:ios:a3e19a634c4ca57a5f4af6","macos":"1:18193449539:ios:a3e19a634c4ca57a5f4af6","web":"1:18193449539:web:9a189e5a469ea0895f4af6","windows":"1:18193449539:web:7291d63668899c1b5f4af6"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ramadan-planner-2025",
+          "appId": "1:18193449539:android:4f44f7d41dfb20395f4af6",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ramadan-planner-2025",
+          "configurations": {
+            "android": "1:18193449539:android:4f44f7d41dfb20395f4af6",
+            "ios": "1:18193449539:ios:a3e19a634c4ca57a5f4af6",
+            "macos": "1:18193449539:ios:a3e19a634c4ca57a5f4af6",
+            "web": "1:18193449539:web:9a189e5a469ea0895f4af6",
+            "windows": "1:18193449539:web:7291d63668899c1b5f4af6"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
