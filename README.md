@@ -1,47 +1,65 @@
-
 # Ramadan Planner
 
 A comprehensive app to enhance your Ramadan experience. With **Ramadan Planner**, you can:  
-- Track daily prayer times.  
-- Access Quran and Hadith collections.  
-- Manage your daily good deeds and track your progress.  
-- Receive reminders for Suhoor, Iftar, and prayer times.  
-- Get daily Hadith notifications for spiritual motivation.  
-- Plan and reflect on your Ramadan goals.  
+- Track daily prayer times with precision.  
+- Access Quran and Hadith collections in an organized and user-friendly way.  
+- Manage your daily good deeds and monitor your spiritual progress.  
+- Receive reminders for Suhoor, Iftar, and all prayer times based on your location.  
+- Get inspiring daily Hadith notifications for motivation and reflection.  
+- Plan and achieve your Ramadan goals effectively.  
 
-This app is designed to help you make the most of this holy month with ease and convenience.
+This app is designed to help you stay connected with your faith and make the most of this holy month with ease and convenience.
 
 ---
 
 ## Features
 
-- **Prayer Time Tracking**: Never miss a prayer with accurate local prayer times.  
-- **Ramadan Timetable**: Suhoor and Iftar reminders tailored to your location.  
-- **Daily Hadith Notifications**: Receive inspiring Hadiths every day.  
-- **Quran Access**: Read and bookmark your favorite Quranic verses.  
-- **Good Deeds Tracker**: Record and reflect on your daily acts of kindness and worship.  
+### 1. **Prayer Time Tracking**
+Never miss a prayer with accurate, location-based prayer timings. The app provides notifications to remind you of each Salah.
+
+### 2. **Ramadan Timetable**
+Customizable reminders for Suhoor and Iftar to ensure you never miss these significant moments during Ramadan.
+
+### 3. **Daily Hadith Notifications**
+Receive inspiring Hadiths daily to keep you motivated and spiritually uplifted throughout the month.
+
+### 4. **Quran Access**
+Read, search, and bookmark your favorite Quranic verses with ease. A seamless experience for daily recitation.
+
+### 5. **Good Deeds Tracker**
+Record your daily acts of kindness, charity, and worship. Reflect on your progress and strive for self-improvement.
+
+### 6. **Ramadan Goals**
+Set and track personal goals for the holy month, whether it's completing the Quran, helping others, or improving your prayers.
 
 ---
 
 ## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color     | ![#07160D](https://via.placeholder.com/10/07160D?text=+) #07160D |
-| Example Color     | ![#214031](https://via.placeholder.com/10/214031?text=+) #214031 |
-| Example Color     | ![#3E7B5E](https://via.placeholder.com/10/3E7B5E?text=+) #3E7B5E |
-| Example Color     | ![#FFE500](https://via.placeholder.com/10/FFE500?text=+) #FFE500 |
+| Color Name      | Hex Code   |
+|-----------------|------------|
+| Dark Green      | #07160D    |
+| Forest Green    | #214031    |
+| Mint Green      | #3E7B5E    |
+| Yellow          | #FFE500    |
 
 ---
 
 ## Deployment
 
-To deploy this project, run:
+To deploy this project, follow these steps:
 
-```bash
+
+# Clone the repository
 git clone https://github.com/MehediHasannOvi/ramadanplanner.git
+
+# Navigate to the project directory
 cd ramadanplanner
+
+# Install dependencies
 flutter pub get
+
+# Run the application
 flutter run
 
 
