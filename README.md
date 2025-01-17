@@ -1,37 +1,49 @@
 
 # Ramadan Planner
 
-This App You Can Get Pray Time traking , quran , Good Work you Can traking Your All Good Work 
+A comprehensive app to enhance your Ramadan experience. With **Ramadan Planner**, you can:  
+- Track daily prayer times.  
+- Access Quran and Hadith collections.  
+- Manage your daily good deeds and track your progress.  
+- Receive reminders for Suhoor, Iftar, and prayer times.  
+- Get daily Hadith notifications for spiritual motivation.  
+- Plan and reflect on your Ramadan goals.  
+
+This app is designed to help you make the most of this holy month with ease and convenience.
+
+---
+
+## Features
+
+- **Prayer Time Tracking**: Never miss a prayer with accurate local prayer times.  
+- **Ramadan Timetable**: Suhoor and Iftar reminders tailored to your location.  
+- **Daily Hadith Notifications**: Receive inspiring Hadiths every day.  
+- **Quran Access**: Read and bookmark your favorite Quranic verses.  
+- **Good Deeds Tracker**: Record and reflect on your daily acts of kindness and worship.  
+
+---
 
 ## Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#07160D](https://via.placeholder.com/10/07160D?text=+) #07160D |
-| Example Color | ![#214031](https://via.placeholder.com/10/214031?text=+) #214031 |
-| Example Color | ![#3E7B5E](https://via.placeholder.com/10/00b48a?text=+) #3E7B5E |
-| Example Color | ![#FFE500](https://via.placeholder.com/10/3E7B5E?text=+) #FFE500 |
+| Example Color     | ![#07160D](https://via.placeholder.com/10/07160D?text=+) #07160D |
+| Example Color     | ![#214031](https://via.placeholder.com/10/214031?text=+) #214031 |
+| Example Color     | ![#3E7B5E](https://via.placeholder.com/10/3E7B5E?text=+) #3E7B5E |
+| Example Color     | ![#FFE500](https://via.placeholder.com/10/FFE500?text=+) #FFE500 |
 
+---
 
 ## Deployment
 
-To deploy this project run
+To deploy this project, run:
 
 ```bash
-   git clone https://github.com/MehediHasannOvi/ramadanplanner.git
-```
+git clone https://github.com/MehediHasannOvi/ramadanplanner.git
+cd ramadanplanner
+flutter pub get
+flutter run
 
-```bash
-    cd ramadanplanner
-```
-
-```bash
-  Flutter Pub get 
-```
-
-```bash
-Flutter Run
-```
 
 
 ## Screenshots
