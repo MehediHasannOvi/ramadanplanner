@@ -28,9 +28,9 @@ class PrayTrackerController extends GetxController {
     return hadisList;
   }
 
-  void clearNamazDataIfNeeded() {
+  void clearNamazDataIfNeeded()async {
     if (namazData.get('date') != today) {
-      namazData.clear();
+    await  namazData.clear();
       update();
     }
   }

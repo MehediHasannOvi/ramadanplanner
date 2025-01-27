@@ -1,12 +1,14 @@
 // lib/app/service/notification/notification_service_mobile.dart
-import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:ramadan_planner/app/routes/app_pages.dart';
+import 'package:ramadan_planner/app/service/notification_permissions.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
+
+   final notificationPermissions = requestPermissions();
 
 class NotificationService {
   final FlutterLocalNotificationsPlugin notificationsPlugin =
@@ -18,7 +20,9 @@ class NotificationService {
     AndroidInitializationSettings initializationSettingsAndroid =
         const AndroidInitializationSettings('@mipmap/ic_launcher');
 
-    await requestPermissions();
+
+   // request notification permission
+    await notificationPermissions;
 
     var initializationSettingsIOS = DarwinInitializationSettings(
       requestAlertPermission: true,
@@ -59,40 +63,7 @@ class NotificationService {
         .createNotificationChannel(channel);
   }
 
-  Future<void> requestPermissions() async {
-    if (Platform.isAndroid) {
-      final status = await Permission.notification.status;
-      if (status.isDenied) {
-        final result = await Permission.notification.request();
-        if (result.isDenied) {
-          Get.snackbar(
-            'Permission Denied',
-            'Notification permissions are required to receive notifications.',
-            snackPosition: SnackPosition.BOTTOM,
-          );
-        } else if (result.isPermanentlyDenied) {
-          Get.snackbar(
-            'Permission Required',
-            'Notification permissions are required. Please enable them in app settings.',
-            snackPosition: SnackPosition.BOTTOM,
-          );
-          openAppSettings();
-        }
-      } else if (status.isPermanentlyDenied) {
-        Get.snackbar(
-          'Permission Required',
-          'Notification permissions are required. Please enable them in app settings.',
-          snackPosition: SnackPosition.BOTTOM,
-        );
-        openAppSettings();
-      }
-    } else if (Platform.isIOS) {
-      final status = await Permission.notification.status;
-      if (!status.isGranted) {
-        await Permission.notification.request();
-      }
-    }
-  }
+ 
 
   NotificationDetails notificationDetails() {
     return const NotificationDetails(

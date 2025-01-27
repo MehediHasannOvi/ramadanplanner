@@ -1,16 +1,32 @@
 import 'dart:async';
 import 'package:adhan/adhan.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:ramadan_planner/app/service/geolocation_permissions.dart';
 
 class PraytimeController extends GetxController {
   var hijriDate = HijriCalendar.now().toFormat("d MMMM, yyyy");
   var currentTime = DateTime.now().obs;
   Timer? _timer;
   String address = 'Fetching location...';
+
+  getlocation() async {
+    final LocationSettings locationSettings = LocationSettings(
+      accuracy: LocationAccuracy.high,
+      distanceFilter: 100,
+    );
+    StreamSubscription<Position> positionStream =
+        Geolocator.getPositionStream(locationSettings: locationSettings)
+            .listen((Position? position) {
+      print(position == null
+          ? 'Unknown'
+          : '${position.latitude.toString()}, ${position.longitude.toString()}');
+    });
+  }
 
   // Function to get the location name
   // Function to get the location name
@@ -23,8 +39,7 @@ class PraytimeController extends GetxController {
       // Extract relevant address details
       if (placemarks.isNotEmpty) {
         Placemark place = placemarks.first;
-        address =
-            ' ${place.subAdministrativeArea}, ${place.isoCountryCode}';
+        address = ' ${place.subAdministrativeArea}, ${place.isoCountryCode}';
         //${place.name}, ${place.subLocality},
       } else {
         address = 'Location name not found';
@@ -161,6 +176,10 @@ class PraytimeController extends GetxController {
     // Initialize latitude and longitude
     latitude = Hive.box("user").get("latitude");
     longitude = Hive.box("user").get("longitude");
+
+    // Get the location name
+    getlocation();
+    getLocationName(23.5449, 90.5296);
 
     // Initialize myCoordinates after latitude and longitude are set
     myCoordinates = Coordinates(latitude, longitude);

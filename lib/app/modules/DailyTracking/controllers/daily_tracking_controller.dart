@@ -10,10 +10,12 @@ class DailyTrackingController extends GetxController {
 
   final dailyData = Hive.box('Dtrack');
   final now = DateTime.now().day;
-  hiveDetele() {
+
+
+  hiveDetele()async {
     if (dailyData.get('date') == now) {
     } else {
-      dailyData.clear();
+     await dailyData.clear();
       update();
     }
   }

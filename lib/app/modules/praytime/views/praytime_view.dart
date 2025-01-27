@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:ramadan_planner/Util/app_text.dart';
 import 'package:sizer/sizer.dart';
 import '../controllers/praytime_controller.dart';
-
+import 'package:ramadan_planner/app/service/geolocation_permissions.dart';
 class PraytimeView extends GetView<PraytimeController> {
   const PraytimeView({super.key});
 
@@ -27,7 +27,7 @@ class PraytimeView extends GetView<PraytimeController> {
               initState: (_) {},
               builder: (_) {
                 return AppText(
-                   text: controller.address ?? 'Location not set',
+                  text: controller.address ?? 'Location not set',
                   color: Colors.white,
                   fontSize: 15,
                   fontWeight: FontWeight.normal,
@@ -39,7 +39,8 @@ class PraytimeView extends GetView<PraytimeController> {
         actions: [
           IconButton(
             onPressed: () {
-              print(controller.getLocationName(23.5449, 90.5296));
+              // print(controller.getLocationName(23.5449, 90.5296));
+            controller.getlocation();
             },
             icon: Icon(
               Icons.settings,
@@ -78,7 +79,6 @@ class PraytimeView extends GetView<PraytimeController> {
             SizedBox(
               height: 6.h,
             ),
-            
             Row(
               children: [
                 AppText(
