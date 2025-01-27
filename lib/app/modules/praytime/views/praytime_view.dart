@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:ramadan_planner/Util/app_text.dart';
@@ -12,30 +12,42 @@ class PraytimeView extends GetView<PraytimeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Row(
-        children: [
-          Icon(
-            Icons.location_on_outlined,
-            color: Colors.white,
-            size: 14,
-          ),
-          const SizedBox(
-            width: 10,
-          ),
-          GetBuilder<PraytimeController>(
-            init: PraytimeController(),
-            initState: (_) {},
-            builder: (_) {
-              return AppText(
-                text: controller.location ?? 'Location not set',
-                color: Colors.white,
-                fontSize: 15,
-                fontWeight: FontWeight.normal,
-              );
+        title: Row(
+          children: [
+            Icon(
+              Icons.location_on_outlined,
+              color: Colors.white,
+              size: 14,
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            GetBuilder<PraytimeController>(
+              init: PraytimeController(),
+              initState: (_) {},
+              builder: (_) {
+                return AppText(
+                   text: controller.address ?? 'Location not set',
+                  color: Colors.white,
+                  fontSize: 15,
+                  fontWeight: FontWeight.normal,
+                );
+              },
+            )
+          ],
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              print(controller.getLocationName(23.5449, 90.5296));
             },
+            icon: Icon(
+              Icons.settings,
+              color: Colors.white,
+            ),
           )
         ],
-      )),
+      ),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: ListView(
@@ -66,6 +78,7 @@ class PraytimeView extends GetView<PraytimeController> {
             SizedBox(
               height: 6.h,
             ),
+            
             Row(
               children: [
                 AppText(

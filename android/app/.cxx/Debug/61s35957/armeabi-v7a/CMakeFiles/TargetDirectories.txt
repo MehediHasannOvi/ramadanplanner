@@ -1,0 +1,2 @@
+C:/Users/Mehedi Hasan Ovi/Desktop/ramadan-planner/android/app/.cxx/Debug/61s35957/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Mehedi Hasan Ovi/Desktop/ramadan-planner/android/app/.cxx/Debug/61s35957/armeabi-v7a/CMakeFiles/rebuild_cache.dir

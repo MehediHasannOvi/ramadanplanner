@@ -23,6 +23,7 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
       extendBody: true,
       extendBodyBehindAppBar: true,
+      
       body: ListView(
         padding: EdgeInsets.zero,
         children: [

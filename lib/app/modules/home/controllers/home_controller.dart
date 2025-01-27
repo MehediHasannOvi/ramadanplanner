@@ -22,8 +22,14 @@ import '../../../data/dinerkaj.dart';
 import '../../../data/hadis.dart';
 import 'package:http/http.dart' as http;
 
+
 class HomeController extends GetxController {
   HijriCalendar currentDate = HijriCalendar.now();
+
+  // Place Name Finder 
+
+
+
 
   // this function is for diner kaj it will show a diner kaj for the current date
 

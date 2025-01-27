@@ -4,11 +4,38 @@ import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
+import 'package:geocoding/geocoding.dart';
 
 class PraytimeController extends GetxController {
   var hijriDate = HijriCalendar.now().toFormat("d MMMM, yyyy");
   var currentTime = DateTime.now().obs;
   Timer? _timer;
+  String address = 'Fetching location...';
+
+  // Function to get the location name
+  // Function to get the location name
+  Future<void> getLocationName(double latitude, double longitude) async {
+    try {
+      // Get placemarks (list of addresses)
+      List<Placemark> placemarks =
+          await placemarkFromCoordinates(latitude, longitude);
+
+      // Extract relevant address details
+      if (placemarks.isNotEmpty) {
+        Placemark place = placemarks.first;
+        address =
+            ' ${place.subAdministrativeArea}, ${place.isoCountryCode}';
+        //${place.name}, ${place.subLocality},
+      } else {
+        address = 'Location name not found';
+      }
+    } catch (e) {
+      address = 'Error: ${e.toString()}';
+    }
+
+    // Update the UI
+    update();
+  }
 
   final location = Hive.box("user").get("location");
   late double latitude;
@@ -16,6 +43,7 @@ class PraytimeController extends GetxController {
   late Coordinates myCoordinates;
 
   final params = CalculationMethod.karachi.getParameters();
+
   final madhab = Madhab.hanafi;
   PrayerTimes? prayerTimes;
 
@@ -77,7 +105,8 @@ class PraytimeController extends GetxController {
     }
 
     // Check if after sunset (during the time the sun is setting)
-    if (currentTime.isAfter(prayerTimes.maghrib.subtract(Duration(minutes: 5))) &&
+    if (currentTime
+            .isAfter(prayerTimes.maghrib.subtract(Duration(minutes: 5))) &&
         currentTime.isBefore(prayerTimes.maghrib.add(Duration(minutes: 5)))) {
       return true;
     }

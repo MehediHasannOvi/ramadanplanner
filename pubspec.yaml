@@ -51,6 +51,9 @@ dependencies:
   url_launcher: ^6.3.1
   firebase_messaging: ^15.1.6
   firebase_analytics: ^11.4.1
+  geocoding: ^3.0.0
+  device_info_plus: ^11.2.1
+  geolocator: ^13.0.2
   # http: ^1.2.2
  
   # appwrite: ^13.1.1
