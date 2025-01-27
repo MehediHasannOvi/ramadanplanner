@@ -66,10 +66,26 @@ flutter run
 
 ## Screenshots
 
-![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/2.jpg?raw=true)
-![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/1.jpg?raw=true)
-![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/3.jpg?raw=true)
-![App Screenshot](https://github.com/MehediHasannOvi/ramadanplanner/blob/master/Screenshot/4.jpg?raw=true)
+
+<div align="center">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner1.png?raw=true" alt="Screenshot 1" width="30%">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner2.png?raw=true" alt="Screenshot 2" width="30%">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner3.png?raw=true" alt="Screenshot 3" width="30%">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner4.png?raw=true" alt="Screenshot 4" width="30%">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner5.png?raw=true" alt="Screenshot 5" width="30%">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner6.png?raw=true" alt="Screenshot 6" width="30%">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner7.png?raw=true" alt="Screenshot 7" width="30%">
+  <img src="https://github.com/MehediHasannOvi/ramadanplanner/blob/master/screenshot/ramadanplanner8.png?raw=true" alt="Screenshot 8" width="30%">
+  
+</div>
 
 
 ## Tech Stack
